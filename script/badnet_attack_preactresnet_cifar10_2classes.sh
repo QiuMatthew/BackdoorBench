@@ -16,3 +16,5 @@ python ./attack/badnet.py \
     --patch_mask_path ./resource/badnet/trigger_image.png \
     --save_folder_name badnet_attack_preactresnet_cifar10_2classes \
     --dataset cifar10_2classes \
+    --attack_label_trans all2one \
+    --attack_target 0
