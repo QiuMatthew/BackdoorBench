@@ -156,5 +156,5 @@ cython_debug/
 
 record/
 data/
-out/
-err/
+out/*
+err/*
