@@ -2,8 +2,8 @@
 #SBATCH -t 72:00:00
 #SBATCH -p qgpu
 #SBATCH --gres=gpu:tesla_a100:1
-#SBATCH --out="badnet_attack_efficientnet.out"
-#SBATCH --error="badnet_attack_efficientnet.err"
+#SBATCH --out="out/example_badnet_generate_trigger.out"
+#SBATCH --error="err/example_badnet_generate_trigge.err"
 
 python ./resource/badnet/generate_white_square.py \
 --image_size 32 \
