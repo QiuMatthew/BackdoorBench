@@ -65,7 +65,6 @@ class NormalCase:
         parser.add_argument('--git_hash', type=str,
                             help='git hash number, in order to find which version of code is used')
         parser.add_argument("--yaml_path", type=str, default="./config/attack/prototype/cifar10.yaml")
-        parser.add_argument("--num_classes", type=int, default=None)
         return parser
 
     def add_yaml_to_args(self, args):
@@ -76,7 +75,7 @@ class NormalCase:
 
     def process_args(self, args):
         args.terminal_info = sys.argv
-        args.num_classes = args.num_classes if args.num_classes else get_num_classes(args.dataset)
+        args.num_classes = get_num_classes(args.dataset)
         args.input_height, args.input_width, args.input_channel = get_input_shape(args.dataset)
         args.img_size = (args.input_height, args.input_width, args.input_channel)
         args.dataset_path = f"{args.dataset_path}/{args.dataset}"
