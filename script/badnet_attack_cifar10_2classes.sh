@@ -8,4 +8,4 @@ python ./attack/badnet.py \
     --yaml_path ./config/attack/prototype/cifar10.yaml \
     --patch_mask_path ./resource/badnet/trigger_image.png \
     --save_folder_name badnet_attack_cifar10_2classes \
-    --num_classes 2 \
+    --dataset cifar10_2classes \
