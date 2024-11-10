@@ -5,7 +5,7 @@
 #SBATCH --out="badnet_attack_efficientnet.out"
 #SBATCH --error="badnet_attack_efficientnet.err"
 
-python ../resource/badnet/generate_white_square.py \\
+python ./resource/badnet/generate_white_square.py \\
 --image_size 32 \\
 --square_size 3 \\
 --distance_to_right 0 \\
