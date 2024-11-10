@@ -2,8 +2,8 @@
 #SBATCH -t 72:00:00
 #SBATCH -p qgpu
 #SBATCH --gres=gpu:tesla_a100:1
-#SBATCH --out="out/badnet_attack_efficientnet.out"
-#SBATCH --error="err/badnet_attack_efficientnet.err"
+#SBATCH --out="out/example_badnet_attack.out"
+#SBATCH --error="err/example_badnet_attack.err"
 
 python ./attack/badnet.py \
     --yaml_path ./config/attack/prototype/cifar10.yaml \
