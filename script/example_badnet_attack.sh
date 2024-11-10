@@ -15,5 +15,5 @@ python ./resource/badnet/generate_white_square.py \
 python ./attack/badnet.py \
     --yaml_path ./config/attack/prototype/cifar10.yaml \
     --patch_mask_path ./resource/badnet/trigger_image.png \
-    --save_folder_name badnet_example
+    --save_folder_name example_badnet_attack
 
