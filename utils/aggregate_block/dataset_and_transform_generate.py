@@ -38,6 +38,10 @@ def get_num_classes(dataset_name: str) -> int:
         num_classes = 200
     elif dataset_name == 'imagenet':
         num_classes = 1000
+    elif dataset_name == "cifar10_2classes":
+        num_classes = 2
+    elif dataset_name == 'mnist_2classes':
+        num_classes = 2
     else:
         raise Exception("Invalid Dataset")
     return num_classes
@@ -45,7 +49,7 @@ def get_num_classes(dataset_name: str) -> int:
 
 def get_input_shape(dataset_name: str) -> Tuple[int, int, int]:
     # idea : given name, return the image size of images in the dataset
-    if dataset_name == "cifar10":
+    if dataset_name == "cifar10" or dataset_name == "cifar10_2classes":
         input_height = 32
         input_width = 32
         input_channel = 3
@@ -53,7 +57,7 @@ def get_input_shape(dataset_name: str) -> Tuple[int, int, int]:
         input_height = 32
         input_width = 32
         input_channel = 3
-    elif dataset_name == "mnist":
+    elif dataset_name == "mnist" or dataset_name == 'mnist_2classes':
         input_height = 28
         input_width = 28
         input_channel = 1
@@ -80,13 +84,13 @@ def get_input_shape(dataset_name: str) -> Tuple[int, int, int]:
 
 def get_dataset_normalization(dataset_name):
     # idea : given name, return the default normalization of images in the dataset
-    if dataset_name == "cifar10":
+    if dataset_name == "cifar10" or dataset_name == "cifar10_2classes":
         # from wanet
         dataset_normalization = (transforms.Normalize([0.4914, 0.4822, 0.4465], [0.247, 0.243, 0.261]))
     elif dataset_name == 'cifar100':
         '''get from https://gist.github.com/weiaicunzai/e623931921efefd4c331622c344d8151'''
         dataset_normalization = (transforms.Normalize([0.5071, 0.4865, 0.4409], [0.2673, 0.2564, 0.2762]))
-    elif dataset_name == "mnist":
+    elif dataset_name == "mnist" or dataset_name == 'mnist_2classes':
         dataset_normalization = (transforms.Normalize([0.5], [0.5]))
     elif dataset_name == 'tiny':
         dataset_normalization = (transforms.Normalize([0.4802, 0.4481, 0.3975], [0.2302, 0.2265, 0.2262]))
@@ -138,7 +142,7 @@ def get_transform(dataset_name, input_height, input_width, train=True, random_cr
     if train:
         transforms_list.append(transforms.RandomCrop((input_height, input_width), padding=random_crop_padding))
         # transforms_list.append(transforms.RandomRotation(10))
-        if dataset_name == "cifar10":
+        if dataset_name == "cifar10" or dataset_name == "cifar10_2classes":
             transforms_list.append(transforms.RandomHorizontalFlip())
 
     transforms_list.append(transforms.ToTensor())
@@ -153,7 +157,7 @@ def get_transform_prefetch(dataset_name, input_height, input_width, train=True, 
     if train:
         transforms_list.append(transforms.RandomCrop((input_height, input_width), padding=4))
         # transforms_list.append(transforms.RandomRotation(10))
-        if dataset_name == "cifar10":
+        if dataset_name == "cifar10" or dataset_name == "cifar10_2classes":
             transforms_list.append(transforms.RandomHorizontalFlip())
     if not prefetch:
         transforms_list.append(transforms.ToTensor())
@@ -230,7 +234,7 @@ def dataset_and_transform_generate(args):
             from torchvision.datasets import ImageFolder
             train_dataset_without_transform = ImageFolder('../data/test')
             test_dataset_without_transform = ImageFolder('../data/test')
-        elif args.dataset == 'mnist':
+        elif args.dataset == 'mnist' or args.dataset == 'mnist_2classes':
             from torchvision.datasets import MNIST
             train_dataset_without_transform = MNIST(
                 args.dataset_path,
@@ -244,7 +248,7 @@ def dataset_and_transform_generate(args):
                 transform=None,
                 download=True,
             )
-        elif args.dataset == 'cifar10':
+        elif args.dataset == 'cifar10' or args.dataset == 'cifar10_2classes':
             from torchvision.datasets import CIFAR10
             train_dataset_without_transform = CIFAR10(
                 args.dataset_path,
