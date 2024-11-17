@@ -46,6 +46,12 @@ def get_num_classes(dataset_name: str) -> int:
         num_classes = 2
     elif dataset_name == 'ffpp_multiclass':
         num_classes = 6
+    elif dataset_name == 'ffpp_3classes':
+        num_classes = 3
+    elif dataset_name == 'ffpp_4classes':
+        num_classes = 4
+    elif dataset_name == 'ffpp_5classes':
+        num_classes = 5
     else:
         raise Exception("Invalid Dataset")
     return num_classes
@@ -81,7 +87,7 @@ def get_input_shape(dataset_name: str) -> Tuple[int, int, int]:
         input_height = 224
         input_width = 224
         input_channel = 3
-    elif dataset_name == 'ffpp_binary' or dataset_name == 'ffpp_multiclass':
+    elif dataset_name.startswith('ffpp'):
         input_height = 64
         input_width = 64
         input_channel = 3
@@ -111,7 +117,7 @@ def get_dataset_normalization(dataset_name):
                 std=[0.229, 0.224, 0.225],
             )
         )
-    elif dataset_name == 'ffpp_binary' or dataset_name == 'ffpp_multiclass':
+    elif dataset_name.startswith('ffpp'):
         dataset_normalization = (
             transforms.Normalize(
                 mean=[0.485, 0.456, 0.406],
@@ -336,7 +342,7 @@ def dataset_and_transform_generate(args):
                 root=f"{args.dataset_path}/val",
                 is_valid_file=is_valid_file,
             )
-        elif args.dataset == "ffpp_binary" or args.dataset == 'ffpp_multiclass':
+        elif args.dataset.startswith("ffpp"):
             from torchvision.datasets import ImageFolder
 
             def is_valid_file(path):
