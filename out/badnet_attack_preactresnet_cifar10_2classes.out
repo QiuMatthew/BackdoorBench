@@ -1,0 +1,240 @@
+/home/fmg/yuran/miniconda3/envs/backdoorbenchv2/lib/python3.8/site-packages/torchvision/io/image.py:13: UserWarning: Failed to load image Python extension: libc10_hip.so: cannot open shared object file: No such file or directory
+  warn(f"Failed to load image Python extension: {e}")
+INFO:root:{'amp': False,
+ 'attack': 'badnet',
+ 'attack_label_trans': 'all2one',
+ 'attack_target': 0,
+ 'batch_size': 128,
+ 'bd_yaml_path': './config/attack/badnet/default.yaml',
+ 'client_optimizer': 'sgd',
+ 'dataset': 'cifar10_2classes',
+ 'dataset_path': './data/cifar10_2classes',
+ 'device': 'cuda:0',
+ 'epochs': 100,
+ 'frequency_save': 0,
+ 'img_size': (32, 32, 3),
+ 'input_channel': 3,
+ 'input_height': 32,
+ 'input_width': 32,
+ 'lr': 0.01,
+ 'lr_scheduler': 'CosineAnnealingLR',
+ 'model': 'preactresnet18',
+ 'non_blocking': True,
+ 'num_classes': 2,
+ 'num_workers': 4,
+ 'patch_mask_path': './resource/badnet/trigger_image.png',
+ 'pin_memory': True,
+ 'pratio': 0.1,
+ 'prefetch': False,
+ 'random_seed': 0,
+ 'save_folder_name': 'badnet_attack_preactresnet_cifar10_2classes',
+ 'save_path': './record/badnet_attack_preactresnet_cifar10_2classes',
+ 'sgd_momentum': 0.9,
+ 'terminal_info': ['./attack/badnet.py',
+                   '--yaml_path',
+                   './config/attack/prototype/cifar10.yaml',
+                   '--patch_mask_path',
+                   './resource/badnet/trigger_image.png',
+                   '--save_folder_name',
+                   'badnet_attack_preactresnet_cifar10_2classes',
+                   '--dataset',
+                   'cifar10_2classes'],
+ 'wd': 0.0005,
+ 'yaml_path': './config/attack/prototype/cifar10.yaml'}
+2024-11-11:01:07:12 [INFO    ] [prototype.py:124] {'amp': False,
+ 'attack': 'badnet',
+ 'attack_label_trans': 'all2one',
+ 'attack_target': 0,
+ 'batch_size': 128,
+ 'bd_yaml_path': './config/attack/badnet/default.yaml',
+ 'client_optimizer': 'sgd',
+ 'dataset': 'cifar10_2classes',
+ 'dataset_path': './data/cifar10_2classes',
+ 'device': 'cuda:0',
+ 'epochs': 100,
+ 'frequency_save': 0,
+ 'img_size': (32, 32, 3),
+ 'input_channel': 3,
+ 'input_height': 32,
+ 'input_width': 32,
+ 'lr': 0.01,
+ 'lr_scheduler': 'CosineAnnealingLR',
+ 'model': 'preactresnet18',
+ 'non_blocking': True,
+ 'num_classes': 2,
+ 'num_workers': 4,
+ 'patch_mask_path': './resource/badnet/trigger_image.png',
+ 'pin_memory': True,
+ 'pratio': 0.1,
+ 'prefetch': False,
+ 'random_seed': 0,
+ 'save_folder_name': 'badnet_attack_preactresnet_cifar10_2classes',
+ 'save_path': './record/badnet_attack_preactresnet_cifar10_2classes',
+ 'sgd_momentum': 0.9,
+ 'terminal_info': ['./attack/badnet.py',
+                   '--yaml_path',
+                   './config/attack/prototype/cifar10.yaml',
+                   '--patch_mask_path',
+                   './resource/badnet/trigger_image.png',
+                   '--save_folder_name',
+                   'badnet_attack_preactresnet_cifar10_2classes',
+                   '--dataset',
+                   'cifar10_2classes'],
+ 'wd': 0.0005,
+ 'yaml_path': './config/attack/prototype/cifar10.yaml'}
+DEBUG:root:Only INFO or above level log will show in cmd. DEBUG level log only will show in log file.
+DEBUG:root:{'git hash': '--git_hash e326f670cbb2b53dbebc7765f6dbcc14203b1f55',
+ 'last 3 log': 'commit e326f670cbb2b53dbebc7765f6dbcc14203b1f55\n'
+               'Author: QiuMatthew <uzenkyu@gmail.com>\n'
+               'Date:   Mon Nov 11 00:26:11 2024 +0900\n'
+               '\n'
+               '    start over\n'
+               '\n'
+               'commit 063c7406b9d6386b1678aa904e9b8896d5d29ad4\n'
+               'Author: QiuMatthew <uzenkyu@gmail.com>\n'
+               'Date:   Mon Nov 11 00:24:53 2024 +0900\n'
+               '\n'
+               '    start over\n'
+               '\n'
+               'commit e207017876a9e70960cc7888dc0e1daafaf610a8\n'
+               'Author: QiuMatthew <uzenkyu@gmail.com>\n'
+               'Date:   Mon Nov 11 00:14:52 2024 +0900\n'
+               '\n'
+               '    badnet attack on gtsrb dataset',
+ 'status': 'On branch test-number-of-class\n'
+           "Your branch is up to date with 'origin/test-number-of-class'.\n"
+           '\n'
+           'Changes not staged for commit:\n'
+           '  (use "git add/rm <file>..." to update what will be committed)\n'
+           '  (use "git checkout -- <file>..." to discard changes in working '
+           'directory)\n'
+           '\n'
+           '\tdeleted:    out/sample.out\n'
+           '\n'
+           'Untracked files:\n'
+           '  (use "git add <file>..." to include in what will be committed)\n'
+           '\n'
+           '\tout/badnet_attack_preactresnet_cifar10.out\n'
+           '\tout/badnet_attack_preactresnet_cifar10_2classes.out\n'
+           '\n'
+           'no changes added to commit (use "git add" and/or "git commit -a")'}
+INFO:root:stage1 start
+2024-11-11:01:07:13 [INFO    ] [badnet.py:111] stage1 start
+DEBUG:root:dataset_and_transform_generate done
+DEBUG:root:Not DatasetFolder or ImageFolder, so iter through
+DEBUG:root:Not DatasetFolder or ImageFolder, so iter through
+DEBUG:root:Reminder: plz note that if p_num or pratio exceed the number of possible candidate samples
+ then only maximum number of samples will be applied
+DEBUG:root:Reminder: priority p_num > pratio, and choosing fix number of sample is prefered if possible 
+INFO:root:poison num:5000.0,real pratio:0.1
+2024-11-11:01:07:16 [INFO    ] [backdoor_generate_poison_index.py:61] poison num:5000.0,real pratio:0.1
+DEBUG:root:poison train idx is saved
+INFO:root:save file format is .png
+2024-11-11:01:07:16 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+prepro_backdoor:   0%|          | 0/50000 [00:00<?, ?it/s]prepro_backdoor:   0%|          | 92/50000 [00:00<01:16, 649.28it/s]prepro_backdoor:   1%|          | 432/50000 [00:00<00:24, 2028.83it/s]prepro_backdoor:   3%|▎         | 1481/50000 [00:00<00:08, 5543.77it/s]prepro_backdoor:   5%|▍         | 2370/50000 [00:00<00:07, 6784.63it/s]prepro_backdoor:   7%|▋         | 3312/50000 [00:00<00:06, 7683.54it/s]prepro_backdoor:   8%|▊         | 4151/50000 [00:00<00:05, 7890.17it/s]prepro_backdoor:  10%|█         | 5122/50000 [00:00<00:05, 8460.54it/s]prepro_backdoor:  13%|█▎        | 6254/50000 [00:00<00:04, 9345.11it/s]prepro_backdoor:  14%|█▍        | 7212/50000 [00:00<00:04, 9412.91it/s]prepro_backdoor:  16%|█▋        | 8160/50000 [00:01<00:04, 9182.22it/s]prepro_backdoor:  18%|█▊        | 9084/50000 [00:01<00:05, 7317.24it/s]prepro_backdoor:  20%|██        | 10040/50000 [00:01<00:05, 7876.54it/s]prepro_backdoor:  22%|██▏       | 11145/50000 [00:01<00:04, 8696.25it/s]prepro_backdoor:  24%|██▍       | 12087/50000 [00:01<00:04, 8877.40it/s]prepro_backdoor:  26%|██▌       | 13011/50000 [00:01<00:04, 8931.68it/s]prepro_backdoor:  28%|██▊       | 14096/50000 [00:01<00:03, 9463.82it/s]prepro_backdoor:  30%|███       | 15063/50000 [00:01<00:04, 8680.71it/s]prepro_backdoor:  32%|███▏      | 16122/50000 [00:01<00:03, 9201.18it/s]prepro_backdoor:  34%|███▍      | 17066/50000 [00:02<00:03, 8969.90it/s]prepro_backdoor:  36%|███▌      | 17980/50000 [00:02<00:03, 9004.91it/s]prepro_backdoor:  38%|███▊      | 18893/50000 [00:02<00:04, 7293.87it/s]prepro_backdoor:  40%|███▉      | 19767/50000 [00:02<00:03, 7643.47it/s]prepro_backdoor:  41%|████      | 20580/50000 [00:02<00:03, 7716.71it/s]prepro_backdoor:  43%|████▎     | 21542/50000 [00:02<00:03, 8227.81it/s]prepro_backdoor:  45%|████▍     | 22469/50000 [00:02<00:03, 8516.55it/s]prepro_backdoor:  47%|████▋     | 23411/50000 [00:02<00:03, 8762.27it/s]prepro_backdoor:  49%|████▊     | 24311/50000 [00:02<00:02, 8805.57it/s]prepro_backdoor:  50%|█████     | 25236/50000 [00:03<00:02, 8912.04it/s]prepro_backdoor:  52%|█████▏    | 26162/50000 [00:03<00:02, 9009.25it/s]prepro_backdoor:  54%|█████▍    | 27181/50000 [00:03<00:02, 9345.98it/s]prepro_backdoor:  56%|█████▌    | 28121/50000 [00:03<00:02, 9257.42it/s]prepro_backdoor:  58%|█████▊    | 29051/50000 [00:03<00:02, 8904.19it/s]prepro_backdoor:  60%|█████▉    | 29953/50000 [00:03<00:02, 8913.38it/s]prepro_backdoor:  62%|██████▏   | 30848/50000 [00:03<00:02, 8364.88it/s]prepro_backdoor:  63%|██████▎   | 31693/50000 [00:04<00:03, 5546.68it/s]prepro_backdoor:  65%|██████▌   | 32552/50000 [00:04<00:02, 6179.19it/s]prepro_backdoor:  67%|██████▋   | 33393/50000 [00:04<00:02, 6679.83it/s]prepro_backdoor:  69%|██████▉   | 34390/50000 [00:04<00:02, 7485.06it/s]prepro_backdoor:  70%|███████   | 35223/50000 [00:04<00:01, 7550.66it/s]prepro_backdoor:  72%|███████▏  | 36040/50000 [00:04<00:01, 7701.80it/s]prepro_backdoor:  74%|███████▍  | 36917/50000 [00:04<00:01, 7989.63it/s]prepro_backdoor:  76%|███████▌  | 37840/50000 [00:04<00:01, 8336.97it/s]prepro_backdoor:  77%|███████▋  | 38699/50000 [00:04<00:01, 8099.99it/s]prepro_backdoor:  79%|███████▉  | 39651/50000 [00:04<00:01, 8495.79it/s]prepro_backdoor:  81%|████████  | 40516/50000 [00:05<00:01, 6916.30it/s]prepro_backdoor:  83%|████████▎ | 41472/50000 [00:05<00:01, 7568.28it/s]prepro_backdoor:  85%|████████▍ | 42457/50000 [00:05<00:00, 8166.15it/s]prepro_backdoor:  87%|████████▋ | 43422/50000 [00:05<00:00, 8554.08it/s]prepro_backdoor:  89%|████████▉ | 44502/50000 [00:05<00:00, 9177.37it/s]prepro_backdoor:  91%|█████████ | 45449/50000 [00:05<00:00, 9147.89it/s]prepro_backdoor:  93%|█████████▎| 46384/50000 [00:05<00:00, 8549.66it/s]prepro_backdoor:  95%|█████████▍| 47304/50000 [00:05<00:00, 8721.23it/s]prepro_backdoor:  96%|█████████▋| 48193/50000 [00:05<00:00, 8662.70it/s]prepro_backdoor:  98%|█████████▊| 49071/50000 [00:06<00:00, 7966.54it/s]prepro_backdoor: 100%|█████████▉| 49994/50000 [00:06<00:00, 8307.38it/s]prepro_backdoor: 100%|██████████| 50000/50000 [00:06<00:00, 8086.39it/s]
+DEBUG:root:Reminder: plz note that if p_num or pratio exceed the number of possible candidate samples
+ then only maximum number of samples will be applied
+DEBUG:root:Reminder: priority p_num > pratio, and choosing fix number of sample is prefered if possible 
+INFO:root:poison num:9000.0,real pratio:0.9
+2024-11-11:01:07:23 [INFO    ] [backdoor_generate_poison_index.py:61] poison num:9000.0,real pratio:0.9
+INFO:root:save file format is .png
+2024-11-11:01:07:23 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+prepro_backdoor:   0%|          | 0/10000 [00:00<?, ?it/s]prepro_backdoor:   1%|          | 108/10000 [00:00<00:09, 1076.25it/s]prepro_backdoor:   2%|▏         | 216/10000 [00:00<00:13, 711.18it/s] prepro_backdoor:   3%|▎         | 330/10000 [00:00<00:11, 863.03it/s]prepro_backdoor:   4%|▍         | 444/10000 [00:00<00:10, 953.83it/s]prepro_backdoor:   6%|▌         | 555/10000 [00:00<00:09, 1002.42it/s]prepro_backdoor:   7%|▋         | 660/10000 [00:00<00:09, 1010.49it/s]prepro_backdoor:   8%|▊         | 770/10000 [00:00<00:08, 1035.80it/s]prepro_backdoor:   9%|▉         | 885/10000 [00:00<00:08, 1069.45it/s]prepro_backdoor:  10%|█         | 1003/10000 [00:00<00:08, 1102.54it/s]prepro_backdoor:  11%|█         | 1120/10000 [00:01<00:07, 1122.87it/s]prepro_backdoor:  12%|█▏        | 1234/10000 [00:01<00:07, 1109.55it/s]prepro_backdoor:  13%|█▎        | 1346/10000 [00:01<00:10, 817.08it/s] prepro_backdoor:  14%|█▍        | 1449/10000 [00:01<00:09, 865.72it/s]prepro_backdoor:  16%|█▌        | 1550/10000 [00:01<00:09, 901.99it/s]prepro_backdoor:  17%|█▋        | 1654/10000 [00:01<00:08, 938.40it/s]prepro_backdoor:  18%|█▊        | 1762/10000 [00:01<00:08, 976.18it/s]prepro_backdoor:  19%|█▊        | 1868/10000 [00:01<00:08, 998.01it/s]prepro_backdoor:  20%|█▉        | 1978/10000 [00:02<00:07, 1026.73it/s]prepro_backdoor:  21%|██        | 2084/10000 [00:02<00:07, 1035.89it/s]prepro_backdoor:  22%|██▏       | 2197/10000 [00:02<00:07, 1062.67it/s]prepro_backdoor:  23%|██▎       | 2308/10000 [00:02<00:07, 1075.87it/s]prepro_backdoor:  24%|██▍       | 2417/10000 [00:02<00:09, 790.20it/s] prepro_backdoor:  25%|██▌       | 2517/10000 [00:02<00:08, 839.74it/s]prepro_backdoor:  26%|██▌       | 2611/10000 [00:02<00:11, 642.34it/s]prepro_backdoor:  27%|██▋       | 2719/10000 [00:02<00:09, 733.23it/s]prepro_backdoor:  28%|██▊       | 2821/10000 [00:03<00:08, 797.85it/s]prepro_backdoor:  29%|██▉       | 2928/10000 [00:03<00:08, 863.30it/s]prepro_backdoor:  30%|███       | 3038/10000 [00:03<00:07, 924.00it/s]prepro_backdoor:  31%|███▏      | 3145/10000 [00:03<00:07, 961.42it/s]prepro_backdoor:  33%|███▎      | 3261/10000 [00:03<00:06, 1015.82it/s]prepro_backdoor:  34%|███▎      | 3369/10000 [00:03<00:06, 1031.37it/s]prepro_backdoor:  35%|███▍      | 3476/10000 [00:03<00:06, 1023.34it/s]prepro_backdoor:  36%|███▌      | 3581/10000 [00:03<00:06, 1012.85it/s]prepro_backdoor:  37%|███▋      | 3684/10000 [00:03<00:06, 989.94it/s] prepro_backdoor:  38%|███▊      | 3785/10000 [00:04<00:06, 975.34it/s]prepro_backdoor:  39%|███▉      | 3884/10000 [00:04<00:08, 721.56it/s]prepro_backdoor:  40%|███▉      | 3983/10000 [00:04<00:07, 783.24it/s]prepro_backdoor:  41%|████      | 4086/10000 [00:04<00:07, 843.71it/s]prepro_backdoor:  42%|████▏     | 4190/10000 [00:04<00:06, 894.52it/s]prepro_backdoor:  43%|████▎     | 4300/10000 [00:04<00:06, 948.39it/s]prepro_backdoor:  44%|████▍     | 4406/10000 [00:04<00:05, 978.28it/s]prepro_backdoor:  45%|████▌     | 4518/10000 [00:04<00:05, 1017.58it/s]prepro_backdoor:  46%|████▌     | 4623/10000 [00:04<00:05, 1020.57it/s]prepro_backdoor:  47%|████▋     | 4727/10000 [00:05<00:05, 1018.13it/s]prepro_backdoor:  48%|████▊     | 4831/10000 [00:05<00:05, 1019.43it/s]prepro_backdoor:  49%|████▉     | 4934/10000 [00:05<00:06, 801.52it/s] prepro_backdoor:  50%|█████     | 5034/10000 [00:05<00:05, 848.53it/s]prepro_backdoor:  51%|█████▏    | 5142/10000 [00:05<00:05, 907.31it/s]prepro_backdoor:  53%|█████▎    | 5252/10000 [00:05<00:04, 958.25it/s]prepro_backdoor:  54%|█████▎    | 5367/10000 [00:05<00:04, 1009.04it/s]prepro_backdoor:  55%|█████▍    | 5472/10000 [00:05<00:04, 1006.35it/s]prepro_backdoor:  56%|█████▌    | 5575/10000 [00:05<00:04, 998.39it/s] prepro_backdoor:  57%|█████▋    | 5681/10000 [00:06<00:04, 1013.66it/s]prepro_backdoor:  58%|█████▊    | 5787/10000 [00:06<00:04, 1024.83it/s]prepro_backdoor:  59%|█████▉    | 5893/10000 [00:06<00:03, 1034.68it/s]prepro_backdoor:  60%|█████▉    | 5998/10000 [00:06<00:05, 771.88it/s] prepro_backdoor:  61%|██████    | 6103/10000 [00:06<00:04, 836.09it/s]prepro_backdoor:  62%|██████▏   | 6208/10000 [00:06<00:04, 890.24it/s]prepro_backdoor:  63%|██████▎   | 6313/10000 [00:06<00:03, 930.27it/s]prepro_backdoor:  64%|██████▍   | 6423/10000 [00:06<00:03, 974.17it/s]prepro_backdoor:  65%|██████▌   | 6530/10000 [00:06<00:03, 1000.66it/s]prepro_backdoor:  66%|██████▋   | 6634/10000 [00:07<00:03, 974.75it/s] prepro_backdoor:  67%|██████▋   | 6742/10000 [00:07<00:03, 1003.11it/s]prepro_backdoor:  68%|██████▊   | 6850/10000 [00:07<00:03, 1023.66it/s]prepro_backdoor:  70%|██████▉   | 6955/10000 [00:07<00:02, 1029.35it/s]prepro_backdoor:  71%|███████   | 7059/10000 [00:07<00:02, 1028.14it/s]prepro_backdoor:  72%|███████▏  | 7163/10000 [00:07<00:04, 574.33it/s] prepro_backdoor:  73%|███████▎  | 7267/10000 [00:07<00:04, 661.78it/s]prepro_backdoor:  74%|███████▎  | 7370/10000 [00:08<00:03, 738.73it/s]prepro_backdoor:  75%|███████▍  | 7480/10000 [00:08<00:03, 820.92it/s]prepro_backdoor:  76%|███████▌  | 7581/10000 [00:08<00:02, 867.08it/s]prepro_backdoor:  77%|███████▋  | 7681/10000 [00:08<00:02, 901.34it/s]prepro_backdoor:  78%|███████▊  | 7799/10000 [00:08<00:02, 975.13it/s]prepro_backdoor:  79%|███████▉  | 7917/10000 [00:08<00:02, 1030.10it/s]prepro_backdoor:  80%|████████  | 8025/10000 [00:08<00:01, 1037.17it/s]prepro_backdoor:  81%|████████▏ | 8133/10000 [00:08<00:01, 1042.34it/s]prepro_backdoor:  82%|████████▏ | 8240/10000 [00:08<00:01, 1034.14it/s]prepro_backdoor:  83%|████████▎ | 8346/10000 [00:09<00:02, 811.76it/s] prepro_backdoor:  84%|████████▍ | 8444/10000 [00:09<00:01, 852.13it/s]prepro_backdoor:  85%|████████▌ | 8546/10000 [00:09<00:01, 894.58it/s]prepro_backdoor:  86%|████████▋ | 8649/10000 [00:09<00:01, 928.58it/s]prepro_backdoor:  87%|████████▋ | 8748/10000 [00:09<00:01, 945.10it/s]prepro_backdoor:  89%|████████▊ | 8860/10000 [00:09<00:01, 994.33it/s]prepro_backdoor:  90%|████████▉ | 8981/10000 [00:09<00:00, 1054.74it/s]prepro_backdoor:  91%|█████████ | 9100/10000 [00:09<00:00, 1093.40it/s]prepro_backdoor:  92%|█████████▏| 9212/10000 [00:09<00:00, 1099.81it/s]prepro_backdoor:  93%|█████████▎| 9324/10000 [00:09<00:00, 1070.04it/s]prepro_backdoor:  94%|█████████▍| 9432/10000 [00:10<00:00, 1061.06it/s]prepro_backdoor:  95%|█████████▌| 9539/10000 [00:10<00:00, 833.25it/s] prepro_backdoor:  96%|█████████▋| 9647/10000 [00:10<00:00, 892.70it/s]prepro_backdoor:  98%|█████████▊| 9751/10000 [00:10<00:00, 930.29it/s]prepro_backdoor:  99%|█████████▊| 9857/10000 [00:10<00:00, 964.51it/s]prepro_backdoor: 100%|█████████▉| 9969/10000 [00:10<00:00, 1005.42it/s]prepro_backdoor: 100%|██████████| 10000/10000 [00:10<00:00, 932.20it/s]
+INFO:root:stage2 start
+2024-11-11:01:07:33 [INFO    ] [badnet.py:193] stage2 start
+DEBUG:root:image_size ONLY apply for vit!!!
+If you use vit make sure you set the image size!
+DEBUG:root:Make sure you want PreActResNet18, which is NOT resnet18.
+DEBUG:root:This class REQUIRE bd dataset to implement overwrite methods. This is NOT a general class for all cls task.
+INFO:root:Do NOT set the settings/parameters attr manually after you start training!
+You may break the relationship between them.
+2024-11-11:01:07:34 [INFO    ] [trainer_cls.py:972] Do NOT set the settings/parameters attr manually after you start training!
+You may break the relationship between them.
+Files already downloaded and verified
+Files already downloaded and verified
+INFO:root:('epoch_now:0, '
+ 'batch_now:0self.amp:False,self.criterion:CrossEntropyLoss(),self.optimizer:SGD '
+ '(\n'
+ 'Parameter Group 0\n'
+ '    dampening: 0\n'
+ '    initial_lr: 0.01\n'
+ '    lr: 0.01\n'
+ '    maximize: False\n'
+ '    momentum: 0.9\n'
+ '    nesterov: False\n'
+ '    weight_decay: 0.0005\n'
+ "),self.scheduler:{'T_max': 100, 'eta_min': 0, 'base_lrs': [0.01], "
+ "'last_epoch': 0, '_step_count': 1, 'verbose': False, "
+ "'_get_lr_called_within_step': False, '_last_lr': [0.01]},self.scaler:{})")
+2024-11-11:01:07:34 [INFO    ] [trainer_cls.py:1030] ('epoch_now:0, '
+ 'batch_now:0self.amp:False,self.criterion:CrossEntropyLoss(),self.optimizer:SGD '
+ '(\n'
+ 'Parameter Group 0\n'
+ '    dampening: 0\n'
+ '    initial_lr: 0.01\n'
+ '    lr: 0.01\n'
+ '    maximize: False\n'
+ '    momentum: 0.9\n'
+ '    nesterov: False\n'
+ '    weight_decay: 0.0005\n'
+ "),self.scheduler:{'T_max': 100, 'eta_min': 0, 'base_lrs': [0.01], "
+ "'last_epoch': 0, '_step_count': 1, 'verbose': False, "
+ "'_get_lr_called_within_step': False, '_last_lr': [0.01]},self.scaler:{})")
+../aten/src/ATen/native/cuda/Loss.cu:257: nll_loss_forward_reduce_cuda_kernel_2d: block: [0,0,0], thread: [0,0,0] Assertion `t >= 0 && t < n_classes` failed.
+../aten/src/ATen/native/cuda/Loss.cu:257: nll_loss_forward_reduce_cuda_kernel_2d: block: [0,0,0], thread: [1,0,0] Assertion `t >= 0 && t < n_classes` failed.
+../aten/src/ATen/native/cuda/Loss.cu:257: nll_loss_forward_reduce_cuda_kernel_2d: block: [0,0,0], thread: [2,0,0] Assertion `t >= 0 && t < n_classes` failed.
+../aten/src/ATen/native/cuda/Loss.cu:257: nll_loss_forward_reduce_cuda_kernel_2d: block: [0,0,0], thread: [7,0,0] Assertion `t >= 0 && t < n_classes` failed.
+../aten/src/ATen/native/cuda/Loss.cu:257: nll_loss_forward_reduce_cuda_kernel_2d: block: [0,0,0], thread: [10,0,0] Assertion `t >= 0 && t < n_classes` failed.
+../aten/src/ATen/native/cuda/Loss.cu:257: nll_loss_forward_reduce_cuda_kernel_2d: block: [0,0,0], thread: [11,0,0] Assertion `t >= 0 && t < n_classes` failed.
+../aten/src/ATen/native/cuda/Loss.cu:257: nll_loss_forward_reduce_cuda_kernel_2d: block: [0,0,0], thread: [14,0,0] Assertion `t >= 0 && t < n_classes` failed.
+../aten/src/ATen/native/cuda/Loss.cu:257: nll_loss_forward_reduce_cuda_kernel_2d: block: [0,0,0], thread: [15,0,0] Assertion `t >= 0 && t < n_classes` failed.
+../aten/src/ATen/native/cuda/Loss.cu:257: nll_loss_forward_reduce_cuda_kernel_2d: block: [0,0,0], thread: [16,0,0] Assertion `t >= 0 && t < n_classes` failed.
+../aten/src/ATen/native/cuda/Loss.cu:257: nll_loss_forward_reduce_cuda_kernel_2d: block: [0,0,0], thread: [17,0,0] Assertion `t >= 0 && t < n_classes` failed.
+../aten/src/ATen/native/cuda/Loss.cu:257: nll_loss_forward_reduce_cuda_kernel_2d: block: [0,0,0], thread: [18,0,0] Assertion `t >= 0 && t < n_classes` failed.
+../aten/src/ATen/native/cuda/Loss.cu:257: nll_loss_forward_reduce_cuda_kernel_2d: block: [0,0,0], thread: [20,0,0] Assertion `t >= 0 && t < n_classes` failed.
+../aten/src/ATen/native/cuda/Loss.cu:257: nll_loss_forward_reduce_cuda_kernel_2d: block: [0,0,0], thread: [21,0,0] Assertion `t >= 0 && t < n_classes` failed.
+../aten/src/ATen/native/cuda/Loss.cu:257: nll_loss_forward_reduce_cuda_kernel_2d: block: [0,0,0], thread: [23,0,0] Assertion `t >= 0 && t < n_classes` failed.
+../aten/src/ATen/native/cuda/Loss.cu:257: nll_loss_forward_reduce_cuda_kernel_2d: block: [0,0,0], thread: [24,0,0] Assertion `t >= 0 && t < n_classes` failed.
+../aten/src/ATen/native/cuda/Loss.cu:257: nll_loss_forward_reduce_cuda_kernel_2d: block: [0,0,0], thread: [25,0,0] Assertion `t >= 0 && t < n_classes` failed.
+../aten/src/ATen/native/cuda/Loss.cu:257: nll_loss_forward_reduce_cuda_kernel_2d: block: [0,0,0], thread: [27,0,0] Assertion `t >= 0 && t < n_classes` failed.
+../aten/src/ATen/native/cuda/Loss.cu:257: nll_loss_forward_reduce_cuda_kernel_2d: block: [0,0,0], thread: [29,0,0] Assertion `t >= 0 && t < n_classes` failed.
+../aten/src/ATen/native/cuda/Loss.cu:257: nll_loss_forward_reduce_cuda_kernel_2d: block: [0,0,0], thread: [30,0,0] Assertion `t >= 0 && t < n_classes` failed.
+Traceback (most recent call last):
+  File "./attack/badnet.py", line 276, in <module>
+    attack.stage2_training()
+  File "./attack/badnet.py", line 230, in stage2_training
+    trainer.train_with_test_each_epoch_on_mix(
+  File "/home/fmg2/yuran/BackdoorBench/./utils/trainer_cls.py", line 1930, in train_with_test_each_epoch_on_mix
+    train_epoch_original_targets_list = self.train_one_epoch_on_mix(verbose=1)
+  File "/home/fmg2/yuran/BackdoorBench/./utils/trainer_cls.py", line 1781, in train_one_epoch_on_mix
+    one_batch_loss, batch_predict = self.one_forward_backward(x, labels, self.device, verbose)
+  File "/home/fmg2/yuran/BackdoorBench/./utils/trainer_cls.py", line 1159, in one_forward_backward
+    self.scaler.scale(loss).backward()
+  File "/home/fmg/yuran/miniconda3/envs/backdoorbenchv2/lib/python3.8/site-packages/torch/_tensor.py", line 363, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, inputs=inputs)
+  File "/home/fmg/yuran/miniconda3/envs/backdoorbenchv2/lib/python3.8/site-packages/torch/autograd/__init__.py", line 173, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+RuntimeError: cuDNN error: CUDNN_STATUS_INTERNAL_ERROR
+terminate called after throwing an instance of 'c10::CUDAError'
+  what():  CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call,so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Exception raised from createEvent at ../aten/src/ATen/cuda/CUDAEvent.h:174 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x42 (0x1554930eb7d2 in /home/fmg/yuran/miniconda3/envs/backdoorbenchv2/lib/python3.8/site-packages/torch/lib/libc10.so)
+frame #1: <unknown function> + 0x267df7a (0x1554e610af7a in /home/fmg/yuran/miniconda3/envs/backdoorbenchv2/lib/python3.8/site-packages/torch/lib/libtorch_cuda_cpp.so)
+frame #2: <unknown function> + 0x300568 (0x155548503568 in /home/fmg/yuran/miniconda3/envs/backdoorbenchv2/lib/python3.8/site-packages/torch/lib/libtorch_python.so)
+frame #3: c10::TensorImpl::release_resources() + 0x175 (0x1554930d4005 in /home/fmg/yuran/miniconda3/envs/backdoorbenchv2/lib/python3.8/site-packages/torch/lib/libc10.so)
+frame #4: <unknown function> + 0x1ee569 (0x1555483f1569 in /home/fmg/yuran/miniconda3/envs/backdoorbenchv2/lib/python3.8/site-packages/torch/lib/libtorch_python.so)
+frame #5: <unknown function> + 0x4d9c78 (0x1555486dcc78 in /home/fmg/yuran/miniconda3/envs/backdoorbenchv2/lib/python3.8/site-packages/torch/lib/libtorch_python.so)
+frame #6: THPVariable_subclass_dealloc(_object*) + 0x292 (0x1555486dcf72 in /home/fmg/yuran/miniconda3/envs/backdoorbenchv2/lib/python3.8/site-packages/torch/lib/libtorch_python.so)
+frame #7: python() [0x4e0c20]
+frame #8: python() [0x4f1d78]
+frame #9: python() [0x4f1d61]
+frame #10: python() [0x4f1d61]
+frame #11: python() [0x4f1d61]
+frame #12: python() [0x4c9630]
+<omitting python frames>
+frame #18: __libc_start_main + 0xe7 (0x155554598b97 in /lib/x86_64-linux-gnu/libc.so.6)
+frame #19: python() [0x579f8d]
+
+/cm/local/apps/slurm/var/spool/job589741/slurm_script: line 19: 29817 Aborted                 (core dumped) python ./attack/badnet.py --yaml_path ./config/attack/prototype/cifar10.yaml --patch_mask_path ./resource/badnet/trigger_image.png --save_folder_name badnet_attack_preactresnet_cifar10_2classes --dataset cifar10_2classes

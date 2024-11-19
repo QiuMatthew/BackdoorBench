@@ -1,0 +1,274 @@
+/home/fmg/yuran/miniconda3/envs/backdoorbenchv2/lib/python3.8/site-packages/torchvision/io/image.py:13: UserWarning: Failed to load image Python extension: libc10_hip.so: cannot open shared object file: No such file or directory
+  warn(f"Failed to load image Python extension: {e}")
+WARNING:root:save_path MUST have 'record' in its abspath, and data_path in attack result MUST have 'data' in its path
+WARNING:root:For ImageNet, this script need large size of RAM to load the whole dataset.
+WARNING:root:save_path MUST have 'record' in its abspath, and data_path in attack result MUST have 'data' in its path
+WARNING:root:For ImageNet, this script need large size of RAM to load the whole dataset.
+INFO:root:{'K': 5,
+ 'adam_betas': [0.9, 0.999],
+ 'amp': True,
+ 'batch_size': 256,
+ 'checkpoint_load': None,
+ 'checkpoint_save': 'record/badnet_attack_efficientnet_ffpp_binary/defense/i-bau/checkpoint/',
+ 'client_optimizer': 'adam',
+ 'dataset': 'ffpp_binary',
+ 'dataset_path': './data/ffpp_binary',
+ 'device': 'cuda',
+ 'epochs': 100,
+ 'frequency_save': 0,
+ 'img_size': (64, 64, 3),
+ 'index': None,
+ 'input_channel': 3,
+ 'input_height': 64,
+ 'input_width': 64,
+ 'log': 'record/badnet_attack_efficientnet_ffpp_binary/defense/i-bau/log/',
+ 'lr': 0.0001,
+ 'lr_scheduler': 'CosineAnnealingLR',
+ 'model': 'efficientnet_b3',
+ 'n_rounds': 5,
+ 'non_blocking': True,
+ 'num_classes': 2,
+ 'num_workers': 4,
+ 'optim': 'Adam',
+ 'pin_memory': True,
+ 'prefetch': False,
+ 'random_seed': 0,
+ 'ratio': 0.05,
+ 'result_file': 'badnet_attack_efficientnet_ffpp_binary',
+ 'save_path': 'record/badnet_attack_efficientnet_ffpp_binary/defense/i-bau/',
+ 'sgd_momentum': 0.9,
+ 'terminal_info': ['./defense/i-bau.py',
+                   '--yaml_path',
+                   './config/defense/i-bau/cifar10.yaml',
+                   '--model',
+                   'efficientnet_b3',
+                   '--dataset',
+                   'ffpp_binary',
+                   '--result_file',
+                   'badnet_attack_efficientnet_ffpp_binary'],
+ 'wd': 0,
+ 'yaml_path': './config/defense/i-bau/cifar10.yaml'}
+2024-11-17:21:04:18 [INFO    ] [i-bau.py:378] {'K': 5,
+ 'adam_betas': [0.9, 0.999],
+ 'amp': True,
+ 'batch_size': 256,
+ 'checkpoint_load': None,
+ 'checkpoint_save': 'record/badnet_attack_efficientnet_ffpp_binary/defense/i-bau/checkpoint/',
+ 'client_optimizer': 'adam',
+ 'dataset': 'ffpp_binary',
+ 'dataset_path': './data/ffpp_binary',
+ 'device': 'cuda',
+ 'epochs': 100,
+ 'frequency_save': 0,
+ 'img_size': (64, 64, 3),
+ 'index': None,
+ 'input_channel': 3,
+ 'input_height': 64,
+ 'input_width': 64,
+ 'log': 'record/badnet_attack_efficientnet_ffpp_binary/defense/i-bau/log/',
+ 'lr': 0.0001,
+ 'lr_scheduler': 'CosineAnnealingLR',
+ 'model': 'efficientnet_b3',
+ 'n_rounds': 5,
+ 'non_blocking': True,
+ 'num_classes': 2,
+ 'num_workers': 4,
+ 'optim': 'Adam',
+ 'pin_memory': True,
+ 'prefetch': False,
+ 'random_seed': 0,
+ 'ratio': 0.05,
+ 'result_file': 'badnet_attack_efficientnet_ffpp_binary',
+ 'save_path': 'record/badnet_attack_efficientnet_ffpp_binary/defense/i-bau/',
+ 'sgd_momentum': 0.9,
+ 'terminal_info': ['./defense/i-bau.py',
+                   '--yaml_path',
+                   './config/defense/i-bau/cifar10.yaml',
+                   '--model',
+                   'efficientnet_b3',
+                   '--dataset',
+                   'ffpp_binary',
+                   '--result_file',
+                   'badnet_attack_efficientnet_ffpp_binary'],
+ 'wd': 0,
+ 'yaml_path': './config/defense/i-bau/cifar10.yaml'}
+INFO:root:{'git hash': None,
+ 'last 3 log': 'commit 1b65f4a7e9462576dbe095281cf4b54593d006b7\n'
+               'Author: QiuMatthew <uzenkyu@gmail.com>\n'
+               'Date:   Sun Nov 17 21:02:17 2024 +0900\n'
+               '\n'
+               '    update script: badnet ibau efficientnet ffpp binary\n'
+               '\n'
+               'commit 3a351be86fb26c3d0725d4008b170fbdda289f6b\n'
+               'Author: QiuMatthew <uzenkyu@gmail.com>\n'
+               'Date:   Sun Nov 17 20:58:46 2024 +0900\n'
+               '\n'
+               '    new script: badnet nad/ibau efficientnet ffpp binary\n'
+               '\n'
+               'commit 7b94a3f0d1f9208dfc342a5d0333adf24078e3bc\n'
+               'Author: QiuMatthew <uzenkyu@gmail.com>\n'
+               'Date:   Sun Nov 17 20:28:27 2024 +0900\n'
+               '\n'
+               '    new script: badnet abl ffpp_binary',
+ 'status': 'On branch test-number-of-class\n'
+           "Your branch is up to date with 'origin/test-number-of-class'.\n"
+           '\n'
+           'Changes not staged for commit:\n'
+           '  (use "git add/rm <file>..." to update what will be committed)\n'
+           '  (use "git checkout -- <file>..." to discard changes in working '
+           'directory)\n'
+           '\n'
+           '\tdeleted:    out/sample.out\n'
+           '\tmodified:   resource/badnet/trigger_image.png\n'
+           '\n'
+           'Untracked files:\n'
+           '  (use "git add <file>..." to include in what will be committed)\n'
+           '\n'
+           '\tout/badnet_abl_efficientnet_ffpp_binary.out\n'
+           '\tout/badnet_attack_efficientnet_ffpp_3classes.out\n'
+           '\tout/badnet_attack_efficientnet_ffpp_4classes.out\n'
+           '\tout/badnet_attack_efficientnet_ffpp_5classes.out\n'
+           '\tout/badnet_attack_efficientnet_ffpp_binary.out\n'
+           '\tout/badnet_attack_efficientnet_ffpp_multiclass.out\n'
+           '\tout/badnet_attack_preactresnet_cifar10.out\n'
+           '\tout/badnet_attack_preactresnet_cifar10_2classes.out\n'
+           '\tout/badnet_attack_preactresnet_ffpp_binary.out\n'
+           '\tout/badnet_attack_preactresnet_ffpp_multiclass.out\n'
+           '\tout/badnet_ibau_efficientnet_ffpp_binary.out\n'
+           '\tout/badnet_nad_efficientnet_ffpp_binary.out\n'
+           '\tout/copy_ffpp_binary_dataset.out\n'
+           '\tout/copy_ffpp_multiclass_dataset.out\n'
+           '\tout/generate_ffpp_with_345_classes.out\n'
+           '\tout/remove_unnecessary_data.out\n'
+           '\n'
+           'no changes added to commit (use "git add" and/or "git commit -a")'}
+2024-11-17:21:04:18 [INFO    ] [i-bau.py:381] {'git hash': None,
+ 'last 3 log': 'commit 1b65f4a7e9462576dbe095281cf4b54593d006b7\n'
+               'Author: QiuMatthew <uzenkyu@gmail.com>\n'
+               'Date:   Sun Nov 17 21:02:17 2024 +0900\n'
+               '\n'
+               '    update script: badnet ibau efficientnet ffpp binary\n'
+               '\n'
+               'commit 3a351be86fb26c3d0725d4008b170fbdda289f6b\n'
+               'Author: QiuMatthew <uzenkyu@gmail.com>\n'
+               'Date:   Sun Nov 17 20:58:46 2024 +0900\n'
+               '\n'
+               '    new script: badnet nad/ibau efficientnet ffpp binary\n'
+               '\n'
+               'commit 7b94a3f0d1f9208dfc342a5d0333adf24078e3bc\n'
+               'Author: QiuMatthew <uzenkyu@gmail.com>\n'
+               'Date:   Sun Nov 17 20:28:27 2024 +0900\n'
+               '\n'
+               '    new script: badnet abl ffpp_binary',
+ 'status': 'On branch test-number-of-class\n'
+           "Your branch is up to date with 'origin/test-number-of-class'.\n"
+           '\n'
+           'Changes not staged for commit:\n'
+           '  (use "git add/rm <file>..." to update what will be committed)\n'
+           '  (use "git checkout -- <file>..." to discard changes in working '
+           'directory)\n'
+           '\n'
+           '\tdeleted:    out/sample.out\n'
+           '\tmodified:   resource/badnet/trigger_image.png\n'
+           '\n'
+           'Untracked files:\n'
+           '  (use "git add <file>..." to include in what will be committed)\n'
+           '\n'
+           '\tout/badnet_abl_efficientnet_ffpp_binary.out\n'
+           '\tout/badnet_attack_efficientnet_ffpp_3classes.out\n'
+           '\tout/badnet_attack_efficientnet_ffpp_4classes.out\n'
+           '\tout/badnet_attack_efficientnet_ffpp_5classes.out\n'
+           '\tout/badnet_attack_efficientnet_ffpp_binary.out\n'
+           '\tout/badnet_attack_efficientnet_ffpp_multiclass.out\n'
+           '\tout/badnet_attack_preactresnet_cifar10.out\n'
+           '\tout/badnet_attack_preactresnet_cifar10_2classes.out\n'
+           '\tout/badnet_attack_preactresnet_ffpp_binary.out\n'
+           '\tout/badnet_attack_preactresnet_ffpp_multiclass.out\n'
+           '\tout/badnet_ibau_efficientnet_ffpp_binary.out\n'
+           '\tout/badnet_nad_efficientnet_ffpp_binary.out\n'
+           '\tout/copy_ffpp_binary_dataset.out\n'
+           '\tout/copy_ffpp_multiclass_dataset.out\n'
+           '\tout/generate_ffpp_with_345_classes.out\n'
+           '\tout/remove_unnecessary_data.out\n'
+           '\n'
+           'no changes added to commit (use "git add" and/or "git commit -a")'}
+INFO:root:We use clean train data, the original paper use clean test data.
+2024-11-17:21:04:23 [INFO    ] [i-bau.py:419] We use clean train data, the original paper use clean test data.
+INFO:root:save file format is .png
+2024-11-17:21:04:23 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+loading...
+loading...
+INFO:root:=> Conducting Defence..
+2024-11-17:21:04:27 [INFO    ] [i-bau.py:521] => Conducting Defence..
+INFO:root:{'bd_test_loss_avg_over_batch': 0.19403195132811865,
+ 'clean_test_loss_avg_over_batch': 1.0948607542298057,
+ 'epoch': 0,
+ 'ra_test_loss_avg_over_batch': 3.874277710914612,
+ 'test_acc': 0.6735714285714286,
+ 'test_asr': 0.955,
+ 'test_ra': 0.045}
+2024-11-17:21:12:24 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.19403195132811865,
+ 'clean_test_loss_avg_over_batch': 1.0948607542298057,
+ 'epoch': 0,
+ 'ra_test_loss_avg_over_batch': 3.874277710914612,
+ 'test_acc': 0.6735714285714286,
+ 'test_asr': 0.955,
+ 'test_ra': 0.045}
+INFO:root:{'bd_test_loss_avg_over_batch': 0.21994623790184656,
+ 'clean_test_loss_avg_over_batch': 1.304879361932928,
+ 'epoch': 1,
+ 'ra_test_loss_avg_over_batch': 4.985422054926555,
+ 'test_acc': 0.6846428571428571,
+ 'test_asr': 0.9542857142857143,
+ 'test_ra': 0.045714285714285714}
+2024-11-17:21:19:43 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.21994623790184656,
+ 'clean_test_loss_avg_over_batch': 1.304879361932928,
+ 'epoch': 1,
+ 'ra_test_loss_avg_over_batch': 4.985422054926555,
+ 'test_acc': 0.6846428571428571,
+ 'test_asr': 0.9542857142857143,
+ 'test_ra': 0.045714285714285714}
+INFO:root:{'bd_test_loss_avg_over_batch': 0.23276872684558234,
+ 'clean_test_loss_avg_over_batch': 1.4491390640085393,
+ 'epoch': 2,
+ 'ra_test_loss_avg_over_batch': 5.078866004943848,
+ 'test_acc': 0.6760714285714285,
+ 'test_asr': 0.9564285714285714,
+ 'test_ra': 0.04357142857142857}
+2024-11-17:21:28:54 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.23276872684558234,
+ 'clean_test_loss_avg_over_batch': 1.4491390640085393,
+ 'epoch': 2,
+ 'ra_test_loss_avg_over_batch': 5.078866004943848,
+ 'test_acc': 0.6760714285714285,
+ 'test_asr': 0.9564285714285714,
+ 'test_ra': 0.04357142857142857}
+INFO:root:{'bd_test_loss_avg_over_batch': 0.27677928904692334,
+ 'clean_test_loss_avg_over_batch': 1.780783707445318,
+ 'epoch': 3,
+ 'ra_test_loss_avg_over_batch': 5.642796119054158,
+ 'test_acc': 0.6782142857142858,
+ 'test_asr': 0.9571428571428572,
+ 'test_ra': 0.04285714285714286}
+2024-11-17:21:38:04 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.27677928904692334,
+ 'clean_test_loss_avg_over_batch': 1.780783707445318,
+ 'epoch': 3,
+ 'ra_test_loss_avg_over_batch': 5.642796119054158,
+ 'test_acc': 0.6782142857142858,
+ 'test_asr': 0.9571428571428572,
+ 'test_ra': 0.04285714285714286}
+INFO:root:{'bd_test_loss_avg_over_batch': 0.35509734104077023,
+ 'clean_test_loss_avg_over_batch': 2.4492028626528652,
+ 'epoch': 4,
+ 'ra_test_loss_avg_over_batch': 5.699488162994385,
+ 'test_acc': 0.6685714285714286,
+ 'test_asr': 0.9607142857142857,
+ 'test_ra': 0.039285714285714285}
+2024-11-17:21:46:37 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.35509734104077023,
+ 'clean_test_loss_avg_over_batch': 2.4492028626528652,
+ 'epoch': 4,
+ 'ra_test_loss_avg_over_batch': 5.699488162994385,
+ 'test_acc': 0.6685714285714286,
+ 'test_asr': 0.9607142857142857,
+ 'test_ra': 0.039285714285714285}
+INFO:root:saving...
+2024-11-17:21:46:38 [INFO    ] [save_load_attack.py:176] saving...
