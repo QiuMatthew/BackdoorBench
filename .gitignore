@@ -154,8 +154,10 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
-#record/**/*.pt
-#record/**/*.pickle
-#record/**/*dataset/
-record/
+record/**/*.pt
+record/**/*.pickle
+record/**/*dataset/
+record/**/*.png
+record/**/*ffpp*/
+#record/
 data/
