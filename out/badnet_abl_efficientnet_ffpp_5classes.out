@@ -2299,3 +2299,29 @@ INFO:root:{'bd_test_loss_avg_over_batch': 0.018120588856452905,
  'train_ra_bd_only': 0.4964449315684456}
 INFO:root:epoch: 57  lr: 0.0010
 2024-11-19:20:02:17 [INFO    ] [abl.py:204] epoch: 57  lr: 0.0010
+INFO:root:{'bd_test_loss_avg_over_batch': 0.02325869372924155,
+ 'clean_test_loss_avg_over_batch': 3.091004661151341,
+ 'epoch': 57,
+ 'ra_test_loss_avg_over_batch': 16.82249164581299,
+ 'test_acc': 0.5364285714285715,
+ 'test_asr': 0.9901785714285715,
+ 'test_ra': 0.0067857142857142855,
+ 'train_acc': 0.9403198653198653,
+ 'train_acc_clean_only': 0.969172456571815,
+ 'train_asr_bd_only': 0.6801843576989012,
+ 'train_epoch_loss_avg_over_batch': 0.16651041780605816,
+ 'train_ra_bd_only': 0.4986088862659135}
+2024-11-19:20:14:25 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.02325869372924155,
+ 'clean_test_loss_avg_over_batch': 3.091004661151341,
+ 'epoch': 57,
+ 'ra_test_loss_avg_over_batch': 16.82249164581299,
+ 'test_acc': 0.5364285714285715,
+ 'test_asr': 0.9901785714285715,
+ 'test_ra': 0.0067857142857142855,
+ 'train_acc': 0.9403198653198653,
+ 'train_acc_clean_only': 0.969172456571815,
+ 'train_asr_bd_only': 0.6801843576989012,
+ 'train_epoch_loss_avg_over_batch': 0.16651041780605816,
+ 'train_ra_bd_only': 0.4986088862659135}
+INFO:root:epoch: 58  lr: 0.0010
+2024-11-19:20:14:26 [INFO    ] [abl.py:204] epoch: 58  lr: 0.0010

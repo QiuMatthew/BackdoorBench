@@ -158,6 +158,8 @@ record/**/*.pt
 record/**/*.pickle
 record/**/*dataset/
 record/**/*.png
-record/**/*ffpp*/
+record/**/*3*/
+record/**/*4*/
+record/**/*5*/
 #record/
 data/
