@@ -157,9 +157,9 @@ cython_debug/
 record/**/*.pt
 record/**/*.pickle
 record/**/*dataset/
-record/**/*.png
-#record/**/*3*/
-#record/**/*4*/
-#record/**/*5*/
+#record/**/*.png
+record/**/*3*/
+record/**/*4*/
+record/**/*5*/
 #record/
 data/
