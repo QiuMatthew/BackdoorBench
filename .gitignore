@@ -163,3 +163,6 @@ record/**/*dataset/
 #record/**/*5*/
 #record/
 data/
+
+# Ignore macOS system files
+.DS_Store
