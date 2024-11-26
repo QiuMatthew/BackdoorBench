@@ -46,6 +46,8 @@ def get_num_classes(dataset_name: str) -> int:
         num_classes = 2
     elif dataset_name == 'ffpp_multiclass':
         num_classes = 6
+    elif dataset_name == 'ffpp_2classes':
+        num_classes = 2
     elif dataset_name == 'ffpp_3classes':
         num_classes = 3
     elif dataset_name == 'ffpp_4classes':
