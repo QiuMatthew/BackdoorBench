@@ -1,0 +1,720 @@
+/home/fmg/yuran/miniconda3/envs/backdoorbenchv2/lib/python3.8/site-packages/torchvision/io/image.py:13: UserWarning: Failed to load image Python extension: libc10_hip.so: cannot open shared object file: No such file or directory
+  warn(f"Failed to load image Python extension: {e}")
+WARNING:root:save_path MUST have 'record' in its abspath, and data_path in attack result MUST have 'data' in its path
+WARNING:root:For ImageNet, this script need large size of RAM to load the whole dataset.
+WARNING:root:save_path MUST have 'record' in its abspath, and data_path in attack result MUST have 'data' in its path
+WARNING:root:For ImageNet, this script need large size of RAM to load the whole dataset.
+INFO:root:{'amp': True,
+ 'batch_size': 256,
+ 'beta1': 500,
+ 'beta2': 1000,
+ 'beta3': 1000,
+ 'checkpoint_load': None,
+ 'checkpoint_save': 'record/badnet_attack_efficientnet_ffpp_4classes/defense/nad/checkpoint/',
+ 'client_optimizer': 'sgd',
+ 'dataset': 'ffpp_4classes',
+ 'dataset_path': './data/ffpp_4classes',
+ 'device': 'cuda',
+ 'epochs': 100,
+ 'frequency_save': 0,
+ 'img_size': (64, 64, 3),
+ 'index': None,
+ 'input_channel': 3,
+ 'input_height': 64,
+ 'input_width': 64,
+ 'log': 'record/badnet_attack_efficientnet_ffpp_4classes/defense/nad/log/',
+ 'lr': 0.01,
+ 'lr_scheduler': 'CosineAnnealingLR',
+ 'model': 'efficientnet_b3',
+ 'momentum': 0.9,
+ 'non_blocking': True,
+ 'num_classes': 4,
+ 'num_workers': 4,
+ 'p': 2.0,
+ 'pin_memory': True,
+ 'prefetch': False,
+ 'random_seed': 0,
+ 'ratio': 0.05,
+ 'result_file': 'badnet_attack_efficientnet_ffpp_4classes',
+ 'save_path': 'record/badnet_attack_efficientnet_ffpp_4classes/defense/nad/',
+ 'sgd_momentum': 0.9,
+ 'te_epochs': 10,
+ 'teacher_model_loc': None,
+ 'terminal_info': ['./defense/nad.py',
+                   '--yaml_path',
+                   './config/defense/nad/cifar10.yaml',
+                   '--model',
+                   'efficientnet_b3',
+                   '--dataset',
+                   'ffpp_4classes',
+                   '--result_file',
+                   'badnet_attack_efficientnet_ffpp_4classes'],
+ 'wd': 0.0005,
+ 'weight_decay': 0.0001,
+ 'yaml_path': './config/defense/nad/cifar10.yaml'}
+2024-12-08:19:02:44 [INFO    ] [nad.py:722] {'amp': True,
+ 'batch_size': 256,
+ 'beta1': 500,
+ 'beta2': 1000,
+ 'beta3': 1000,
+ 'checkpoint_load': None,
+ 'checkpoint_save': 'record/badnet_attack_efficientnet_ffpp_4classes/defense/nad/checkpoint/',
+ 'client_optimizer': 'sgd',
+ 'dataset': 'ffpp_4classes',
+ 'dataset_path': './data/ffpp_4classes',
+ 'device': 'cuda',
+ 'epochs': 100,
+ 'frequency_save': 0,
+ 'img_size': (64, 64, 3),
+ 'index': None,
+ 'input_channel': 3,
+ 'input_height': 64,
+ 'input_width': 64,
+ 'log': 'record/badnet_attack_efficientnet_ffpp_4classes/defense/nad/log/',
+ 'lr': 0.01,
+ 'lr_scheduler': 'CosineAnnealingLR',
+ 'model': 'efficientnet_b3',
+ 'momentum': 0.9,
+ 'non_blocking': True,
+ 'num_classes': 4,
+ 'num_workers': 4,
+ 'p': 2.0,
+ 'pin_memory': True,
+ 'prefetch': False,
+ 'random_seed': 0,
+ 'ratio': 0.05,
+ 'result_file': 'badnet_attack_efficientnet_ffpp_4classes',
+ 'save_path': 'record/badnet_attack_efficientnet_ffpp_4classes/defense/nad/',
+ 'sgd_momentum': 0.9,
+ 'te_epochs': 10,
+ 'teacher_model_loc': None,
+ 'terminal_info': ['./defense/nad.py',
+                   '--yaml_path',
+                   './config/defense/nad/cifar10.yaml',
+                   '--model',
+                   'efficientnet_b3',
+                   '--dataset',
+                   'ffpp_4classes',
+                   '--result_file',
+                   'badnet_attack_efficientnet_ffpp_4classes'],
+ 'wd': 0.0005,
+ 'weight_decay': 0.0001,
+ 'yaml_path': './config/defense/nad/cifar10.yaml'}
+INFO:root:{'git hash': None,
+ 'last 3 log': 'commit 28ea486d763dab2463bf5a1b1587a3ad84778208\n'
+               'Author: QiuMatthew <q_masio@outlook.com>\n'
+               'Date:   Sun Dec 8 14:27:55 2024 +0900\n'
+               '\n'
+               '    new result: 2classes (not merged)\n'
+               '\n'
+               'commit b356c5112aa08ea5cd22aca804589eacf1d1d2cd\n'
+               'Author: QiuMatthew <q_masio@outlook.com>\n'
+               'Date:   Wed Nov 27 11:57:58 2024 +0900\n'
+               '\n'
+               '    running defenses on badnet 2classes\n'
+               '\n'
+               'commit 120fb5158c8452beb1d6b1e9be6474e81854d34b\n'
+               'Author: QiuMatthew <uzenkyu@gmail.com>\n'
+               'Date:   Tue Nov 26 18:36:04 2024 +0900\n'
+               '\n'
+               '    support ffpp_2classes, including the script for generating '
+               'dataset, badnet attack and defenses',
+ 'status': 'On branch test-number-of-class\n'
+           "Your branch is up to date with 'origin/test-number-of-class'.\n"
+           '\n'
+           'Changes not staged for commit:\n'
+           '  (use "git add <file>..." to update what will be committed)\n'
+           '  (use "git checkout -- <file>..." to discard changes in working '
+           'directory)\n'
+           '\n'
+           '\tmodified:   out/badnet_ibau_efficientnet_ffpp_5classes.out\n'
+           '\tmodified:   script/badnet_nad_efficientnet_ffpp_4classes.sh\n'
+           '\n'
+           'Untracked files:\n'
+           '  (use "git add <file>..." to include in what will be committed)\n'
+           '\n'
+           '\tout/badnet_nad_efficientnet_ffpp_4classes.out\n'
+           '\n'
+           'no changes added to commit (use "git add" and/or "git commit -a")'}
+2024-12-08:19:02:45 [INFO    ] [nad.py:725] {'git hash': None,
+ 'last 3 log': 'commit 28ea486d763dab2463bf5a1b1587a3ad84778208\n'
+               'Author: QiuMatthew <q_masio@outlook.com>\n'
+               'Date:   Sun Dec 8 14:27:55 2024 +0900\n'
+               '\n'
+               '    new result: 2classes (not merged)\n'
+               '\n'
+               'commit b356c5112aa08ea5cd22aca804589eacf1d1d2cd\n'
+               'Author: QiuMatthew <q_masio@outlook.com>\n'
+               'Date:   Wed Nov 27 11:57:58 2024 +0900\n'
+               '\n'
+               '    running defenses on badnet 2classes\n'
+               '\n'
+               'commit 120fb5158c8452beb1d6b1e9be6474e81854d34b\n'
+               'Author: QiuMatthew <uzenkyu@gmail.com>\n'
+               'Date:   Tue Nov 26 18:36:04 2024 +0900\n'
+               '\n'
+               '    support ffpp_2classes, including the script for generating '
+               'dataset, badnet attack and defenses',
+ 'status': 'On branch test-number-of-class\n'
+           "Your branch is up to date with 'origin/test-number-of-class'.\n"
+           '\n'
+           'Changes not staged for commit:\n'
+           '  (use "git add <file>..." to update what will be committed)\n'
+           '  (use "git checkout -- <file>..." to discard changes in working '
+           'directory)\n'
+           '\n'
+           '\tmodified:   out/badnet_ibau_efficientnet_ffpp_5classes.out\n'
+           '\tmodified:   script/badnet_nad_efficientnet_ffpp_4classes.sh\n'
+           '\n'
+           'Untracked files:\n'
+           '  (use "git add <file>..." to include in what will be committed)\n'
+           '\n'
+           '\tout/badnet_nad_efficientnet_ffpp_4classes.out\n'
+           '\n'
+           'no changes added to commit (use "git add" and/or "git commit -a")'}
+INFO:root:----------- Network Initialization --------------
+2024-12-08:19:02:45 [INFO    ] [nad.py:745] ----------- Network Initialization --------------
+INFO:root:finished teacher student init...
+2024-12-08:19:02:54 [INFO    ] [nad.py:757] finished teacher student init...
+INFO:root:finished student student init...
+2024-12-08:19:02:55 [INFO    ] [nad.py:769] finished student student init...
+INFO:root:save file format is .png
+2024-12-08:19:02:55 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+INFO:root:Do NOT set the settings/parameters attr manually after you start training!
+You may break the relationship between them.
+2024-12-08:19:02:55 [INFO    ] [trainer_cls.py:972] Do NOT set the settings/parameters attr manually after you start training!
+You may break the relationship between them.
+loading...
+loading...
+INFO:root:('epoch_now:0, '
+ 'batch_now:0self.amp:True,self.criterion:CrossEntropyLoss(),self.optimizer:SGD '
+ '(\n'
+ 'Parameter Group 0\n'
+ '    dampening: 0\n'
+ '    initial_lr: 0.01\n'
+ '    lr: 0.01\n'
+ '    maximize: False\n'
+ '    momentum: 0.9\n'
+ '    nesterov: False\n'
+ '    weight_decay: 0.0005\n'
+ "),self.scheduler:{'T_max': 100, 'eta_min': 0, 'base_lrs': [0.01], "
+ "'last_epoch': 0, '_step_count': 1, 'verbose': False, "
+ "'_get_lr_called_within_step': False, '_last_lr': "
+ "[0.01]},self.scaler:{'scale': 65536.0, 'growth_factor': 2.0, "
+ "'backoff_factor': 0.5, 'growth_interval': 2000, '_growth_tracker': 0})")
+2024-12-08:19:02:56 [INFO    ] [trainer_cls.py:1030] ('epoch_now:0, '
+ 'batch_now:0self.amp:True,self.criterion:CrossEntropyLoss(),self.optimizer:SGD '
+ '(\n'
+ 'Parameter Group 0\n'
+ '    dampening: 0\n'
+ '    initial_lr: 0.01\n'
+ '    lr: 0.01\n'
+ '    maximize: False\n'
+ '    momentum: 0.9\n'
+ '    nesterov: False\n'
+ '    weight_decay: 0.0005\n'
+ "),self.scheduler:{'T_max': 100, 'eta_min': 0, 'base_lrs': [0.01], "
+ "'last_epoch': 0, '_step_count': 1, 'verbose': False, "
+ "'_get_lr_called_within_step': False, '_last_lr': "
+ "[0.01]},self.scaler:{'scale': 65536.0, 'growth_factor': 2.0, "
+ "'backoff_factor': 0.5, 'growth_interval': 2000, '_growth_tracker': 0})")
+INFO:root:one epoch training part done, use time = 13.01867413520813 s
+2024-12-08:19:03:09 [INFO    ] [trainer_cls.py:1489] one epoch training part done, use time = 13.01867413520813 s
+INFO:root:{'batch': 57,
+ 'bd_test_loss_avg_over_batch': 4.354336317847757,
+ 'clean_test_loss_avg_over_batch': 1.2382399168881504,
+ 'epoch': 0,
+ 'test_acc': 0.6901785714285714,
+ 'test_asr': 0.10714285714285714,
+ 'test_ra': 0.736904761904762,
+ 'train_acc': 0.8988194444444444,
+ 'train_epoch_loss_avg_over_batch': 0.2917518636636567}
+2024-12-08:19:03:15 [INFO    ] [trainer_cls.py:65] {'batch': 57,
+ 'bd_test_loss_avg_over_batch': 4.354336317847757,
+ 'clean_test_loss_avg_over_batch': 1.2382399168881504,
+ 'epoch': 0,
+ 'test_acc': 0.6901785714285714,
+ 'test_asr': 0.10714285714285714,
+ 'test_ra': 0.736904761904762,
+ 'train_acc': 0.8988194444444444,
+ 'train_epoch_loss_avg_over_batch': 0.2917518636636567}
+INFO:root:one epoch training part done, use time = 12.656938791275024 s
+2024-12-08:19:03:28 [INFO    ] [trainer_cls.py:1489] one epoch training part done, use time = 12.656938791275024 s
+INFO:root:{'batch': 57,
+ 'bd_test_loss_avg_over_batch': 3.501980094348683,
+ 'clean_test_loss_avg_over_batch': 0.892310619354248,
+ 'epoch': 1,
+ 'test_acc': 0.73875,
+ 'test_asr': 0.1957142857142857,
+ 'test_ra': 0.7271428571428571,
+ 'train_acc': 0.9129166666666667,
+ 'train_epoch_loss_avg_over_batch': 0.23022407711597911}
+2024-12-08:19:03:33 [INFO    ] [trainer_cls.py:65] {'batch': 57,
+ 'bd_test_loss_avg_over_batch': 3.501980094348683,
+ 'clean_test_loss_avg_over_batch': 0.892310619354248,
+ 'epoch': 1,
+ 'test_acc': 0.73875,
+ 'test_asr': 0.1957142857142857,
+ 'test_ra': 0.7271428571428571,
+ 'train_acc': 0.9129166666666667,
+ 'train_epoch_loss_avg_over_batch': 0.23022407711597911}
+INFO:root:one epoch training part done, use time = 12.718775510787964 s
+2024-12-08:19:03:46 [INFO    ] [trainer_cls.py:1489] one epoch training part done, use time = 12.718775510787964 s
+INFO:root:{'batch': 57,
+ 'bd_test_loss_avg_over_batch': 4.779276988085578,
+ 'clean_test_loss_avg_over_batch': 0.7064060866832733,
+ 'epoch': 2,
+ 'test_acc': 0.785,
+ 'test_asr': 0.04738095238095238,
+ 'test_ra': 0.8645238095238095,
+ 'train_acc': 0.931875,
+ 'train_epoch_loss_avg_over_batch': 0.1838675648496862}
+2024-12-08:19:03:50 [INFO    ] [trainer_cls.py:65] {'batch': 57,
+ 'bd_test_loss_avg_over_batch': 4.779276988085578,
+ 'clean_test_loss_avg_over_batch': 0.7064060866832733,
+ 'epoch': 2,
+ 'test_acc': 0.785,
+ 'test_asr': 0.04738095238095238,
+ 'test_ra': 0.8645238095238095,
+ 'train_acc': 0.931875,
+ 'train_epoch_loss_avg_over_batch': 0.1838675648496862}
+INFO:root:one epoch training part done, use time = 12.703474760055542 s
+2024-12-08:19:04:03 [INFO    ] [trainer_cls.py:1489] one epoch training part done, use time = 12.703474760055542 s
+INFO:root:{'batch': 57,
+ 'bd_test_loss_avg_over_batch': 4.232872345868279,
+ 'clean_test_loss_avg_over_batch': 0.9025979123332284,
+ 'epoch': 3,
+ 'test_acc': 0.7364285714285714,
+ 'test_asr': 0.1169047619047619,
+ 'test_ra': 0.7771428571428571,
+ 'train_acc': 0.9354166666666667,
+ 'train_epoch_loss_avg_over_batch': 0.1747857155768495}
+2024-12-08:19:04:07 [INFO    ] [trainer_cls.py:65] {'batch': 57,
+ 'bd_test_loss_avg_over_batch': 4.232872345868279,
+ 'clean_test_loss_avg_over_batch': 0.9025979123332284,
+ 'epoch': 3,
+ 'test_acc': 0.7364285714285714,
+ 'test_asr': 0.1169047619047619,
+ 'test_ra': 0.7771428571428571,
+ 'train_acc': 0.9354166666666667,
+ 'train_epoch_loss_avg_over_batch': 0.1747857155768495}
+INFO:root:one epoch training part done, use time = 12.54347825050354 s
+2024-12-08:19:04:19 [INFO    ] [trainer_cls.py:1489] one epoch training part done, use time = 12.54347825050354 s
+INFO:root:{'batch': 57,
+ 'bd_test_loss_avg_over_batch': 4.891244018779082,
+ 'clean_test_loss_avg_over_batch': 0.7787541909651323,
+ 'epoch': 4,
+ 'test_acc': 0.7573214285714286,
+ 'test_asr': 0.06404761904761905,
+ 'test_ra': 0.824047619047619,
+ 'train_acc': 0.9464583333333333,
+ 'train_epoch_loss_avg_over_batch': 0.14726155185908602}
+2024-12-08:19:04:23 [INFO    ] [trainer_cls.py:65] {'batch': 57,
+ 'bd_test_loss_avg_over_batch': 4.891244018779082,
+ 'clean_test_loss_avg_over_batch': 0.7787541909651323,
+ 'epoch': 4,
+ 'test_acc': 0.7573214285714286,
+ 'test_asr': 0.06404761904761905,
+ 'test_ra': 0.824047619047619,
+ 'train_acc': 0.9464583333333333,
+ 'train_epoch_loss_avg_over_batch': 0.14726155185908602}
+INFO:root:one epoch training part done, use time = 12.580105066299438 s
+2024-12-08:19:04:36 [INFO    ] [trainer_cls.py:1489] one epoch training part done, use time = 12.580105066299438 s
+INFO:root:{'batch': 57,
+ 'bd_test_loss_avg_over_batch': 4.185243564493516,
+ 'clean_test_loss_avg_over_batch': 0.7983324256810275,
+ 'epoch': 5,
+ 'test_acc': 0.7523214285714286,
+ 'test_asr': 0.12595238095238095,
+ 'test_ra': 0.7838095238095238,
+ 'train_acc': 0.9420138888888889,
+ 'train_epoch_loss_avg_over_batch': 0.15087701824673436}
+2024-12-08:19:04:41 [INFO    ] [trainer_cls.py:65] {'batch': 57,
+ 'bd_test_loss_avg_over_batch': 4.185243564493516,
+ 'clean_test_loss_avg_over_batch': 0.7983324256810275,
+ 'epoch': 5,
+ 'test_acc': 0.7523214285714286,
+ 'test_asr': 0.12595238095238095,
+ 'test_ra': 0.7838095238095238,
+ 'train_acc': 0.9420138888888889,
+ 'train_epoch_loss_avg_over_batch': 0.15087701824673436}
+INFO:root:one epoch training part done, use time = 13.05443000793457 s
+2024-12-08:19:04:54 [INFO    ] [trainer_cls.py:1489] one epoch training part done, use time = 13.05443000793457 s
+INFO:root:{'batch': 57,
+ 'bd_test_loss_avg_over_batch': 4.731066872091854,
+ 'clean_test_loss_avg_over_batch': 0.7925790223208341,
+ 'epoch': 6,
+ 'test_acc': 0.7726785714285714,
+ 'test_asr': 0.06904761904761905,
+ 'test_ra': 0.8502380952380952,
+ 'train_acc': 0.9477777777777778,
+ 'train_epoch_loss_avg_over_batch': 0.1471661474359663}
+2024-12-08:19:04:59 [INFO    ] [trainer_cls.py:65] {'batch': 57,
+ 'bd_test_loss_avg_over_batch': 4.731066872091854,
+ 'clean_test_loss_avg_over_batch': 0.7925790223208341,
+ 'epoch': 6,
+ 'test_acc': 0.7726785714285714,
+ 'test_asr': 0.06904761904761905,
+ 'test_ra': 0.8502380952380952,
+ 'train_acc': 0.9477777777777778,
+ 'train_epoch_loss_avg_over_batch': 0.1471661474359663}
+INFO:root:one epoch training part done, use time = 12.935350179672241 s
+2024-12-08:19:05:12 [INFO    ] [trainer_cls.py:1489] one epoch training part done, use time = 12.935350179672241 s
+INFO:root:{'batch': 57,
+ 'bd_test_loss_avg_over_batch': 4.331398318795597,
+ 'clean_test_loss_avg_over_batch': 0.7282977808605541,
+ 'epoch': 7,
+ 'test_acc': 0.7866071428571428,
+ 'test_asr': 0.1269047619047619,
+ 'test_ra': 0.804047619047619,
+ 'train_acc': 0.9522222222222222,
+ 'train_epoch_loss_avg_over_batch': 0.13308482388393922}
+2024-12-08:19:05:16 [INFO    ] [trainer_cls.py:65] {'batch': 57,
+ 'bd_test_loss_avg_over_batch': 4.331398318795597,
+ 'clean_test_loss_avg_over_batch': 0.7282977808605541,
+ 'epoch': 7,
+ 'test_acc': 0.7866071428571428,
+ 'test_asr': 0.1269047619047619,
+ 'test_ra': 0.804047619047619,
+ 'train_acc': 0.9522222222222222,
+ 'train_epoch_loss_avg_over_batch': 0.13308482388393922}
+INFO:root:one epoch training part done, use time = 12.530090570449829 s
+2024-12-08:19:05:29 [INFO    ] [trainer_cls.py:1489] one epoch training part done, use time = 12.530090570449829 s
+INFO:root:{'batch': 57,
+ 'bd_test_loss_avg_over_batch': 4.07620101816514,
+ 'clean_test_loss_avg_over_batch': 0.8504659560593691,
+ 'epoch': 8,
+ 'test_acc': 0.7598214285714285,
+ 'test_asr': 0.18047619047619048,
+ 'test_ra': 0.7535714285714286,
+ 'train_acc': 0.9594444444444444,
+ 'train_epoch_loss_avg_over_batch': 0.112262386763305}
+2024-12-08:19:05:33 [INFO    ] [trainer_cls.py:65] {'batch': 57,
+ 'bd_test_loss_avg_over_batch': 4.07620101816514,
+ 'clean_test_loss_avg_over_batch': 0.8504659560593691,
+ 'epoch': 8,
+ 'test_acc': 0.7598214285714285,
+ 'test_asr': 0.18047619047619048,
+ 'test_ra': 0.7535714285714286,
+ 'train_acc': 0.9594444444444444,
+ 'train_epoch_loss_avg_over_batch': 0.112262386763305}
+INFO:root:one epoch training part done, use time = 12.551368713378906 s
+2024-12-08:19:05:46 [INFO    ] [trainer_cls.py:1489] one epoch training part done, use time = 12.551368713378906 s
+INFO:root:{'batch': 57,
+ 'bd_test_loss_avg_over_batch': 4.5242608294767495,
+ 'clean_test_loss_avg_over_batch': 0.7890492217107252,
+ 'epoch': 9,
+ 'test_acc': 0.7869642857142857,
+ 'test_asr': 0.14547619047619048,
+ 'test_ra': 0.7957142857142857,
+ 'train_acc': 0.9584722222222222,
+ 'train_epoch_loss_avg_over_batch': 0.11360325147969681}
+2024-12-08:19:05:50 [INFO    ] [trainer_cls.py:65] {'batch': 57,
+ 'bd_test_loss_avg_over_batch': 4.5242608294767495,
+ 'clean_test_loss_avg_over_batch': 0.7890492217107252,
+ 'epoch': 9,
+ 'test_acc': 0.7869642857142857,
+ 'test_asr': 0.14547619047619048,
+ 'test_ra': 0.7957142857142857,
+ 'train_acc': 0.9584722222222222,
+ 'train_epoch_loss_avg_over_batch': 0.11360325147969681}
+INFO:root:----------- Train Initialization --------------
+2024-12-08:19:05:51 [INFO    ] [nad.py:838] ----------- Train Initialization --------------
+INFO:root:Do NOT set the settings/parameters attr manually after you start training!
+You may break the relationship between them.
+2024-12-08:19:05:51 [INFO    ] [trainer_cls.py:972] Do NOT set the settings/parameters attr manually after you start training!
+You may break the relationship between them.
+INFO:root:('epoch_now:0, '
+ 'batch_now:0self.amp:True,self.criterion:CrossEntropyLoss(),self.optimizer:SGD '
+ '(\n'
+ 'Parameter Group 0\n'
+ '    dampening: 0\n'
+ '    initial_lr: 0.01\n'
+ '    lr: 0.01\n'
+ '    maximize: False\n'
+ '    momentum: 0.9\n'
+ '    nesterov: False\n'
+ '    weight_decay: 0.0005\n'
+ "),self.scheduler:{'T_max': 100, 'eta_min': 0, 'base_lrs': [0.01], "
+ "'last_epoch': 0, '_step_count': 1, 'verbose': False, "
+ "'_get_lr_called_within_step': False, '_last_lr': "
+ "[0.01]},self.scaler:{'scale': 65536.0, 'growth_factor': 2.0, "
+ "'backoff_factor': 0.5, 'growth_interval': 2000, '_growth_tracker': 0})")
+2024-12-08:19:05:51 [INFO    ] [trainer_cls.py:1030] ('epoch_now:0, '
+ 'batch_now:0self.amp:True,self.criterion:CrossEntropyLoss(),self.optimizer:SGD '
+ '(\n'
+ 'Parameter Group 0\n'
+ '    dampening: 0\n'
+ '    initial_lr: 0.01\n'
+ '    lr: 0.01\n'
+ '    maximize: False\n'
+ '    momentum: 0.9\n'
+ '    nesterov: False\n'
+ '    weight_decay: 0.0005\n'
+ "),self.scheduler:{'T_max': 100, 'eta_min': 0, 'base_lrs': [0.01], "
+ "'last_epoch': 0, '_step_count': 1, 'verbose': False, "
+ "'_get_lr_called_within_step': False, '_last_lr': "
+ "[0.01]},self.scaler:{'scale': 65536.0, 'growth_factor': 2.0, "
+ "'backoff_factor': 0.5, 'growth_interval': 2000, '_growth_tracker': 0})")
+INFO:root:epoch: 0  lr: 0.0100
+2024-12-08:19:05:51 [INFO    ] [nad.py:86] epoch: 0  lr: 0.0100
+WARNING:root:zero len array in func all_acc(), return None!
+2024-12-08:19:06:06 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
+WARNING:root:zero len array in func all_acc(), return None!
+2024-12-08:19:06:06 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
+INFO:root:Epoch0: Loss:15.971749188378453 Training Acc:90.49305555555556(13031/14400)
+2024-12-08:19:06:06 [INFO    ] [nad.py:546] Epoch0: Loss:15.971749188378453 Training Acc:90.49305555555556(13031/14400)
+INFO:root:{'batch': 0,
+ 'bd_test_loss_avg_over_batch': 3.9058108890757843,
+ 'clean_test_loss_avg_over_batch': 0.867968808520924,
+ 'epoch': 0,
+ 'test_acc': 0.7344642857142857,
+ 'test_asr': 0.05547619047619048,
+ 'test_ra': 0.8252380952380952,
+ 'train_acc': 0.9049305555555556,
+ 'train_epoch_loss_avg_over_batch': 0.2802061261119027}
+2024-12-08:19:06:10 [INFO    ] [trainer_cls.py:65] {'batch': 0,
+ 'bd_test_loss_avg_over_batch': 3.9058108890757843,
+ 'clean_test_loss_avg_over_batch': 0.867968808520924,
+ 'epoch': 0,
+ 'test_acc': 0.7344642857142857,
+ 'test_asr': 0.05547619047619048,
+ 'test_ra': 0.8252380952380952,
+ 'train_acc': 0.9049305555555556,
+ 'train_epoch_loss_avg_over_batch': 0.2802061261119027}
+INFO:root:epoch: 1  lr: 0.0100
+2024-12-08:19:06:11 [INFO    ] [nad.py:86] epoch: 1  lr: 0.0100
+WARNING:root:zero len array in func all_acc(), return None!
+2024-12-08:19:06:25 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
+WARNING:root:zero len array in func all_acc(), return None!
+2024-12-08:19:06:25 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
+INFO:root:Epoch1: Loss:14.631783843040466 Training Acc:90.90277777777777(13090/14400)
+2024-12-08:19:06:25 [INFO    ] [nad.py:546] Epoch1: Loss:14.631783843040466 Training Acc:90.90277777777777(13090/14400)
+INFO:root:{'batch': 0,
+ 'bd_test_loss_avg_over_batch': 3.983224251691033,
+ 'clean_test_loss_avg_over_batch': 0.8056591017679735,
+ 'epoch': 0,
+ 'test_acc': 0.7582142857142857,
+ 'test_asr': 0.12833333333333333,
+ 'test_ra': 0.7773809523809524,
+ 'train_acc': 0.9090277777777778,
+ 'train_epoch_loss_avg_over_batch': 0.2566979621586047}
+2024-12-08:19:06:29 [INFO    ] [trainer_cls.py:65] {'batch': 0,
+ 'bd_test_loss_avg_over_batch': 3.983224251691033,
+ 'clean_test_loss_avg_over_batch': 0.8056591017679735,
+ 'epoch': 0,
+ 'test_acc': 0.7582142857142857,
+ 'test_asr': 0.12833333333333333,
+ 'test_ra': 0.7773809523809524,
+ 'train_acc': 0.9090277777777778,
+ 'train_epoch_loss_avg_over_batch': 0.2566979621586047}
+INFO:root:epoch: 2  lr: 0.0100
+2024-12-08:19:06:29 [INFO    ] [nad.py:86] epoch: 2  lr: 0.0100
+WARNING:root:zero len array in func all_acc(), return None!
+2024-12-08:19:06:42 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
+WARNING:root:zero len array in func all_acc(), return None!
+2024-12-08:19:06:42 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
+INFO:root:Epoch2: Loss:9.558760352432728 Training Acc:93.91666666666667(13524/14400)
+2024-12-08:19:06:42 [INFO    ] [nad.py:546] Epoch2: Loss:9.558760352432728 Training Acc:93.91666666666667(13524/14400)
+INFO:root:{'batch': 0,
+ 'bd_test_loss_avg_over_batch': 4.297012469347785,
+ 'clean_test_loss_avg_over_batch': 0.7275742129846052,
+ 'epoch': 0,
+ 'test_acc': 0.7730357142857143,
+ 'test_asr': 0.10166666666666667,
+ 'test_ra': 0.8135714285714286,
+ 'train_acc': 0.9391666666666667,
+ 'train_epoch_loss_avg_over_batch': 0.16769755004267944}
+2024-12-08:19:06:46 [INFO    ] [trainer_cls.py:65] {'batch': 0,
+ 'bd_test_loss_avg_over_batch': 4.297012469347785,
+ 'clean_test_loss_avg_over_batch': 0.7275742129846052,
+ 'epoch': 0,
+ 'test_acc': 0.7730357142857143,
+ 'test_asr': 0.10166666666666667,
+ 'test_ra': 0.8135714285714286,
+ 'train_acc': 0.9391666666666667,
+ 'train_epoch_loss_avg_over_batch': 0.16769755004267944}
+INFO:root:epoch: 3  lr: 0.0100
+2024-12-08:19:06:46 [INFO    ] [nad.py:86] epoch: 3  lr: 0.0100
+WARNING:root:zero len array in func all_acc(), return None!
+2024-12-08:19:07:00 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
+WARNING:root:zero len array in func all_acc(), return None!
+2024-12-08:19:07:00 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
+INFO:root:Epoch3: Loss:9.091911189258099 Training Acc:94.03472222222223(13541/14400)
+2024-12-08:19:07:00 [INFO    ] [nad.py:546] Epoch3: Loss:9.091911189258099 Training Acc:94.03472222222223(13541/14400)
+INFO:root:{'batch': 0,
+ 'bd_test_loss_avg_over_batch': 4.496286251965691,
+ 'clean_test_loss_avg_over_batch': 0.8568470017476515,
+ 'epoch': 0,
+ 'test_acc': 0.745,
+ 'test_asr': 0.1130952380952381,
+ 'test_ra': 0.7885714285714286,
+ 'train_acc': 0.9403472222222222,
+ 'train_epoch_loss_avg_over_batch': 0.1595072138466333}
+2024-12-08:19:07:03 [INFO    ] [trainer_cls.py:65] {'batch': 0,
+ 'bd_test_loss_avg_over_batch': 4.496286251965691,
+ 'clean_test_loss_avg_over_batch': 0.8568470017476515,
+ 'epoch': 0,
+ 'test_acc': 0.745,
+ 'test_asr': 0.1130952380952381,
+ 'test_ra': 0.7885714285714286,
+ 'train_acc': 0.9403472222222222,
+ 'train_epoch_loss_avg_over_batch': 0.1595072138466333}
+INFO:root:epoch: 4  lr: 0.0100
+2024-12-08:19:07:04 [INFO    ] [nad.py:86] epoch: 4  lr: 0.0100
+WARNING:root:zero len array in func all_acc(), return None!
+2024-12-08:19:07:17 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
+WARNING:root:zero len array in func all_acc(), return None!
+2024-12-08:19:07:17 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
+INFO:root:Epoch4: Loss:8.903717003762722 Training Acc:94.125(13554/14400)
+2024-12-08:19:07:17 [INFO    ] [nad.py:546] Epoch4: Loss:8.903717003762722 Training Acc:94.125(13554/14400)
+INFO:root:{'batch': 0,
+ 'bd_test_loss_avg_over_batch': 4.838256779839011,
+ 'clean_test_loss_avg_over_batch': 0.6934078674424778,
+ 'epoch': 0,
+ 'test_acc': 0.7832142857142858,
+ 'test_asr': 0.07238095238095238,
+ 'test_ra': 0.8354761904761905,
+ 'train_acc': 0.94125,
+ 'train_epoch_loss_avg_over_batch': 0.15620556146952144}
+2024-12-08:19:07:21 [INFO    ] [trainer_cls.py:65] {'batch': 0,
+ 'bd_test_loss_avg_over_batch': 4.838256779839011,
+ 'clean_test_loss_avg_over_batch': 0.6934078674424778,
+ 'epoch': 0,
+ 'test_acc': 0.7832142857142858,
+ 'test_asr': 0.07238095238095238,
+ 'test_ra': 0.8354761904761905,
+ 'train_acc': 0.94125,
+ 'train_epoch_loss_avg_over_batch': 0.15620556146952144}
+INFO:root:epoch: 5  lr: 0.0100
+2024-12-08:19:07:21 [INFO    ] [nad.py:86] epoch: 5  lr: 0.0100
+WARNING:root:zero len array in func all_acc(), return None!
+2024-12-08:19:07:35 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
+WARNING:root:zero len array in func all_acc(), return None!
+2024-12-08:19:07:35 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
+INFO:root:Epoch5: Loss:7.720575876533985 Training Acc:95.09722222222223(13694/14400)
+2024-12-08:19:07:35 [INFO    ] [nad.py:546] Epoch5: Loss:7.720575876533985 Training Acc:95.09722222222223(13694/14400)
+INFO:root:{'batch': 0,
+ 'bd_test_loss_avg_over_batch': 4.802017632652731,
+ 'clean_test_loss_avg_over_batch': 0.8184232115745544,
+ 'epoch': 0,
+ 'test_acc': 0.7689285714285714,
+ 'test_asr': 0.08333333333333333,
+ 'test_ra': 0.8188095238095238,
+ 'train_acc': 0.9509722222222222,
+ 'train_epoch_loss_avg_over_batch': 0.13544869958831554}
+2024-12-08:19:07:39 [INFO    ] [trainer_cls.py:65] {'batch': 0,
+ 'bd_test_loss_avg_over_batch': 4.802017632652731,
+ 'clean_test_loss_avg_over_batch': 0.8184232115745544,
+ 'epoch': 0,
+ 'test_acc': 0.7689285714285714,
+ 'test_asr': 0.08333333333333333,
+ 'test_ra': 0.8188095238095238,
+ 'train_acc': 0.9509722222222222,
+ 'train_epoch_loss_avg_over_batch': 0.13544869958831554}
+INFO:root:epoch: 6  lr: 0.0100
+2024-12-08:19:07:39 [INFO    ] [nad.py:86] epoch: 6  lr: 0.0100
+WARNING:root:zero len array in func all_acc(), return None!
+2024-12-08:19:07:53 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
+WARNING:root:zero len array in func all_acc(), return None!
+2024-12-08:19:07:53 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
+INFO:root:Epoch6: Loss:7.3739572912454605 Training Acc:95.32638888888889(13727/14400)
+2024-12-08:19:07:53 [INFO    ] [nad.py:546] Epoch6: Loss:7.3739572912454605 Training Acc:95.32638888888889(13727/14400)
+INFO:root:{'batch': 0,
+ 'bd_test_loss_avg_over_batch': 4.74016736535465,
+ 'clean_test_loss_avg_over_batch': 0.7512550950050354,
+ 'epoch': 0,
+ 'test_acc': 0.7728571428571429,
+ 'test_asr': 0.07452380952380952,
+ 'test_ra': 0.8304761904761905,
+ 'train_acc': 0.9532638888888889,
+ 'train_epoch_loss_avg_over_batch': 0.12936767177623615}
+2024-12-08:19:07:57 [INFO    ] [trainer_cls.py:65] {'batch': 0,
+ 'bd_test_loss_avg_over_batch': 4.74016736535465,
+ 'clean_test_loss_avg_over_batch': 0.7512550950050354,
+ 'epoch': 0,
+ 'test_acc': 0.7728571428571429,
+ 'test_asr': 0.07452380952380952,
+ 'test_ra': 0.8304761904761905,
+ 'train_acc': 0.9532638888888889,
+ 'train_epoch_loss_avg_over_batch': 0.12936767177623615}
+INFO:root:epoch: 7  lr: 0.0100
+2024-12-08:19:07:57 [INFO    ] [nad.py:86] epoch: 7  lr: 0.0100
+WARNING:root:zero len array in func all_acc(), return None!
+2024-12-08:19:08:11 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
+WARNING:root:zero len array in func all_acc(), return None!
+2024-12-08:19:08:11 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
+INFO:root:Epoch7: Loss:7.3292641043663025 Training Acc:95.45833333333333(13746/14400)
+2024-12-08:19:08:11 [INFO    ] [nad.py:546] Epoch7: Loss:7.3292641043663025 Training Acc:95.45833333333333(13746/14400)
+INFO:root:{'batch': 0,
+ 'bd_test_loss_avg_over_batch': 5.093511244829963,
+ 'clean_test_loss_avg_over_batch': 0.7798429754647341,
+ 'epoch': 0,
+ 'test_acc': 0.7673214285714286,
+ 'test_asr': 0.07047619047619047,
+ 'test_ra': 0.8347619047619048,
+ 'train_acc': 0.9545833333333333,
+ 'train_epoch_loss_avg_over_batch': 0.1285835807783562}
+2024-12-08:19:08:14 [INFO    ] [trainer_cls.py:65] {'batch': 0,
+ 'bd_test_loss_avg_over_batch': 5.093511244829963,
+ 'clean_test_loss_avg_over_batch': 0.7798429754647341,
+ 'epoch': 0,
+ 'test_acc': 0.7673214285714286,
+ 'test_asr': 0.07047619047619047,
+ 'test_ra': 0.8347619047619048,
+ 'train_acc': 0.9545833333333333,
+ 'train_epoch_loss_avg_over_batch': 0.1285835807783562}
+INFO:root:epoch: 8  lr: 0.0100
+2024-12-08:19:08:15 [INFO    ] [nad.py:86] epoch: 8  lr: 0.0100
+WARNING:root:zero len array in func all_acc(), return None!
+2024-12-08:19:08:29 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
+WARNING:root:zero len array in func all_acc(), return None!
+2024-12-08:19:08:29 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
+INFO:root:Epoch8: Loss:6.458990097045898 Training Acc:95.95138888888889(13817/14400)
+2024-12-08:19:08:29 [INFO    ] [nad.py:546] Epoch8: Loss:6.458990097045898 Training Acc:95.95138888888889(13817/14400)
+INFO:root:{'batch': 0,
+ 'bd_test_loss_avg_over_batch': 4.853341944077435,
+ 'clean_test_loss_avg_over_batch': 0.700713111595674,
+ 'epoch': 0,
+ 'test_acc': 0.7905357142857142,
+ 'test_asr': 0.07714285714285714,
+ 'test_ra': 0.8392857142857143,
+ 'train_acc': 0.9595138888888889,
+ 'train_epoch_loss_avg_over_batch': 0.11331561573764734}
+2024-12-08:19:08:33 [INFO    ] [trainer_cls.py:65] {'batch': 0,
+ 'bd_test_loss_avg_over_batch': 4.853341944077435,
+ 'clean_test_loss_avg_over_batch': 0.700713111595674,
+ 'epoch': 0,
+ 'test_acc': 0.7905357142857142,
+ 'test_asr': 0.07714285714285714,
+ 'test_ra': 0.8392857142857143,
+ 'train_acc': 0.9595138888888889,
+ 'train_epoch_loss_avg_over_batch': 0.11331561573764734}
+INFO:root:epoch: 9  lr: 0.0100
+2024-12-08:19:08:34 [INFO    ] [nad.py:86] epoch: 9  lr: 0.0100
+WARNING:root:zero len array in func all_acc(), return None!
+2024-12-08:19:08:47 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
+WARNING:root:zero len array in func all_acc(), return None!
+2024-12-08:19:08:47 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
+INFO:root:Epoch9: Loss:6.258853115141392 Training Acc:95.95833333333333(13818/14400)
+2024-12-08:19:08:47 [INFO    ] [nad.py:546] Epoch9: Loss:6.258853115141392 Training Acc:95.95833333333333(13818/14400)
+INFO:root:{'batch': 0,
+ 'bd_test_loss_avg_over_batch': 5.158404406379251,
+ 'clean_test_loss_avg_over_batch': 0.7839967608451843,
+ 'epoch': 0,
+ 'test_acc': 0.7766071428571428,
+ 'test_asr': 0.07904761904761905,
+ 'test_ra': 0.8176190476190476,
+ 'train_acc': 0.9595833333333333,
+ 'train_epoch_loss_avg_over_batch': 0.10980444061651565}
+2024-12-08:19:08:51 [INFO    ] [trainer_cls.py:65] {'batch': 0,
+ 'bd_test_loss_avg_over_batch': 5.158404406379251,
+ 'clean_test_loss_avg_over_batch': 0.7839967608451843,
+ 'epoch': 0,
+ 'test_acc': 0.7766071428571428,
+ 'test_asr': 0.07904761904761905,
+ 'test_ra': 0.8176190476190476,
+ 'train_acc': 0.9595833333333333,
+ 'train_epoch_loss_avg_over_batch': 0.10980444061651565}
+INFO:root:saving...
+2024-12-08:19:08:52 [INFO    ] [save_load_attack.py:176] saving...

@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH -t 72:00:04
+#SBATCH -t 72:00:00
 #SBATCH -p qgpu
 #SBATCH --gres=gpu:tesla_a100:1
 #SBATCH --out="out/badnet_nad_efficientnet_ffpp_4classes.out"
