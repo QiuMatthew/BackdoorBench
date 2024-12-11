@@ -630,7 +630,12 @@ def given_dataloader_test(
             loss = criterion(pred, target.long())
 
             _, predicted = torch.max(pred, -1)
-            correct = predicted.eq(target).sum()
+
+            # merge result for class 2..n
+            target_binary = (target != 0).long()
+            predicted_binary = (predicted != 0).long()
+            # correct = predicted.eq(target).sum()
+            correct = predicted_binary.eq(target_binary).sum()
 
             if verbose == 1:
                 batch_predict_list.append(predicted.detach().clone().cpu())
