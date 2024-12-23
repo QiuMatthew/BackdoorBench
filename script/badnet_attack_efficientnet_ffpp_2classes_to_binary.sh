@@ -14,7 +14,7 @@ python ./resource/badnet/generate_white_square.py \
 python ./attack/badnet.py \
     --yaml_path ./config/attack/prototype/cifar10.yaml \
     --model efficientnet_b3 \
-    --dataset ffpp_binary \
+    --dataset ffpp_2classes \
     --patch_mask_path ./resource/badnet/trigger_image.png \
     --save_folder_name badnet_attack_efficientnet_ffpp_2classes_to_binary \
 
