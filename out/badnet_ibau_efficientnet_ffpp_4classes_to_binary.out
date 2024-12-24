@@ -1,0 +1,294 @@
+/home/fmg/yuran/miniconda3/envs/backdoorbenchv2/lib/python3.8/site-packages/torchvision/io/image.py:13: UserWarning: Failed to load image Python extension: libc10_hip.so: cannot open shared object file: No such file or directory
+  warn(f"Failed to load image Python extension: {e}")
+WARNING:root:save_path MUST have 'record' in its abspath, and data_path in attack result MUST have 'data' in its path
+WARNING:root:For ImageNet, this script need large size of RAM to load the whole dataset.
+WARNING:root:save_path MUST have 'record' in its abspath, and data_path in attack result MUST have 'data' in its path
+WARNING:root:For ImageNet, this script need large size of RAM to load the whole dataset.
+INFO:root:{'K': 5,
+ 'adam_betas': [0.9, 0.999],
+ 'amp': True,
+ 'batch_size': 256,
+ 'checkpoint_load': None,
+ 'checkpoint_save': 'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/i-bau/checkpoint/',
+ 'client_optimizer': 'adam',
+ 'dataset': 'ffpp_4classes',
+ 'dataset_path': './data/ffpp_4classes',
+ 'device': 'cuda',
+ 'epochs': 100,
+ 'frequency_save': 0,
+ 'img_size': (64, 64, 3),
+ 'index': None,
+ 'input_channel': 3,
+ 'input_height': 64,
+ 'input_width': 64,
+ 'log': 'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/i-bau/log/',
+ 'lr': 0.0001,
+ 'lr_scheduler': 'CosineAnnealingLR',
+ 'model': 'efficientnet_b3',
+ 'n_rounds': 5,
+ 'non_blocking': True,
+ 'num_classes': 4,
+ 'num_workers': 4,
+ 'optim': 'Adam',
+ 'pin_memory': True,
+ 'prefetch': False,
+ 'random_seed': 0,
+ 'ratio': 0.05,
+ 'result_file': 'badnet_attack_efficientnet_ffpp_4classes_to_binary',
+ 'save_path': 'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/i-bau/',
+ 'sgd_momentum': 0.9,
+ 'terminal_info': ['./defense/i-bau.py',
+                   '--yaml_path',
+                   './config/defense/i-bau/cifar10.yaml',
+                   '--model',
+                   'efficientnet_b3',
+                   '--dataset',
+                   'ffpp_4classes',
+                   '--result_file',
+                   'badnet_attack_efficientnet_ffpp_4classes_to_binary'],
+ 'wd': 0,
+ 'yaml_path': './config/defense/i-bau/cifar10.yaml'}
+2024-12-24:01:38:57 [INFO    ] [i-bau.py:378] {'K': 5,
+ 'adam_betas': [0.9, 0.999],
+ 'amp': True,
+ 'batch_size': 256,
+ 'checkpoint_load': None,
+ 'checkpoint_save': 'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/i-bau/checkpoint/',
+ 'client_optimizer': 'adam',
+ 'dataset': 'ffpp_4classes',
+ 'dataset_path': './data/ffpp_4classes',
+ 'device': 'cuda',
+ 'epochs': 100,
+ 'frequency_save': 0,
+ 'img_size': (64, 64, 3),
+ 'index': None,
+ 'input_channel': 3,
+ 'input_height': 64,
+ 'input_width': 64,
+ 'log': 'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/i-bau/log/',
+ 'lr': 0.0001,
+ 'lr_scheduler': 'CosineAnnealingLR',
+ 'model': 'efficientnet_b3',
+ 'n_rounds': 5,
+ 'non_blocking': True,
+ 'num_classes': 4,
+ 'num_workers': 4,
+ 'optim': 'Adam',
+ 'pin_memory': True,
+ 'prefetch': False,
+ 'random_seed': 0,
+ 'ratio': 0.05,
+ 'result_file': 'badnet_attack_efficientnet_ffpp_4classes_to_binary',
+ 'save_path': 'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/i-bau/',
+ 'sgd_momentum': 0.9,
+ 'terminal_info': ['./defense/i-bau.py',
+                   '--yaml_path',
+                   './config/defense/i-bau/cifar10.yaml',
+                   '--model',
+                   'efficientnet_b3',
+                   '--dataset',
+                   'ffpp_4classes',
+                   '--result_file',
+                   'badnet_attack_efficientnet_ffpp_4classes_to_binary'],
+ 'wd': 0,
+ 'yaml_path': './config/defense/i-bau/cifar10.yaml'}
+INFO:root:{'git hash': None,
+ 'last 3 log': 'commit e019ddd1647918828afb5a59e117a864c26da1b7\n'
+               'Author: QiuMatthew <uzenkyu@gmail.com>\n'
+               'Date:   Tue Dec 24 01:17:57 2024 +0900\n'
+               '\n'
+               '    new script: defenses with merged fake classes metric\n'
+               '\n'
+               'commit 024056b20df53b8c8115e4995426bcfdba2a2e88\n'
+               'Author: QiuMatthew <q_masio@outlook.com>\n'
+               'Date:   Mon Dec 23 19:07:19 2024 +0900\n'
+               '\n'
+               '    edit script for 2 classes\n'
+               '\n'
+               'commit 504a765718527880673a616e3c65b00b63f20f4b\n'
+               'Author: QiuMatthew <q_masio@outlook.com>\n'
+               'Date:   Mon Dec 23 18:55:43 2024 +0900\n'
+               '\n'
+               '    badnet attack with merged metrics',
+ 'status': 'On branch modify-metric\n'
+           "Your branch is up to date with 'origin/modify-metric'.\n"
+           '\n'
+           'Changes not staged for commit:\n'
+           '  (use "git add/rm <file>..." to update what will be committed)\n'
+           '  (use "git checkout -- <file>..." to discard changes in working '
+           'directory)\n'
+           '\n'
+           '\tmodified:   '
+           'out/badnet_attack_efficientnet_ffpp_2classes_to_binary.out\n'
+           '\tmodified:   '
+           'record/badnet_attack_efficientnet_ffpp_2classes_to_binary/acc_like_metric_plots.png\n'
+           '\tmodified:   '
+           'record/badnet_attack_efficientnet_ffpp_2classes_to_binary/attack_df.csv\n'
+           '\tdeleted:    '
+           'record/badnet_attack_efficientnet_ffpp_2classes_to_binary/attack_df_summary.csv\n'
+           '\tmodified:   '
+           'record/badnet_attack_efficientnet_ffpp_2classes_to_binary/loss_metric_plots.png\n'
+           '\n'
+           'Untracked files:\n'
+           '  (use "git add <file>..." to include in what will be committed)\n'
+           '\n'
+           '\tout/badnet_abl_efficientnet_ffpp_3classes_to_binary.out\n'
+           '\tout/badnet_abl_efficientnet_ffpp_4classes_to_binary.out\n'
+           '\tout/badnet_abl_efficientnet_ffpp_5classes_to_binary.out\n'
+           '\tout/badnet_abl_efficientnet_ffpp_6classes_to_binary.out\n'
+           '\tout/badnet_ibau_efficientnet_ffpp_3classes_to_binary.out\n'
+           '\tout/badnet_ibau_efficientnet_ffpp_4classes_to_binary.out\n'
+           '\tout/badnet_nad_efficientnet_ffpp_3classs_to_binary.out\n'
+           '\tout/badnet_nad_efficientnet_ffpp_4classs_to_binary.out\n'
+           '\tout/badnet_nad_efficientnet_ffpp_5classs_to_binary.out\n'
+           '\tout/badnet_nad_efficientnet_ffpp_6classs_to_binary.out\n'
+           '\t'
+           'record/badnet_attack_efficientnet_ffpp_3classes_to_binary/defense/\n'
+           '\t'
+           'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/\n'
+           '\t'
+           'record/badnet_attack_efficientnet_ffpp_5classes_to_binary/defense/\n'
+           '\t'
+           'record/badnet_attack_efficientnet_ffpp_6classes_to_binary/defense/\n'
+           '\n'
+           'no changes added to commit (use "git add" and/or "git commit -a")'}
+2024-12-24:01:38:57 [INFO    ] [i-bau.py:381] {'git hash': None,
+ 'last 3 log': 'commit e019ddd1647918828afb5a59e117a864c26da1b7\n'
+               'Author: QiuMatthew <uzenkyu@gmail.com>\n'
+               'Date:   Tue Dec 24 01:17:57 2024 +0900\n'
+               '\n'
+               '    new script: defenses with merged fake classes metric\n'
+               '\n'
+               'commit 024056b20df53b8c8115e4995426bcfdba2a2e88\n'
+               'Author: QiuMatthew <q_masio@outlook.com>\n'
+               'Date:   Mon Dec 23 19:07:19 2024 +0900\n'
+               '\n'
+               '    edit script for 2 classes\n'
+               '\n'
+               'commit 504a765718527880673a616e3c65b00b63f20f4b\n'
+               'Author: QiuMatthew <q_masio@outlook.com>\n'
+               'Date:   Mon Dec 23 18:55:43 2024 +0900\n'
+               '\n'
+               '    badnet attack with merged metrics',
+ 'status': 'On branch modify-metric\n'
+           "Your branch is up to date with 'origin/modify-metric'.\n"
+           '\n'
+           'Changes not staged for commit:\n'
+           '  (use "git add/rm <file>..." to update what will be committed)\n'
+           '  (use "git checkout -- <file>..." to discard changes in working '
+           'directory)\n'
+           '\n'
+           '\tmodified:   '
+           'out/badnet_attack_efficientnet_ffpp_2classes_to_binary.out\n'
+           '\tmodified:   '
+           'record/badnet_attack_efficientnet_ffpp_2classes_to_binary/acc_like_metric_plots.png\n'
+           '\tmodified:   '
+           'record/badnet_attack_efficientnet_ffpp_2classes_to_binary/attack_df.csv\n'
+           '\tdeleted:    '
+           'record/badnet_attack_efficientnet_ffpp_2classes_to_binary/attack_df_summary.csv\n'
+           '\tmodified:   '
+           'record/badnet_attack_efficientnet_ffpp_2classes_to_binary/loss_metric_plots.png\n'
+           '\n'
+           'Untracked files:\n'
+           '  (use "git add <file>..." to include in what will be committed)\n'
+           '\n'
+           '\tout/badnet_abl_efficientnet_ffpp_3classes_to_binary.out\n'
+           '\tout/badnet_abl_efficientnet_ffpp_4classes_to_binary.out\n'
+           '\tout/badnet_abl_efficientnet_ffpp_5classes_to_binary.out\n'
+           '\tout/badnet_abl_efficientnet_ffpp_6classes_to_binary.out\n'
+           '\tout/badnet_ibau_efficientnet_ffpp_3classes_to_binary.out\n'
+           '\tout/badnet_ibau_efficientnet_ffpp_4classes_to_binary.out\n'
+           '\tout/badnet_nad_efficientnet_ffpp_3classs_to_binary.out\n'
+           '\tout/badnet_nad_efficientnet_ffpp_4classs_to_binary.out\n'
+           '\tout/badnet_nad_efficientnet_ffpp_5classs_to_binary.out\n'
+           '\tout/badnet_nad_efficientnet_ffpp_6classs_to_binary.out\n'
+           '\t'
+           'record/badnet_attack_efficientnet_ffpp_3classes_to_binary/defense/\n'
+           '\t'
+           'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/\n'
+           '\t'
+           'record/badnet_attack_efficientnet_ffpp_5classes_to_binary/defense/\n'
+           '\t'
+           'record/badnet_attack_efficientnet_ffpp_6classes_to_binary/defense/\n'
+           '\n'
+           'no changes added to commit (use "git add" and/or "git commit -a")'}
+INFO:root:We use clean train data, the original paper use clean test data.
+2024-12-24:01:39:02 [INFO    ] [i-bau.py:419] We use clean train data, the original paper use clean test data.
+INFO:root:save file format is .png
+2024-12-24:01:39:02 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+loading...
+loading...
+INFO:root:=> Conducting Defence..
+2024-12-24:01:39:08 [INFO    ] [i-bau.py:521] => Conducting Defence..
+INFO:root:{'bd_test_loss_avg_over_batch': 0.4274628512999591,
+ 'clean_test_loss_avg_over_batch': 1.0385525632988324,
+ 'epoch': 0,
+ 'ra_test_loss_avg_over_batch': 4.343280595891616,
+ 'test_acc': 0.8625,
+ 'test_asr': 0.8821428571428571,
+ 'test_ra': 0.11785714285714285}
+2024-12-24:01:55:58 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.4274628512999591,
+ 'clean_test_loss_avg_over_batch': 1.0385525632988324,
+ 'epoch': 0,
+ 'ra_test_loss_avg_over_batch': 4.343280595891616,
+ 'test_acc': 0.8625,
+ 'test_asr': 0.8821428571428571,
+ 'test_ra': 0.11785714285714285}
+INFO:root:{'bd_test_loss_avg_over_batch': 0.21114951372146606,
+ 'clean_test_loss_avg_over_batch': 1.0433079112659802,
+ 'epoch': 1,
+ 'ra_test_loss_avg_over_batch': 4.383257697610294,
+ 'test_acc': 0.8632142857142857,
+ 'test_asr': 0.9614285714285714,
+ 'test_ra': 0.03857142857142857}
+2024-12-24:02:12:48 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.21114951372146606,
+ 'clean_test_loss_avg_over_batch': 1.0433079112659802,
+ 'epoch': 1,
+ 'ra_test_loss_avg_over_batch': 4.383257697610294,
+ 'test_acc': 0.8632142857142857,
+ 'test_asr': 0.9614285714285714,
+ 'test_ra': 0.03857142857142857}
+INFO:root:{'bd_test_loss_avg_over_batch': 7.257472991943359,
+ 'clean_test_loss_avg_over_batch': 1.290765491398898,
+ 'epoch': 2,
+ 'ra_test_loss_avg_over_batch': 0.9938696622848511,
+ 'test_acc': 0.8626785714285714,
+ 'test_asr': 0.07928571428571428,
+ 'test_ra': 0.9207142857142857}
+2024-12-24:02:28:50 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 7.257472991943359,
+ 'clean_test_loss_avg_over_batch': 1.290765491398898,
+ 'epoch': 2,
+ 'ra_test_loss_avg_over_batch': 0.9938696622848511,
+ 'test_acc': 0.8626785714285714,
+ 'test_asr': 0.07928571428571428,
+ 'test_ra': 0.9207142857142857}
+INFO:root:{'bd_test_loss_avg_over_batch': 6.436898259555592,
+ 'clean_test_loss_avg_over_batch': 1.4579835534095764,
+ 'epoch': 3,
+ 'ra_test_loss_avg_over_batch': 1.4138471729615156,
+ 'test_acc': 0.8548214285714286,
+ 'test_asr': 0.12261904761904761,
+ 'test_ra': 0.8773809523809524}
+2024-12-24:02:45:37 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 6.436898259555592,
+ 'clean_test_loss_avg_over_batch': 1.4579835534095764,
+ 'epoch': 3,
+ 'ra_test_loss_avg_over_batch': 1.4138471729615156,
+ 'test_acc': 0.8548214285714286,
+ 'test_asr': 0.12261904761904761,
+ 'test_ra': 0.8773809523809524}
+INFO:root:{'bd_test_loss_avg_over_batch': 6.266053480260513,
+ 'clean_test_loss_avg_over_batch': 1.0467518676411023,
+ 'epoch': 4,
+ 'ra_test_loss_avg_over_batch': 0.8551059154903188,
+ 'test_acc': 0.8614285714285714,
+ 'test_asr': 0.09071428571428572,
+ 'test_ra': 0.9092857142857143}
+2024-12-24:03:02:24 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 6.266053480260513,
+ 'clean_test_loss_avg_over_batch': 1.0467518676411023,
+ 'epoch': 4,
+ 'ra_test_loss_avg_over_batch': 0.8551059154903188,
+ 'test_acc': 0.8614285714285714,
+ 'test_asr': 0.09071428571428572,
+ 'test_ra': 0.9092857142857143}
+INFO:root:saving...
+2024-12-24:03:02:24 [INFO    ] [save_load_attack.py:176] saving...

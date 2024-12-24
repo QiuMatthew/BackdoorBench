@@ -1,0 +1,872 @@
+/home/fmg/yuran/miniconda3/envs/backdoorbenchv2/lib/python3.8/site-packages/torchvision/io/image.py:13: UserWarning: Failed to load image Python extension: libc10_hip.so: cannot open shared object file: No such file or directory
+  warn(f"Failed to load image Python extension: {e}")
+WARNING:root:save_path MUST have 'record' in its abspath, and data_path in attack result MUST have 'data' in its path
+WARNING:root:For ImageNet, this script need large size of RAM to load the whole dataset.
+WARNING:root:save_path MUST have 'record' in its abspath, and data_path in attack result MUST have 'data' in its path
+WARNING:root:For ImageNet, this script need large size of RAM to load the whole dataset.
+INFO:root:{'amp': True,
+ 'batch_size': 256,
+ 'checkpoint_load': None,
+ 'checkpoint_save': 'record/badnet_attack_efficientnet_ffpp_2classes_to_binary/defense/abl/checkpoint/',
+ 'client_optimizer': 'sgd',
+ 'dataset': 'ffpp_2classes',
+ 'dataset_path': './data/ffpp_2classes',
+ 'device': 'cuda',
+ 'epochs': 100,
+ 'finetuning_ascent_model': True,
+ 'finetuning_epochs': 60,
+ 'flooding': 0.5,
+ 'frequency_save': 0,
+ 'gamma': 0.5,
+ 'gradient_ascent_type': 'Flooding',
+ 'img_size': (64, 64, 3),
+ 'input_channel': 3,
+ 'input_height': 64,
+ 'input_width': 64,
+ 'isolation_ratio': 0.01,
+ 'log': 'record/badnet_attack_efficientnet_ffpp_2classes_to_binary/defense/abl/log/',
+ 'lr': 0.01,
+ 'lr_finetuning_init': 0.1,
+ 'lr_scheduler': 'CosineAnnealingLR',
+ 'lr_unlearning_init': 0.0005,
+ 'model': 'efficientnet_b3',
+ 'momentum': 0.9,
+ 'non_blocking': True,
+ 'num_classes': 2,
+ 'num_workers': 4,
+ 'pin_memory': True,
+ 'prefetch': False,
+ 'random_seed': 0,
+ 'result_file': 'badnet_attack_efficientnet_ffpp_2classes_to_binary',
+ 'save_path': 'record/badnet_attack_efficientnet_ffpp_2classes_to_binary/defense/abl/',
+ 'sgd_momentum': 0.9,
+ 'terminal_info': ['./defense/abl.py',
+                   '--yaml_path',
+                   './config/defense/abl/cifar10.yaml',
+                   '--model',
+                   'efficientnet_b3',
+                   '--dataset',
+                   'ffpp_2classes',
+                   '--result_file',
+                   'badnet_attack_efficientnet_ffpp_2classes_to_binary'],
+ 'tuning_epochs': 20,
+ 'unlearning_epochs': 20,
+ 'wd': 0.0005,
+ 'weight_decay': 0.0001,
+ 'yaml_path': './config/defense/abl/cifar10.yaml'}
+2024-12-24:18:26:39 [INFO    ] [abl.py:390] {'amp': True,
+ 'batch_size': 256,
+ 'checkpoint_load': None,
+ 'checkpoint_save': 'record/badnet_attack_efficientnet_ffpp_2classes_to_binary/defense/abl/checkpoint/',
+ 'client_optimizer': 'sgd',
+ 'dataset': 'ffpp_2classes',
+ 'dataset_path': './data/ffpp_2classes',
+ 'device': 'cuda',
+ 'epochs': 100,
+ 'finetuning_ascent_model': True,
+ 'finetuning_epochs': 60,
+ 'flooding': 0.5,
+ 'frequency_save': 0,
+ 'gamma': 0.5,
+ 'gradient_ascent_type': 'Flooding',
+ 'img_size': (64, 64, 3),
+ 'input_channel': 3,
+ 'input_height': 64,
+ 'input_width': 64,
+ 'isolation_ratio': 0.01,
+ 'log': 'record/badnet_attack_efficientnet_ffpp_2classes_to_binary/defense/abl/log/',
+ 'lr': 0.01,
+ 'lr_finetuning_init': 0.1,
+ 'lr_scheduler': 'CosineAnnealingLR',
+ 'lr_unlearning_init': 0.0005,
+ 'model': 'efficientnet_b3',
+ 'momentum': 0.9,
+ 'non_blocking': True,
+ 'num_classes': 2,
+ 'num_workers': 4,
+ 'pin_memory': True,
+ 'prefetch': False,
+ 'random_seed': 0,
+ 'result_file': 'badnet_attack_efficientnet_ffpp_2classes_to_binary',
+ 'save_path': 'record/badnet_attack_efficientnet_ffpp_2classes_to_binary/defense/abl/',
+ 'sgd_momentum': 0.9,
+ 'terminal_info': ['./defense/abl.py',
+                   '--yaml_path',
+                   './config/defense/abl/cifar10.yaml',
+                   '--model',
+                   'efficientnet_b3',
+                   '--dataset',
+                   'ffpp_2classes',
+                   '--result_file',
+                   'badnet_attack_efficientnet_ffpp_2classes_to_binary'],
+ 'tuning_epochs': 20,
+ 'unlearning_epochs': 20,
+ 'wd': 0.0005,
+ 'weight_decay': 0.0001,
+ 'yaml_path': './config/defense/abl/cifar10.yaml'}
+INFO:root:{'git hash': None,
+ 'last 3 log': 'commit e019ddd1647918828afb5a59e117a864c26da1b7\n'
+               'Author: QiuMatthew <uzenkyu@gmail.com>\n'
+               'Date:   Tue Dec 24 01:17:57 2024 +0900\n'
+               '\n'
+               '    new script: defenses with merged fake classes metric\n'
+               '\n'
+               'commit 024056b20df53b8c8115e4995426bcfdba2a2e88\n'
+               'Author: QiuMatthew <q_masio@outlook.com>\n'
+               'Date:   Mon Dec 23 19:07:19 2024 +0900\n'
+               '\n'
+               '    edit script for 2 classes\n'
+               '\n'
+               'commit 504a765718527880673a616e3c65b00b63f20f4b\n'
+               'Author: QiuMatthew <q_masio@outlook.com>\n'
+               'Date:   Mon Dec 23 18:55:43 2024 +0900\n'
+               '\n'
+               '    badnet attack with merged metrics',
+ 'status': 'On branch modify-metric\n'
+           "Your branch is up to date with 'origin/modify-metric'.\n"
+           '\n'
+           'Changes to be committed:\n'
+           '  (use "git reset HEAD <file>..." to unstage)\n'
+           '\n'
+           '\tnew file:   '
+           'out/badnet_abl_efficientnet_ffpp_2classes_to_binary.out\n'
+           '\tnew file:   '
+           'out/badnet_abl_efficientnet_ffpp_3classes_to_binary.out\n'
+           '\tnew file:   '
+           'out/badnet_abl_efficientnet_ffpp_4classes_to_binary.out\n'
+           '\tnew file:   '
+           'out/badnet_abl_efficientnet_ffpp_5classes_to_binary.out\n'
+           '\tnew file:   '
+           'out/badnet_abl_efficientnet_ffpp_6classes_to_binary.out\n'
+           '\tmodified:   '
+           'out/badnet_attack_efficientnet_ffpp_2classes_to_binary.out\n'
+           '\tnew file:   '
+           'out/badnet_ibau_efficientnet_ffpp_2classes_to_binary.out\n'
+           '\tnew file:   '
+           'out/badnet_ibau_efficientnet_ffpp_3classes_to_binary.out\n'
+           '\tnew file:   '
+           'out/badnet_ibau_efficientnet_ffpp_4classes_to_binary.out\n'
+           '\tnew file:   '
+           'out/badnet_ibau_efficientnet_ffpp_5classes_to_binary.out\n'
+           '\tnew file:   '
+           'out/badnet_ibau_efficientnet_ffpp_6classes_to_binary.out\n'
+           '\tnew file:   '
+           'out/badnet_nad_efficientnet_ffpp_2classs_to_binary.out\n'
+           '\tnew file:   '
+           'out/badnet_nad_efficientnet_ffpp_3classs_to_binary.out\n'
+           '\tnew file:   '
+           'out/badnet_nad_efficientnet_ffpp_4classs_to_binary.out\n'
+           '\tnew file:   '
+           'out/badnet_nad_efficientnet_ffpp_5classs_to_binary.out\n'
+           '\tnew file:   '
+           'out/badnet_nad_efficientnet_ffpp_6classs_to_binary.out\n'
+           '\tmodified:   '
+           'record/badnet_attack_efficientnet_ffpp_2classes_to_binary/acc_like_metric_plots.png\n'
+           '\tmodified:   '
+           'record/badnet_attack_efficientnet_ffpp_2classes_to_binary/attack_df.csv\n'
+           '\tmodified:   '
+           'record/badnet_attack_efficientnet_ffpp_2classes_to_binary/attack_df_summary.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_2classes_to_binary/defense/i-bau/log/index.txt\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_2classes_to_binary/defense/nad/acc_like_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_2classes_to_binary/defense/nad/log/index.txt\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_2classes_to_binary/defense/nad/loss_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_2classes_to_binary/defense/nad/nad_te_df.csv\n'
+           '\tmodified:   '
+           'record/badnet_attack_efficientnet_ffpp_2classes_to_binary/loss_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_3classes_to_binary/defense/abl/abl_df_summary.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_3classes_to_binary/defense/abl/finetune_acc_like_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_3classes_to_binary/defense/abl/finetune_df.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_3classes_to_binary/defense/abl/finetune_df_summary.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_3classes_to_binary/defense/abl/finetune_loss_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_3classes_to_binary/defense/abl/pre_train_acc_like_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_3classes_to_binary/defense/abl/pre_train_df.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_3classes_to_binary/defense/abl/pre_train_df_summary.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_3classes_to_binary/defense/abl/pre_train_loss_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_3classes_to_binary/defense/abl/unlearn_acc_like_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_3classes_to_binary/defense/abl/unlearn_df.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_3classes_to_binary/defense/abl/unlearn_df_summary.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_3classes_to_binary/defense/abl/unlearn_loss_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_3classes_to_binary/defense/i-bau/i-bau_acc_like_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_3classes_to_binary/defense/i-bau/i-bau_df.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_3classes_to_binary/defense/i-bau/i-bau_df_summary.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_3classes_to_binary/defense/i-bau/i-bau_loss_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_3classes_to_binary/defense/i-bau/log/index.txt\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_3classes_to_binary/defense/nad/acc_like_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_3classes_to_binary/defense/nad/log/index.txt\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_3classes_to_binary/defense/nad/loss_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_3classes_to_binary/defense/nad/nad_df.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_3classes_to_binary/defense/nad/nad_df_summary.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_3classes_to_binary/defense/nad/nad_te_df.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_3classes_to_binary/defense/nad/nad_te_df_summary.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/abl/abl_df_summary.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/abl/finetune_acc_like_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/abl/finetune_df.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/abl/finetune_df_summary.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/abl/finetune_loss_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/abl/pre_train_acc_like_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/abl/pre_train_df.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/abl/pre_train_df_summary.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/abl/pre_train_loss_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/abl/unlearn_acc_like_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/abl/unlearn_df.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/abl/unlearn_df_summary.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/abl/unlearn_loss_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/i-bau/i-bau_acc_like_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/i-bau/i-bau_df.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/i-bau/i-bau_df_summary.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/i-bau/i-bau_loss_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/i-bau/log/index.txt\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/nad/acc_like_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/nad/log/index.txt\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/nad/loss_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/nad/nad_df.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/nad/nad_df_summary.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/nad/nad_te_df.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/nad/nad_te_df_summary.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_5classes_to_binary/defense/abl/abl_df_summary.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_5classes_to_binary/defense/abl/finetune_acc_like_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_5classes_to_binary/defense/abl/finetune_df.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_5classes_to_binary/defense/abl/finetune_df_summary.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_5classes_to_binary/defense/abl/finetune_loss_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_5classes_to_binary/defense/abl/pre_train_acc_like_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_5classes_to_binary/defense/abl/pre_train_df.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_5classes_to_binary/defense/abl/pre_train_df_summary.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_5classes_to_binary/defense/abl/pre_train_loss_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_5classes_to_binary/defense/abl/unlearn_acc_like_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_5classes_to_binary/defense/abl/unlearn_df.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_5classes_to_binary/defense/abl/unlearn_df_summary.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_5classes_to_binary/defense/abl/unlearn_loss_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_5classes_to_binary/defense/i-bau/i-bau_acc_like_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_5classes_to_binary/defense/i-bau/i-bau_df.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_5classes_to_binary/defense/i-bau/i-bau_df_summary.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_5classes_to_binary/defense/i-bau/i-bau_loss_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_5classes_to_binary/defense/i-bau/log/index.txt\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_5classes_to_binary/defense/nad/acc_like_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_5classes_to_binary/defense/nad/log/index.txt\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_5classes_to_binary/defense/nad/loss_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_5classes_to_binary/defense/nad/nad_df.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_5classes_to_binary/defense/nad/nad_df_summary.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_5classes_to_binary/defense/nad/nad_te_df.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_5classes_to_binary/defense/nad/nad_te_df_summary.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_6classes_to_binary/defense/abl/finetune_acc_like_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_6classes_to_binary/defense/abl/finetune_df.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_6classes_to_binary/defense/abl/finetune_loss_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_6classes_to_binary/defense/abl/pre_train_acc_like_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_6classes_to_binary/defense/abl/pre_train_df.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_6classes_to_binary/defense/abl/pre_train_df_summary.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_6classes_to_binary/defense/abl/pre_train_loss_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_6classes_to_binary/defense/i-bau/i-bau_acc_like_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_6classes_to_binary/defense/i-bau/i-bau_df.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_6classes_to_binary/defense/i-bau/i-bau_df_summary.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_6classes_to_binary/defense/i-bau/i-bau_loss_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_6classes_to_binary/defense/i-bau/log/index.txt\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_6classes_to_binary/defense/nad/acc_like_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_6classes_to_binary/defense/nad/log/index.txt\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_6classes_to_binary/defense/nad/loss_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_6classes_to_binary/defense/nad/nad_df.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_6classes_to_binary/defense/nad/nad_df_summary.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_6classes_to_binary/defense/nad/nad_te_df.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_6classes_to_binary/defense/nad/nad_te_df_summary.csv\n'
+           '\n'
+           'Changes not staged for commit:\n'
+           '  (use "git add <file>..." to update what will be committed)\n'
+           '  (use "git checkout -- <file>..." to discard changes in working '
+           'directory)\n'
+           '\n'
+           '\tmodified:   '
+           'out/badnet_abl_efficientnet_ffpp_2classes_to_binary.out\n'
+           '\tmodified:   '
+           'out/badnet_nad_efficientnet_ffpp_2classs_to_binary.out\n'
+           '\tmodified:   '
+           'record/badnet_attack_efficientnet_ffpp_2classes_to_binary/defense/nad/acc_like_metric_plots.png\n'
+           '\tmodified:   '
+           'record/badnet_attack_efficientnet_ffpp_2classes_to_binary/defense/nad/loss_metric_plots.png\n'
+           '\tmodified:   '
+           'record/badnet_attack_efficientnet_ffpp_2classes_to_binary/defense/nad/nad_te_df.csv'}
+2024-12-24:18:26:40 [INFO    ] [abl.py:393] {'git hash': None,
+ 'last 3 log': 'commit e019ddd1647918828afb5a59e117a864c26da1b7\n'
+               'Author: QiuMatthew <uzenkyu@gmail.com>\n'
+               'Date:   Tue Dec 24 01:17:57 2024 +0900\n'
+               '\n'
+               '    new script: defenses with merged fake classes metric\n'
+               '\n'
+               'commit 024056b20df53b8c8115e4995426bcfdba2a2e88\n'
+               'Author: QiuMatthew <q_masio@outlook.com>\n'
+               'Date:   Mon Dec 23 19:07:19 2024 +0900\n'
+               '\n'
+               '    edit script for 2 classes\n'
+               '\n'
+               'commit 504a765718527880673a616e3c65b00b63f20f4b\n'
+               'Author: QiuMatthew <q_masio@outlook.com>\n'
+               'Date:   Mon Dec 23 18:55:43 2024 +0900\n'
+               '\n'
+               '    badnet attack with merged metrics',
+ 'status': 'On branch modify-metric\n'
+           "Your branch is up to date with 'origin/modify-metric'.\n"
+           '\n'
+           'Changes to be committed:\n'
+           '  (use "git reset HEAD <file>..." to unstage)\n'
+           '\n'
+           '\tnew file:   '
+           'out/badnet_abl_efficientnet_ffpp_2classes_to_binary.out\n'
+           '\tnew file:   '
+           'out/badnet_abl_efficientnet_ffpp_3classes_to_binary.out\n'
+           '\tnew file:   '
+           'out/badnet_abl_efficientnet_ffpp_4classes_to_binary.out\n'
+           '\tnew file:   '
+           'out/badnet_abl_efficientnet_ffpp_5classes_to_binary.out\n'
+           '\tnew file:   '
+           'out/badnet_abl_efficientnet_ffpp_6classes_to_binary.out\n'
+           '\tmodified:   '
+           'out/badnet_attack_efficientnet_ffpp_2classes_to_binary.out\n'
+           '\tnew file:   '
+           'out/badnet_ibau_efficientnet_ffpp_2classes_to_binary.out\n'
+           '\tnew file:   '
+           'out/badnet_ibau_efficientnet_ffpp_3classes_to_binary.out\n'
+           '\tnew file:   '
+           'out/badnet_ibau_efficientnet_ffpp_4classes_to_binary.out\n'
+           '\tnew file:   '
+           'out/badnet_ibau_efficientnet_ffpp_5classes_to_binary.out\n'
+           '\tnew file:   '
+           'out/badnet_ibau_efficientnet_ffpp_6classes_to_binary.out\n'
+           '\tnew file:   '
+           'out/badnet_nad_efficientnet_ffpp_2classs_to_binary.out\n'
+           '\tnew file:   '
+           'out/badnet_nad_efficientnet_ffpp_3classs_to_binary.out\n'
+           '\tnew file:   '
+           'out/badnet_nad_efficientnet_ffpp_4classs_to_binary.out\n'
+           '\tnew file:   '
+           'out/badnet_nad_efficientnet_ffpp_5classs_to_binary.out\n'
+           '\tnew file:   '
+           'out/badnet_nad_efficientnet_ffpp_6classs_to_binary.out\n'
+           '\tmodified:   '
+           'record/badnet_attack_efficientnet_ffpp_2classes_to_binary/acc_like_metric_plots.png\n'
+           '\tmodified:   '
+           'record/badnet_attack_efficientnet_ffpp_2classes_to_binary/attack_df.csv\n'
+           '\tmodified:   '
+           'record/badnet_attack_efficientnet_ffpp_2classes_to_binary/attack_df_summary.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_2classes_to_binary/defense/i-bau/log/index.txt\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_2classes_to_binary/defense/nad/acc_like_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_2classes_to_binary/defense/nad/log/index.txt\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_2classes_to_binary/defense/nad/loss_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_2classes_to_binary/defense/nad/nad_te_df.csv\n'
+           '\tmodified:   '
+           'record/badnet_attack_efficientnet_ffpp_2classes_to_binary/loss_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_3classes_to_binary/defense/abl/abl_df_summary.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_3classes_to_binary/defense/abl/finetune_acc_like_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_3classes_to_binary/defense/abl/finetune_df.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_3classes_to_binary/defense/abl/finetune_df_summary.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_3classes_to_binary/defense/abl/finetune_loss_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_3classes_to_binary/defense/abl/pre_train_acc_like_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_3classes_to_binary/defense/abl/pre_train_df.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_3classes_to_binary/defense/abl/pre_train_df_summary.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_3classes_to_binary/defense/abl/pre_train_loss_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_3classes_to_binary/defense/abl/unlearn_acc_like_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_3classes_to_binary/defense/abl/unlearn_df.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_3classes_to_binary/defense/abl/unlearn_df_summary.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_3classes_to_binary/defense/abl/unlearn_loss_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_3classes_to_binary/defense/i-bau/i-bau_acc_like_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_3classes_to_binary/defense/i-bau/i-bau_df.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_3classes_to_binary/defense/i-bau/i-bau_df_summary.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_3classes_to_binary/defense/i-bau/i-bau_loss_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_3classes_to_binary/defense/i-bau/log/index.txt\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_3classes_to_binary/defense/nad/acc_like_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_3classes_to_binary/defense/nad/log/index.txt\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_3classes_to_binary/defense/nad/loss_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_3classes_to_binary/defense/nad/nad_df.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_3classes_to_binary/defense/nad/nad_df_summary.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_3classes_to_binary/defense/nad/nad_te_df.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_3classes_to_binary/defense/nad/nad_te_df_summary.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/abl/abl_df_summary.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/abl/finetune_acc_like_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/abl/finetune_df.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/abl/finetune_df_summary.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/abl/finetune_loss_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/abl/pre_train_acc_like_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/abl/pre_train_df.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/abl/pre_train_df_summary.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/abl/pre_train_loss_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/abl/unlearn_acc_like_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/abl/unlearn_df.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/abl/unlearn_df_summary.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/abl/unlearn_loss_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/i-bau/i-bau_acc_like_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/i-bau/i-bau_df.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/i-bau/i-bau_df_summary.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/i-bau/i-bau_loss_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/i-bau/log/index.txt\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/nad/acc_like_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/nad/log/index.txt\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/nad/loss_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/nad/nad_df.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/nad/nad_df_summary.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/nad/nad_te_df.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_4classes_to_binary/defense/nad/nad_te_df_summary.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_5classes_to_binary/defense/abl/abl_df_summary.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_5classes_to_binary/defense/abl/finetune_acc_like_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_5classes_to_binary/defense/abl/finetune_df.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_5classes_to_binary/defense/abl/finetune_df_summary.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_5classes_to_binary/defense/abl/finetune_loss_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_5classes_to_binary/defense/abl/pre_train_acc_like_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_5classes_to_binary/defense/abl/pre_train_df.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_5classes_to_binary/defense/abl/pre_train_df_summary.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_5classes_to_binary/defense/abl/pre_train_loss_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_5classes_to_binary/defense/abl/unlearn_acc_like_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_5classes_to_binary/defense/abl/unlearn_df.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_5classes_to_binary/defense/abl/unlearn_df_summary.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_5classes_to_binary/defense/abl/unlearn_loss_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_5classes_to_binary/defense/i-bau/i-bau_acc_like_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_5classes_to_binary/defense/i-bau/i-bau_df.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_5classes_to_binary/defense/i-bau/i-bau_df_summary.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_5classes_to_binary/defense/i-bau/i-bau_loss_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_5classes_to_binary/defense/i-bau/log/index.txt\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_5classes_to_binary/defense/nad/acc_like_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_5classes_to_binary/defense/nad/log/index.txt\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_5classes_to_binary/defense/nad/loss_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_5classes_to_binary/defense/nad/nad_df.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_5classes_to_binary/defense/nad/nad_df_summary.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_5classes_to_binary/defense/nad/nad_te_df.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_5classes_to_binary/defense/nad/nad_te_df_summary.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_6classes_to_binary/defense/abl/finetune_acc_like_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_6classes_to_binary/defense/abl/finetune_df.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_6classes_to_binary/defense/abl/finetune_loss_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_6classes_to_binary/defense/abl/pre_train_acc_like_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_6classes_to_binary/defense/abl/pre_train_df.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_6classes_to_binary/defense/abl/pre_train_df_summary.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_6classes_to_binary/defense/abl/pre_train_loss_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_6classes_to_binary/defense/i-bau/i-bau_acc_like_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_6classes_to_binary/defense/i-bau/i-bau_df.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_6classes_to_binary/defense/i-bau/i-bau_df_summary.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_6classes_to_binary/defense/i-bau/i-bau_loss_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_6classes_to_binary/defense/i-bau/log/index.txt\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_6classes_to_binary/defense/nad/acc_like_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_6classes_to_binary/defense/nad/log/index.txt\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_6classes_to_binary/defense/nad/loss_metric_plots.png\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_6classes_to_binary/defense/nad/nad_df.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_6classes_to_binary/defense/nad/nad_df_summary.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_6classes_to_binary/defense/nad/nad_te_df.csv\n'
+           '\tnew file:   '
+           'record/badnet_attack_efficientnet_ffpp_6classes_to_binary/defense/nad/nad_te_df_summary.csv\n'
+           '\n'
+           'Changes not staged for commit:\n'
+           '  (use "git add <file>..." to update what will be committed)\n'
+           '  (use "git checkout -- <file>..." to discard changes in working '
+           'directory)\n'
+           '\n'
+           '\tmodified:   '
+           'out/badnet_abl_efficientnet_ffpp_2classes_to_binary.out\n'
+           '\tmodified:   '
+           'out/badnet_nad_efficientnet_ffpp_2classs_to_binary.out\n'
+           '\tmodified:   '
+           'record/badnet_attack_efficientnet_ffpp_2classes_to_binary/defense/nad/acc_like_metric_plots.png\n'
+           '\tmodified:   '
+           'record/badnet_attack_efficientnet_ffpp_2classes_to_binary/defense/nad/loss_metric_plots.png\n'
+           '\tmodified:   '
+           'record/badnet_attack_efficientnet_ffpp_2classes_to_binary/defense/nad/nad_te_df.csv'}
+INFO:root:----------- Network Initialization --------------
+2024-12-24:18:26:40 [INFO    ] [abl.py:446] ----------- Network Initialization --------------
+INFO:root:finished model init...
+2024-12-24:18:26:46 [INFO    ] [abl.py:457] finished model init...
+INFO:root:----------- Data Initialization --------------
+2024-12-24:18:26:46 [INFO    ] [abl.py:476] ----------- Data Initialization --------------
+INFO:root:----------- Train Initialization --------------
+2024-12-24:18:26:46 [INFO    ] [abl.py:526] ----------- Train Initialization --------------
+INFO:root:Epoch 1:
+2024-12-24:18:26:46 [INFO    ] [abl.py:528] Epoch 1:
+INFO:root:epoch: 0  lr: 0.0100
+2024-12-24:18:26:46 [INFO    ] [abl.py:97] epoch: 0  lr: 0.0100
+loading...
+loading...
+INFO:root:{'bd_test_loss_avg_over_batch': 0.5527335902055105,
+ 'clean_test_loss_avg_over_batch': 0.7047099091789939,
+ 'epoch': 0,
+ 'ra_test_loss_avg_over_batch': 0.8570144176483154,
+ 'test_acc': 0.5,
+ 'test_asr': 0.9985714285714286,
+ 'test_ra': 0.0014285714285714286,
+ 'train_acc': 0.5190694444444445,
+ 'train_acc_clean_only': 0.5002777777777778,
+ 'train_asr_bd_only': 0.6881944444444444,
+ 'train_epoch_loss_avg_over_batch': 1.1745038180749328,
+ 'train_ra_bd_only': 0.5017361111111112}
+2024-12-24:18:28:01 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.5527335902055105,
+ 'clean_test_loss_avg_over_batch': 0.7047099091789939,
+ 'epoch': 0,
+ 'ra_test_loss_avg_over_batch': 0.8570144176483154,
+ 'test_acc': 0.5,
+ 'test_asr': 0.9985714285714286,
+ 'test_ra': 0.0014285714285714286,
+ 'train_acc': 0.5190694444444445,
+ 'train_acc_clean_only': 0.5002777777777778,
+ 'train_asr_bd_only': 0.6881944444444444,
+ 'train_epoch_loss_avg_over_batch': 1.1745038180749328,
+ 'train_ra_bd_only': 0.5017361111111112}
+INFO:root:Epoch 2:
+2024-12-24:18:28:01 [INFO    ] [abl.py:528] Epoch 2:
+INFO:root:epoch: 1  lr: 0.0100
+2024-12-24:18:28:01 [INFO    ] [abl.py:97] epoch: 1  lr: 0.0100
+INFO:root:{'bd_test_loss_avg_over_batch': 0.6753984689712524,
+ 'clean_test_loss_avg_over_batch': 0.6932004527612166,
+ 'epoch': 1,
+ 'ra_test_loss_avg_over_batch': 0.7116167744000753,
+ 'test_acc': 0.5021428571428571,
+ 'test_asr': 0.9735714285714285,
+ 'test_ra': 0.02642857142857143,
+ 'train_acc': 0.5312847222222222,
+ 'train_acc_clean_only': 0.5004320987654322,
+ 'train_asr_bd_only': 0.8089583333333333,
+ 'train_epoch_loss_avg_over_batch': 0.8867705148871373,
+ 'train_ra_bd_only': 0.5038888888888889}
+2024-12-24:18:29:13 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.6753984689712524,
+ 'clean_test_loss_avg_over_batch': 0.6932004527612166,
+ 'epoch': 1,
+ 'ra_test_loss_avg_over_batch': 0.7116167744000753,
+ 'test_acc': 0.5021428571428571,
+ 'test_asr': 0.9735714285714285,
+ 'test_ra': 0.02642857142857143,
+ 'train_acc': 0.5312847222222222,
+ 'train_acc_clean_only': 0.5004320987654322,
+ 'train_asr_bd_only': 0.8089583333333333,
+ 'train_epoch_loss_avg_over_batch': 0.8867705148871373,
+ 'train_ra_bd_only': 0.5038888888888889}
+INFO:root:Epoch 3:
+2024-12-24:18:29:14 [INFO    ] [abl.py:528] Epoch 3:
+INFO:root:epoch: 2  lr: 0.0100
+2024-12-24:18:29:14 [INFO    ] [abl.py:97] epoch: 2  lr: 0.0100
+INFO:root:{'bd_test_loss_avg_over_batch': 0.6597111026446024,
+ 'clean_test_loss_avg_over_batch': 1.1165327538143506,
+ 'epoch': 2,
+ 'ra_test_loss_avg_over_batch': 1.6419793367385864,
+ 'test_acc': 0.5017857142857143,
+ 'test_asr': 0.9864285714285714,
+ 'test_ra': 0.013571428571428571,
+ 'train_acc': 0.5367083333333333,
+ 'train_acc_clean_only': 0.5014429012345679,
+ 'train_asr_bd_only': 0.8540972222222222,
+ 'train_epoch_loss_avg_over_batch': 0.817843821501859,
+ 'train_ra_bd_only': 0.49694444444444447}
+2024-12-24:18:30:26 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.6597111026446024,
+ 'clean_test_loss_avg_over_batch': 1.1165327538143506,
+ 'epoch': 2,
+ 'ra_test_loss_avg_over_batch': 1.6419793367385864,
+ 'test_acc': 0.5017857142857143,
+ 'test_asr': 0.9864285714285714,
+ 'test_ra': 0.013571428571428571,
+ 'train_acc': 0.5367083333333333,
+ 'train_acc_clean_only': 0.5014429012345679,
+ 'train_asr_bd_only': 0.8540972222222222,
+ 'train_epoch_loss_avg_over_batch': 0.817843821501859,
+ 'train_ra_bd_only': 0.49694444444444447}
+INFO:root:Epoch 4:
+2024-12-24:18:30:26 [INFO    ] [abl.py:528] Epoch 4:
+INFO:root:epoch: 3  lr: 0.0100
+2024-12-24:18:30:26 [INFO    ] [abl.py:97] epoch: 3  lr: 0.0100
+INFO:root:{'bd_test_loss_avg_over_batch': 0.5739899973074595,
+ 'clean_test_loss_avg_over_batch': 0.7014539295976813,
+ 'epoch': 3,
+ 'ra_test_loss_avg_over_batch': 0.8289650479952494,
+ 'test_acc': 0.49964285714285717,
+ 'test_asr': 0.9928571428571429,
+ 'test_ra': 0.007142857142857143,
+ 'train_acc': 0.5389305555555556,
+ 'train_acc_clean_only': 0.5009876543209877,
+ 'train_asr_bd_only': 0.8804166666666666,
+ 'train_epoch_loss_avg_over_batch': 0.8065229678662166,
+ 'train_ra_bd_only': 0.49895833333333334}
+2024-12-24:18:31:38 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.5739899973074595,
+ 'clean_test_loss_avg_over_batch': 0.7014539295976813,
+ 'epoch': 3,
+ 'ra_test_loss_avg_over_batch': 0.8289650479952494,
+ 'test_acc': 0.49964285714285717,
+ 'test_asr': 0.9928571428571429,
+ 'test_ra': 0.007142857142857143,
+ 'train_acc': 0.5389305555555556,
+ 'train_acc_clean_only': 0.5009876543209877,
+ 'train_asr_bd_only': 0.8804166666666666,
+ 'train_epoch_loss_avg_over_batch': 0.8065229678662166,
+ 'train_ra_bd_only': 0.49895833333333334}
+INFO:root:Epoch 5:
+2024-12-24:18:31:38 [INFO    ] [abl.py:528] Epoch 5:
+INFO:root:epoch: 4  lr: 0.0100
+2024-12-24:18:31:38 [INFO    ] [abl.py:97] epoch: 4  lr: 0.0100
+INFO:root:{'bd_test_loss_avg_over_batch': 0.5556452373663584,
+ 'clean_test_loss_avg_over_batch': 0.7039304267276417,
+ 'epoch': 4,
+ 'ra_test_loss_avg_over_batch': 0.8525794545809428,
+ 'test_acc': 0.5,
+ 'test_asr': 1.0,
+ 'test_ra': 0.0,
+ 'train_acc': 0.5394652777777778,
+ 'train_acc_clean_only': 0.4992515432098765,
+ 'train_asr_bd_only': 0.9013888888888889,
+ 'train_epoch_loss_avg_over_batch': 0.789411284572066,
+ 'train_ra_bd_only': 0.498125}
+2024-12-24:18:32:50 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.5556452373663584,
+ 'clean_test_loss_avg_over_batch': 0.7039304267276417,
+ 'epoch': 4,
+ 'ra_test_loss_avg_over_batch': 0.8525794545809428,
+ 'test_acc': 0.5,
+ 'test_asr': 1.0,
+ 'test_ra': 0.0,
+ 'train_acc': 0.5394652777777778,
+ 'train_acc_clean_only': 0.4992515432098765,
+ 'train_asr_bd_only': 0.9013888888888889,
+ 'train_epoch_loss_avg_over_batch': 0.789411284572066,
+ 'train_ra_bd_only': 0.498125}
+INFO:root:Epoch 6:
+2024-12-24:18:32:50 [INFO    ] [abl.py:528] Epoch 6:
+INFO:root:epoch: 5  lr: 0.0100
+2024-12-24:18:32:50 [INFO    ] [abl.py:97] epoch: 5  lr: 0.0100
+INFO:root:{'bd_test_loss_avg_over_batch': 0.5829593340555826,
+ 'clean_test_loss_avg_over_batch': 0.7000668753277172,
+ 'epoch': 5,
+ 'ra_test_loss_avg_over_batch': 0.8172326385974884,
+ 'test_acc': 0.5,
+ 'test_asr': 1.0,
+ 'test_ra': 0.0,
+ 'train_acc': 0.5410555555555555,
+ 'train_acc_clean_only': 0.4998148148148148,
+ 'train_asr_bd_only': 0.9122222222222223,
+ 'train_epoch_loss_avg_over_batch': 0.7843141657421051,
+ 'train_ra_bd_only': 0.4996527777777778}
+2024-12-24:18:34:03 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.5829593340555826,
+ 'clean_test_loss_avg_over_batch': 0.7000668753277172,
+ 'epoch': 5,
+ 'ra_test_loss_avg_over_batch': 0.8172326385974884,
+ 'test_acc': 0.5,
+ 'test_asr': 1.0,
+ 'test_ra': 0.0,
+ 'train_acc': 0.5410555555555555,
+ 'train_acc_clean_only': 0.4998148148148148,
+ 'train_asr_bd_only': 0.9122222222222223,
+ 'train_epoch_loss_avg_over_batch': 0.7843141657421051,
+ 'train_ra_bd_only': 0.4996527777777778}
+INFO:root:Epoch 7:
+2024-12-24:18:34:03 [INFO    ] [abl.py:528] Epoch 7:
+INFO:root:epoch: 6  lr: 0.0100
+2024-12-24:18:34:03 [INFO    ] [abl.py:97] epoch: 6  lr: 0.0100
+INFO:root:{'bd_test_loss_avg_over_batch': 0.5486980775992075,
+ 'clean_test_loss_avg_over_batch': 0.7073717171495612,
+ 'epoch': 6,
+ 'ra_test_loss_avg_over_batch': 0.8658606211344401,
+ 'test_acc': 0.5,
+ 'test_asr': 0.985,
+ 'test_ra': 0.015,
+ 'train_acc': 0.5413333333333333,
+ 'train_acc_clean_only': 0.5000617283950617,
+ 'train_asr_bd_only': 0.9127777777777778,
+ 'train_epoch_loss_avg_over_batch': 0.7675000270348883,
+ 'train_ra_bd_only': 0.5027083333333333}
+2024-12-24:18:35:15 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.5486980775992075,
+ 'clean_test_loss_avg_over_batch': 0.7073717171495612,
+ 'epoch': 6,
+ 'ra_test_loss_avg_over_batch': 0.8658606211344401,
+ 'test_acc': 0.5,
+ 'test_asr': 0.985,
+ 'test_ra': 0.015,
+ 'train_acc': 0.5413333333333333,
+ 'train_acc_clean_only': 0.5000617283950617,
+ 'train_asr_bd_only': 0.9127777777777778,
+ 'train_epoch_loss_avg_over_batch': 0.7675000270348883,
+ 'train_ra_bd_only': 0.5027083333333333}
+INFO:root:Epoch 8:
+2024-12-24:18:35:15 [INFO    ] [abl.py:528] Epoch 8:
+INFO:root:epoch: 7  lr: 0.0100
+2024-12-24:18:35:15 [INFO    ] [abl.py:97] epoch: 7  lr: 0.0100
