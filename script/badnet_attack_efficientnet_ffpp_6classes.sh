@@ -2,7 +2,7 @@
 #SBATCH -t 72:00:00
 #SBATCH -p qgpu
 #SBATCH --gres=gpu:tesla_a100:1
-#SBATCH --out="out/badnet_attack_efficientnet_ffpp_multiclass.out"
+#SBATCH --out="out/badnet_attack_efficientnet_ffpp_6classes.out"
 
 python ./resource/badnet/generate_white_square.py \
 --image_size 64 \
@@ -16,4 +16,4 @@ python ./attack/badnet.py \
     --model efficientnet_b3 \
     --dataset ffpp_multiclass \
     --patch_mask_path ./resource/badnet/trigger_image.png \
-    --save_folder_name badnet_attack_efficientnet_ffpp_multiclass
+    --save_folder_name badnet_attack_efficientnet_ffpp_6classes
