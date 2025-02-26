@@ -42,7 +42,7 @@ def get_num_classes(dataset_name: str) -> int:
         num_classes = 2
     elif dataset_name == 'mnist_2classes':
         num_classes = 2
-    elif == dataset_name == 'ffpp_binary':
+    elif dataset_name == 'ffpp_binary':
         num_classes = 2
     elif dataset.name == 'ffpp_multiclass' or dataset.name == 'ffpp_6classes':
         num_classes = 6
