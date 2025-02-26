@@ -44,7 +44,7 @@ def get_num_classes(dataset_name: str) -> int:
         num_classes = 2
     elif dataset_name == 'ffpp_binary':
         num_classes = 2
-    elif dataset.name == 'ffpp_multiclass' or dataset.name == 'ffpp_6classes':
+    elif dataset_name == 'ffpp_multiclass' or dataset_name == 'ffpp_6classes':
         num_classes = 6
     else:
         raise Exception("Invalid Dataset")

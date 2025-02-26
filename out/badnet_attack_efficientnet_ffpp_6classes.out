@@ -1,11 +1,10 @@
 /home/fmg/yuran/miniconda3/envs/backdoorbenchv2/lib/python3.8/site-packages/torchvision/io/image.py:13: UserWarning: Failed to load image Python extension: libc10_hip.so: cannot open shared object file: No such file or directory
   warn(f"Failed to load image Python extension: {e}")
 Traceback (most recent call last):
-  File "./attack/badnet.py", line 39, in <module>
-    from utils.save_load_attack import save_attack_result
-  File "/home/fmg2/yuran/BackdoorBench/./utils/save_load_attack.py", line 29, in <module>
-    from utils.aggregate_block.dataset_and_transform_generate import dataset_and_transform_generate
-  File "/home/fmg2/yuran/BackdoorBench/./utils/aggregate_block/dataset_and_transform_generate.py", line 45
-    elif == dataset_name == 'ffpp_binary':
-         ^
-SyntaxError: invalid syntax
+  File "./attack/badnet.py", line 273, in <module>
+    args = attack.process_args(args)
+  File "/home/fmg2/yuran/BackdoorBench/./attack/prototype.py", line 78, in process_args
+    args.num_classes = get_num_classes(args.dataset)
+  File "/home/fmg2/yuran/BackdoorBench/./utils/aggregate_block/dataset_and_transform_generate.py", line 47, in get_num_classes
+    elif dataset.name == 'ffpp_multiclass' or dataset.name == 'ffpp_6classes':
+NameError: name 'dataset' is not defined
