@@ -37,6 +37,7 @@ from calendar import c
 from unittest.mock import sentinel
 from torchvision import transforms
 
+
 import torch
 import logging
 import argparse
@@ -48,6 +49,8 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 import tqdm
+
+import matplotlib.pyplot as plt
 
 sys.path.append('../')
 sys.path.append(os.getcwd())
@@ -243,6 +246,39 @@ class NADModelTrainer(PureCleanModelTrainer):
                 test_acc_list, \
                 test_asr_list, \
                 test_ra_list
+
+    def save_attention_map(self, attention_map, filename="attention_map.png", save_dir="attention_maps"):
+        """
+        Save the attention map as an image.
+
+        Parameters:
+            attention_map (torch.Tensor): The attention map tensor (shape: [batch, 1, H, W])
+            filename (str): The filename for the saved image.
+            save_dir (str): The directory where images will be saved.
+        """
+        # Ensure the directory exists
+        os.makedirs(save_dir, exist_ok=True)
+
+        # Move tensor to CPU and convert to NumPy
+        attention_map = attention_map.detach().cpu().numpy()
+
+        # Process each sample in the batch
+        for i in range(attention_map.shape[0]):  # Loop through batch
+            am = attention_map[i, 0]  # Extract single-channel attention map (H, W)
+
+            # Normalize the attention map to [0, 1]
+            am = (am - am.min()) / (am.max() - am.min() + 1e-6)
+
+            # Save as a heatmap using matplotlib
+            plt.imshow(am, cmap="jet")  # Use a heatmap colormap
+            plt.axis("off")  # Remove axes
+
+            # Save the figure
+            save_path = os.path.join(save_dir, f"{filename}_sample{i}.png")
+            plt.savefig(save_path, bbox_inches="tight", pad_inches=0)
+            plt.close()
+
+            print(f"Saved attention map: {save_path}")
     
     def train_epoch(self,args,trainloader,nets,optimizer,scheduler,criterions,epoch):
         '''train the student model with regard to the teacher model and some clean train data for each step
@@ -454,6 +490,13 @@ class NADModelTrainer(PureCleanModelTrainer):
                 at3_loss = criterionAT(activation3_s, activation3_t.detach()) * args.beta3
 
                 at_loss = at3_loss + cls_loss
+                
+                # calculate attention map using the critierionAT and save as image
+                attention_map_s = criterionAT.attention_map(activation3_s)
+                self.save_attention_map(attention_map_s, filename="student")
+                attention_map_t = criterionAT.attention_map(activation3_t)
+                self.save_attention_map(attention_map_t, filename="teacher")
+                
 
             if args.model == 'convnext_tiny':
                 outputs_s = snet(inputs)
