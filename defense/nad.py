@@ -266,14 +266,19 @@ class NADModelTrainer(PureCleanModelTrainer):
         for i in range(attention_map.shape[0]):  # Loop through batch
             am = attention_map[i, 0]  # Extract single-channel attention map (H, W)
 
-            # Normalize the attention map to [0, 1]
-            am = (am - am.min()) / (am.max() - am.min() + 1e-6)
-
             # Save as a heatmap using matplotlib
-            plt.imshow(am, cmap="jet")  # Use a heatmap colormap
+            plt.imshow(am, cmap="gray")  # Use a heatmap colormap
             plt.axis("off")  # Remove axes
 
             # Save the figure
+            save_path = os.path.join(save_dir, f"{filename}_sample{i}_raw.png")
+            plt.savefig(save_path, bbox_inches="tight", pad_inches=0)
+            plt.close()
+
+            # Normalize the attention map to [0, 1]
+            am = (am - am.min()) / (am.max() - am.min() + 1e-6)
+
+            # Save the normalized figure
             save_path = os.path.join(save_dir, f"{filename}_sample{i}.png")
             plt.savefig(save_path, bbox_inches="tight", pad_inches=0)
             plt.close()
@@ -320,6 +325,8 @@ class NADModelTrainer(PureCleanModelTrainer):
         batch_original_index_list = []
         batch_poison_indicator_list = []
         batch_original_targets_list = []
+
+        total_iterations = len(trainloader)
         for idx, (inputs, labels, original_index, poison_indicator, original_targets) in enumerate(trainloader):
             inputs, labels = inputs.to(args.device, non_blocking=self.non_blocking), labels.to(args.device, non_blocking=self.non_blocking)
 
@@ -491,11 +498,15 @@ class NADModelTrainer(PureCleanModelTrainer):
 
                 at_loss = at3_loss + cls_loss
                 
-                # calculate attention map using the critierionAT and save as image
-                attention_map_s = criterionAT.attention_map(activation3_s)
-                self.save_attention_map(attention_map_s, filename="student")
-                attention_map_t = criterionAT.attention_map(activation3_t)
-                self.save_attention_map(attention_map_t, filename="teacher")
+                # output attention maps for the last epoch and last iteration
+                if epoch == 9 and idx == total_iterations - 1:
+                    # calculate attention map using the critierionAT and save as image
+                    print(f"Activation3_s min: {activation3_s.min()}, max: {activation3_s.max()}")
+                    attention_map_s = criterionAT.attention_map(activation3_s)
+                    self.save_attention_map(attention_map_s, filename="student")
+                    print(f"Activation3_t min: {activation3_t.min()}, max: {activation3_t.max()}")
+                    attention_map_t = criterionAT.attention_map(activation3_t)
+                    self.save_attention_map(attention_map_t, filename="teacher")
                 
 
             if args.model == 'convnext_tiny':
