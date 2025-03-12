@@ -266,17 +266,23 @@ class NADModelTrainer(PureCleanModelTrainer):
         for i in range(attention_map.shape[0]):  # Loop through batch
             am = attention_map[i, 0]  # Extract single-channel attention map (H, W)
 
-            # Save as a heatmap using matplotlib
-            plt.imshow(am, cmap="gray")  # Use a heatmap colormap
-            plt.axis("off")  # Remove axes
+            # Plot the raw attention map
+            plt.imshow(am, cmap="gray")
+            plt.axis("off")
 
             # Save the figure
             save_path = os.path.join(save_dir, f"{filename}_sample{i}_raw.png")
             plt.savefig(save_path, bbox_inches="tight", pad_inches=0)
             plt.close()
 
+            print(f"Saved normalized attention map: {save_path}")
+
             # Normalize the attention map to [0, 1]
             am = (am - am.min()) / (am.max() - am.min() + 1e-6)
+
+            # Plot the normalized attention map
+            plt.imshow(am, cmap="gray")
+            plt.axis("off")
 
             # Save the normalized figure
             save_path = os.path.join(save_dir, f"{filename}_sample{i}.png")
