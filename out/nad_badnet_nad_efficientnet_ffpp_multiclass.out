@@ -52,7 +52,7 @@ INFO:root:{'amp': True,
  'wd': 0.0005,
  'weight_decay': 0.0001,
  'yaml_path': './config/defense/nad/cifar10.yaml'}
-2025-03-12:08:56:45 [INFO    ] [nad.py:776] {'amp': True,
+2025-03-13:11:37:01 [INFO    ] [nad.py:782] {'amp': True,
  'batch_size': 256,
  'beta1': 500,
  'beta2': 1000,
@@ -101,24 +101,23 @@ INFO:root:{'amp': True,
  'weight_decay': 0.0001,
  'yaml_path': './config/defense/nad/cifar10.yaml'}
 INFO:root:{'git hash': None,
- 'last 3 log': 'commit dbd3d2edf6b3519b221b85734de27920cfa18130\n'
+ 'last 3 log': 'commit 749384b800e4cd96cb00c9a49d0ae040391bca25\n'
                'Author: QiuMatthew <uzenkyu@gmail.com>\n'
-               'Date:   Wed Mar 12 01:08:36 2025 +0900\n'
+               'Date:   Wed Mar 12 16:04:36 2025 +0900\n'
                '\n'
-               '    use grayscale and also save the raw attention without '
-               'normalization\n'
+               '    rename attention map folder name\n'
                '\n'
-               'commit 60a9d5a621807a8ee0c9fbcbb9da98291dd333bd\n'
-               'Author: QiuMatthew <q_masio@outlook.com>\n'
-               'Date:   Wed Mar 12 01:04:46 2025 +0900\n'
+               'commit 7f8b441b5cb212821397b79d878372be265414da\n'
+               'Author: QiuMatthew <uzenkyu@gmail.com>\n'
+               'Date:   Wed Mar 12 16:04:10 2025 +0900\n'
                '\n'
-               '    student sampels\n'
+               '    rename attention map folder name\n'
                '\n'
-               'commit 17eb2a9850ce9128b25efcab549672bb7e091317\n'
-               'Author: QiuMatthew <q_masio@outlook.com>\n'
-               'Date:   Wed Mar 12 00:56:11 2025 +0900\n'
+               'commit 79d6f90b6402d67031a0a69d5dee11197aed62e5\n'
+               'Author: QiuMatthew <uzenkyu@gmail.com>\n'
+               'Date:   Wed Mar 12 16:02:58 2025 +0900\n'
                '\n'
-               '    teacher attentions',
+               '    plot again after normalization',
  'status': 'On branch nad\n'
            "Your branch is up to date with 'origin/nad'.\n"
            '\n'
@@ -129,29 +128,28 @@ INFO:root:{'git hash': None,
            '\tmodified:   out/nad_badnet_nad_efficientnet_ffpp_multiclass.out\n'
            '\n'
            '\n'
-           "It took 18.61 seconds to enumerate untracked files. 'status -uno'\n"
+           "It took 33.18 seconds to enumerate untracked files. 'status -uno'\n"
            'may speed it up, but you have to be careful not to forget to add\n'
            "new files yourself (see 'git help status').\n"
            'no changes added to commit (use "git add" and/or "git commit -a")'}
-2025-03-12:08:57:25 [INFO    ] [nad.py:779] {'git hash': None,
- 'last 3 log': 'commit dbd3d2edf6b3519b221b85734de27920cfa18130\n'
+2025-03-13:11:38:42 [INFO    ] [nad.py:785] {'git hash': None,
+ 'last 3 log': 'commit 749384b800e4cd96cb00c9a49d0ae040391bca25\n'
                'Author: QiuMatthew <uzenkyu@gmail.com>\n'
-               'Date:   Wed Mar 12 01:08:36 2025 +0900\n'
+               'Date:   Wed Mar 12 16:04:36 2025 +0900\n'
                '\n'
-               '    use grayscale and also save the raw attention without '
-               'normalization\n'
+               '    rename attention map folder name\n'
                '\n'
-               'commit 60a9d5a621807a8ee0c9fbcbb9da98291dd333bd\n'
-               'Author: QiuMatthew <q_masio@outlook.com>\n'
-               'Date:   Wed Mar 12 01:04:46 2025 +0900\n'
+               'commit 7f8b441b5cb212821397b79d878372be265414da\n'
+               'Author: QiuMatthew <uzenkyu@gmail.com>\n'
+               'Date:   Wed Mar 12 16:04:10 2025 +0900\n'
                '\n'
-               '    student sampels\n'
+               '    rename attention map folder name\n'
                '\n'
-               'commit 17eb2a9850ce9128b25efcab549672bb7e091317\n'
-               'Author: QiuMatthew <q_masio@outlook.com>\n'
-               'Date:   Wed Mar 12 00:56:11 2025 +0900\n'
+               'commit 79d6f90b6402d67031a0a69d5dee11197aed62e5\n'
+               'Author: QiuMatthew <uzenkyu@gmail.com>\n'
+               'Date:   Wed Mar 12 16:02:58 2025 +0900\n'
                '\n'
-               '    teacher attentions',
+               '    plot again after normalization',
  'status': 'On branch nad\n'
            "Your branch is up to date with 'origin/nad'.\n"
            '\n'
@@ -162,21 +160,21 @@ INFO:root:{'git hash': None,
            '\tmodified:   out/nad_badnet_nad_efficientnet_ffpp_multiclass.out\n'
            '\n'
            '\n'
-           "It took 18.61 seconds to enumerate untracked files. 'status -uno'\n"
+           "It took 33.18 seconds to enumerate untracked files. 'status -uno'\n"
            'may speed it up, but you have to be careful not to forget to add\n'
            "new files yourself (see 'git help status').\n"
            'no changes added to commit (use "git add" and/or "git commit -a")'}
 INFO:root:----------- Network Initialization --------------
-2025-03-12:08:57:25 [INFO    ] [nad.py:799] ----------- Network Initialization --------------
+2025-03-13:11:38:43 [INFO    ] [nad.py:805] ----------- Network Initialization --------------
 INFO:root:finished teacher student init...
-2025-03-12:08:59:38 [INFO    ] [nad.py:811] finished teacher student init...
+2025-03-13:11:42:19 [INFO    ] [nad.py:817] finished teacher student init...
 INFO:root:finished student student init...
-2025-03-12:08:59:38 [INFO    ] [nad.py:823] finished student student init...
+2025-03-13:11:42:20 [INFO    ] [nad.py:829] finished student student init...
 INFO:root:save file format is .png
-2025-03-12:08:59:38 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2025-03-13:11:42:20 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
 INFO:root:Do NOT set the settings/parameters attr manually after you start training!
 You may break the relationship between them.
-2025-03-12:08:59:38 [INFO    ] [trainer_cls.py:972] Do NOT set the settings/parameters attr manually after you start training!
+2025-03-13:11:42:20 [INFO    ] [trainer_cls.py:972] Do NOT set the settings/parameters attr manually after you start training!
 You may break the relationship between them.
 loading...
 loading...
@@ -196,7 +194,7 @@ INFO:root:('epoch_now:0, '
  "'_get_lr_called_within_step': False, '_last_lr': "
  "[0.01]},self.scaler:{'scale': 65536.0, 'growth_factor': 2.0, "
  "'backoff_factor': 0.5, 'growth_interval': 2000, '_growth_tracker': 0})")
-2025-03-12:08:59:40 [INFO    ] [trainer_cls.py:1030] ('epoch_now:0, '
+2025-03-13:11:42:23 [INFO    ] [trainer_cls.py:1030] ('epoch_now:0, '
  'batch_now:0self.amp:True,self.criterion:CrossEntropyLoss(),self.optimizer:SGD '
  '(\n'
  'Parameter Group 0\n'
@@ -212,8 +210,8 @@ INFO:root:('epoch_now:0, '
  "'_get_lr_called_within_step': False, '_last_lr': "
  "[0.01]},self.scaler:{'scale': 65536.0, 'growth_factor': 2.0, "
  "'backoff_factor': 0.5, 'growth_interval': 2000, '_growth_tracker': 0})")
-INFO:root:one epoch training part done, use time = 273.8825595378876 s
-2025-03-12:09:04:13 [INFO    ] [trainer_cls.py:1489] one epoch training part done, use time = 273.8825595378876 s
+INFO:root:one epoch training part done, use time = 681.3446712493896 s
+2025-03-13:11:53:44 [INFO    ] [trainer_cls.py:1489] one epoch training part done, use time = 681.3446712493896 s
 INFO:root:{'batch': 85,
  'bd_test_loss_avg_over_batch': 4.004673208509173,
  'clean_test_loss_avg_over_batch': 1.4218136325027004,
@@ -223,7 +221,7 @@ INFO:root:{'batch': 85,
  'test_ra': 0.621,
  'train_acc': 0.8187962962962962,
  'train_epoch_loss_avg_over_batch': 0.5165045296444613}
-2025-03-12:09:06:38 [INFO    ] [trainer_cls.py:65] {'batch': 85,
+2025-03-13:11:58:55 [INFO    ] [trainer_cls.py:65] {'batch': 85,
  'bd_test_loss_avg_over_batch': 4.004673208509173,
  'clean_test_loss_avg_over_batch': 1.4218136325027004,
  'epoch': 0,
@@ -232,8 +230,8 @@ INFO:root:{'batch': 85,
  'test_ra': 0.621,
  'train_acc': 0.8187962962962962,
  'train_epoch_loss_avg_over_batch': 0.5165045296444613}
-INFO:root:one epoch training part done, use time = 99.72200274467468 s
-2025-03-12:09:08:20 [INFO    ] [trainer_cls.py:1489] one epoch training part done, use time = 99.72200274467468 s
+INFO:root:one epoch training part done, use time = 209.6632149219513 s
+2025-03-13:12:02:28 [INFO    ] [trainer_cls.py:1489] one epoch training part done, use time = 209.6632149219513 s
 INFO:root:{'batch': 85,
  'bd_test_loss_avg_over_batch': 4.893561226981027,
  'clean_test_loss_avg_over_batch': 1.7807242545214566,
@@ -243,7 +241,7 @@ INFO:root:{'batch': 85,
  'test_ra': 0.6278571428571429,
  'train_acc': 0.8585648148148148,
  'train_epoch_loss_avg_over_batch': 0.37895960281876956}
-2025-03-12:09:09:29 [INFO    ] [trainer_cls.py:65] {'batch': 85,
+2025-03-13:12:02:32 [INFO    ] [trainer_cls.py:65] {'batch': 85,
  'bd_test_loss_avg_over_batch': 4.893561226981027,
  'clean_test_loss_avg_over_batch': 1.7807242545214566,
  'epoch': 1,
@@ -252,8 +250,8 @@ INFO:root:{'batch': 85,
  'test_ra': 0.6278571428571429,
  'train_acc': 0.8585648148148148,
  'train_epoch_loss_avg_over_batch': 0.37895960281876956}
-INFO:root:one epoch training part done, use time = 54.84612226486206 s
-2025-03-12:09:10:24 [INFO    ] [trainer_cls.py:1489] one epoch training part done, use time = 54.84612226486206 s
+INFO:root:one epoch training part done, use time = 102.62651920318604 s
+2025-03-13:12:04:15 [INFO    ] [trainer_cls.py:1489] one epoch training part done, use time = 102.62651920318604 s
 INFO:root:{'batch': 85,
  'bd_test_loss_avg_over_batch': 4.878158177648272,
  'clean_test_loss_avg_over_batch': 1.4021746209173491,
@@ -263,7 +261,7 @@ INFO:root:{'batch': 85,
  'test_ra': 0.6901428571428572,
  'train_acc': 0.8728703703703704,
  'train_epoch_loss_avg_over_batch': 0.3364111016778385}
-2025-03-12:09:11:41 [INFO    ] [trainer_cls.py:65] {'batch': 85,
+2025-03-13:12:06:14 [INFO    ] [trainer_cls.py:65] {'batch': 85,
  'bd_test_loss_avg_over_batch': 4.878158177648272,
  'clean_test_loss_avg_over_batch': 1.4021746209173491,
  'epoch': 2,
@@ -272,8 +270,8 @@ INFO:root:{'batch': 85,
  'test_ra': 0.6901428571428572,
  'train_acc': 0.8728703703703704,
  'train_epoch_loss_avg_over_batch': 0.3364111016778385}
-INFO:root:one epoch training part done, use time = 125.37252378463745 s
-2025-03-12:09:13:47 [INFO    ] [trainer_cls.py:1489] one epoch training part done, use time = 125.37252378463745 s
+INFO:root:one epoch training part done, use time = 190.97213554382324 s
+2025-03-13:12:09:25 [INFO    ] [trainer_cls.py:1489] one epoch training part done, use time = 190.97213554382324 s
 INFO:root:{'batch': 85,
  'bd_test_loss_avg_over_batch': 5.217245442526681,
  'clean_test_loss_avg_over_batch': 1.4886526519601995,
@@ -283,7 +281,7 @@ INFO:root:{'batch': 85,
  'test_ra': 0.6877142857142857,
  'train_acc': 0.8880555555555556,
  'train_epoch_loss_avg_over_batch': 0.29654866527108587}
-2025-03-12:09:15:03 [INFO    ] [trainer_cls.py:65] {'batch': 85,
+2025-03-13:12:11:36 [INFO    ] [trainer_cls.py:65] {'batch': 85,
  'bd_test_loss_avg_over_batch': 5.217245442526681,
  'clean_test_loss_avg_over_batch': 1.4886526519601995,
  'epoch': 3,
@@ -292,8 +290,8 @@ INFO:root:{'batch': 85,
  'test_ra': 0.6877142857142857,
  'train_acc': 0.8880555555555556,
  'train_epoch_loss_avg_over_batch': 0.29654866527108587}
-INFO:root:one epoch training part done, use time = 170.72278571128845 s
-2025-03-12:09:17:55 [INFO    ] [trainer_cls.py:1489] one epoch training part done, use time = 170.72278571128845 s
+INFO:root:one epoch training part done, use time = 206.11923694610596 s
+2025-03-13:12:15:04 [INFO    ] [trainer_cls.py:1489] one epoch training part done, use time = 206.11923694610596 s
 INFO:root:{'batch': 85,
  'bd_test_loss_avg_over_batch': 4.37795044694628,
  'clean_test_loss_avg_over_batch': 1.514100472132365,
@@ -303,7 +301,7 @@ INFO:root:{'batch': 85,
  'test_ra': 0.6285714285714286,
  'train_acc': 0.895462962962963,
  'train_epoch_loss_avg_over_batch': 0.2679569249643999}
-2025-03-12:09:19:37 [INFO    ] [trainer_cls.py:65] {'batch': 85,
+2025-03-13:12:17:05 [INFO    ] [trainer_cls.py:65] {'batch': 85,
  'bd_test_loss_avg_over_batch': 4.37795044694628,
  'clean_test_loss_avg_over_batch': 1.514100472132365,
  'epoch': 4,
@@ -312,8 +310,8 @@ INFO:root:{'batch': 85,
  'test_ra': 0.6285714285714286,
  'train_acc': 0.895462962962963,
  'train_epoch_loss_avg_over_batch': 0.2679569249643999}
-INFO:root:one epoch training part done, use time = 101.1620306968689 s
-2025-03-12:09:21:19 [INFO    ] [trainer_cls.py:1489] one epoch training part done, use time = 101.1620306968689 s
+INFO:root:one epoch training part done, use time = 183.0746648311615 s
+2025-03-13:12:20:09 [INFO    ] [trainer_cls.py:1489] one epoch training part done, use time = 183.0746648311615 s
 INFO:root:{'batch': 85,
  'bd_test_loss_avg_over_batch': 4.829375420297895,
  'clean_test_loss_avg_over_batch': 1.320073532335686,
@@ -323,7 +321,7 @@ INFO:root:{'batch': 85,
  'test_ra': 0.6864285714285714,
  'train_acc': 0.8922222222222222,
  'train_epoch_loss_avg_over_batch': 0.2809726892148747}
-2025-03-12:09:21:45 [INFO    ] [trainer_cls.py:65] {'batch': 85,
+2025-03-13:12:23:17 [INFO    ] [trainer_cls.py:65] {'batch': 85,
  'bd_test_loss_avg_over_batch': 4.829375420297895,
  'clean_test_loss_avg_over_batch': 1.320073532335686,
  'epoch': 5,
@@ -332,8 +330,8 @@ INFO:root:{'batch': 85,
  'test_ra': 0.6864285714285714,
  'train_acc': 0.8922222222222222,
  'train_epoch_loss_avg_over_batch': 0.2809726892148747}
-INFO:root:one epoch training part done, use time = 104.8013072013855 s
-2025-03-12:09:23:31 [INFO    ] [trainer_cls.py:1489] one epoch training part done, use time = 104.8013072013855 s
+INFO:root:one epoch training part done, use time = 161.02006268501282 s
+2025-03-13:12:25:59 [INFO    ] [trainer_cls.py:1489] one epoch training part done, use time = 161.02006268501282 s
 INFO:root:{'batch': 85,
  'bd_test_loss_avg_over_batch': 4.985055310385568,
  'clean_test_loss_avg_over_batch': 1.414970206491875,
@@ -343,7 +341,7 @@ INFO:root:{'batch': 85,
  'test_ra': 0.6604285714285715,
  'train_acc': 0.90625,
  'train_epoch_loss_avg_over_batch': 0.24275571826626272}
-2025-03-12:09:25:07 [INFO    ] [trainer_cls.py:65] {'batch': 85,
+2025-03-13:12:28:59 [INFO    ] [trainer_cls.py:65] {'batch': 85,
  'bd_test_loss_avg_over_batch': 4.985055310385568,
  'clean_test_loss_avg_over_batch': 1.414970206491875,
  'epoch': 6,
@@ -352,8 +350,8 @@ INFO:root:{'batch': 85,
  'test_ra': 0.6604285714285715,
  'train_acc': 0.90625,
  'train_epoch_loss_avg_over_batch': 0.24275571826626272}
-INFO:root:one epoch training part done, use time = 115.57100367546082 s
-2025-03-12:09:27:03 [INFO    ] [trainer_cls.py:1489] one epoch training part done, use time = 115.57100367546082 s
+INFO:root:one epoch training part done, use time = 194.9104721546173 s
+2025-03-13:12:32:14 [INFO    ] [trainer_cls.py:1489] one epoch training part done, use time = 194.9104721546173 s
 INFO:root:{'batch': 85,
  'bd_test_loss_avg_over_batch': 4.5193652766091486,
  'clean_test_loss_avg_over_batch': 1.4325800628373118,
@@ -363,7 +361,7 @@ INFO:root:{'batch': 85,
  'test_ra': 0.6564285714285715,
  'train_acc': 0.9035185185185185,
  'train_epoch_loss_avg_over_batch': 0.25362167744075553}
-2025-03-12:09:28:19 [INFO    ] [trainer_cls.py:65] {'batch': 85,
+2025-03-13:12:34:24 [INFO    ] [trainer_cls.py:65] {'batch': 85,
  'bd_test_loss_avg_over_batch': 4.5193652766091486,
  'clean_test_loss_avg_over_batch': 1.4325800628373118,
  'epoch': 7,
@@ -372,8 +370,8 @@ INFO:root:{'batch': 85,
  'test_ra': 0.6564285714285715,
  'train_acc': 0.9035185185185185,
  'train_epoch_loss_avg_over_batch': 0.25362167744075553}
-INFO:root:one epoch training part done, use time = 140.38357496261597 s
-2025-03-12:09:30:40 [INFO    ] [trainer_cls.py:1489] one epoch training part done, use time = 140.38357496261597 s
+INFO:root:one epoch training part done, use time = 271.1148843765259 s
+2025-03-13:12:38:56 [INFO    ] [trainer_cls.py:1489] one epoch training part done, use time = 271.1148843765259 s
 INFO:root:{'batch': 85,
  'bd_test_loss_avg_over_batch': 4.581408977508545,
  'clean_test_loss_avg_over_batch': 1.501699761910872,
@@ -383,7 +381,7 @@ INFO:root:{'batch': 85,
  'test_ra': 0.6425714285714286,
  'train_acc': 0.9081944444444444,
  'train_epoch_loss_avg_over_batch': 0.2366761028766632}
-2025-03-12:09:31:53 [INFO    ] [trainer_cls.py:65] {'batch': 85,
+2025-03-13:12:39:05 [INFO    ] [trainer_cls.py:65] {'batch': 85,
  'bd_test_loss_avg_over_batch': 4.581408977508545,
  'clean_test_loss_avg_over_batch': 1.501699761910872,
  'epoch': 8,
@@ -392,8 +390,8 @@ INFO:root:{'batch': 85,
  'test_ra': 0.6425714285714286,
  'train_acc': 0.9081944444444444,
  'train_epoch_loss_avg_over_batch': 0.2366761028766632}
-INFO:root:one epoch training part done, use time = 95.10360479354858 s
-2025-03-12:09:33:29 [INFO    ] [trainer_cls.py:1489] one epoch training part done, use time = 95.10360479354858 s
+INFO:root:one epoch training part done, use time = 160.9026620388031 s
+2025-03-13:12:41:46 [INFO    ] [trainer_cls.py:1489] one epoch training part done, use time = 160.9026620388031 s
 INFO:root:{'batch': 85,
  'bd_test_loss_avg_over_batch': 4.360264914376395,
  'clean_test_loss_avg_over_batch': 1.5719782366897121,
@@ -403,7 +401,7 @@ INFO:root:{'batch': 85,
  'test_ra': 0.6218571428571429,
  'train_acc': 0.9146296296296297,
  'train_epoch_loss_avg_over_batch': 0.22208057887413923}
-2025-03-12:09:35:26 [INFO    ] [trainer_cls.py:65] {'batch': 85,
+2025-03-13:12:44:00 [INFO    ] [trainer_cls.py:65] {'batch': 85,
  'bd_test_loss_avg_over_batch': 4.360264914376395,
  'clean_test_loss_avg_over_batch': 1.5719782366897121,
  'epoch': 9,
@@ -413,10 +411,10 @@ INFO:root:{'batch': 85,
  'train_acc': 0.9146296296296297,
  'train_epoch_loss_avg_over_batch': 0.22208057887413923}
 INFO:root:----------- Train Initialization --------------
-2025-03-12:09:35:27 [INFO    ] [nad.py:892] ----------- Train Initialization --------------
+2025-03-13:12:44:02 [INFO    ] [nad.py:898] ----------- Train Initialization --------------
 INFO:root:Do NOT set the settings/parameters attr manually after you start training!
 You may break the relationship between them.
-2025-03-12:09:35:27 [INFO    ] [trainer_cls.py:972] Do NOT set the settings/parameters attr manually after you start training!
+2025-03-13:12:44:02 [INFO    ] [trainer_cls.py:972] Do NOT set the settings/parameters attr manually after you start training!
 You may break the relationship between them.
 INFO:root:('epoch_now:0, '
  'batch_now:0self.amp:True,self.criterion:CrossEntropyLoss(),self.optimizer:SGD '
@@ -434,7 +432,7 @@ INFO:root:('epoch_now:0, '
  "'_get_lr_called_within_step': False, '_last_lr': "
  "[0.01]},self.scaler:{'scale': 65536.0, 'growth_factor': 2.0, "
  "'backoff_factor': 0.5, 'growth_interval': 2000, '_growth_tracker': 0})")
-2025-03-12:09:35:28 [INFO    ] [trainer_cls.py:1030] ('epoch_now:0, '
+2025-03-13:12:44:02 [INFO    ] [trainer_cls.py:1030] ('epoch_now:0, '
  'batch_now:0self.amp:True,self.criterion:CrossEntropyLoss(),self.optimizer:SGD '
  '(\n'
  'Parameter Group 0\n'
@@ -451,13 +449,13 @@ INFO:root:('epoch_now:0, '
  "[0.01]},self.scaler:{'scale': 65536.0, 'growth_factor': 2.0, "
  "'backoff_factor': 0.5, 'growth_interval': 2000, '_growth_tracker': 0})")
 INFO:root:epoch: 0  lr: 0.0100
-2025-03-12:09:35:28 [INFO    ] [nad.py:89] epoch: 0  lr: 0.0100
+2025-03-13:12:44:02 [INFO    ] [nad.py:89] epoch: 0  lr: 0.0100
 WARNING:root:zero len array in func all_acc(), return None!
-2025-03-12:09:37:24 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
+2025-03-13:12:47:27 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
 WARNING:root:zero len array in func all_acc(), return None!
-2025-03-12:09:37:24 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
+2025-03-13:12:47:27 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
 INFO:root:Epoch0: Loss:45.337091006338596 Training Acc:81.24537037037037(17549/21600)
-2025-03-12:09:37:25 [INFO    ] [nad.py:600] Epoch0: Loss:45.337091006338596 Training Acc:81.24537037037037(17549/21600)
+2025-03-13:12:47:27 [INFO    ] [nad.py:606] Epoch0: Loss:45.337091006338596 Training Acc:81.24537037037037(17549/21600)
 INFO:root:{'batch': 0,
  'bd_test_loss_avg_over_batch': 3.6995996832847595,
  'clean_test_loss_avg_over_batch': 1.1757474559726138,
@@ -467,7 +465,7 @@ INFO:root:{'batch': 0,
  'test_ra': 0.6762857142857143,
  'train_acc': 0.8124537037037037,
  'train_epoch_loss_avg_over_batch': 0.5333775412510423}
-2025-03-12:09:38:54 [INFO    ] [trainer_cls.py:65] {'batch': 0,
+2025-03-13:12:49:41 [INFO    ] [trainer_cls.py:65] {'batch': 0,
  'bd_test_loss_avg_over_batch': 3.6995996832847595,
  'clean_test_loss_avg_over_batch': 1.1757474559726138,
  'epoch': 0,
@@ -477,13 +475,13 @@ INFO:root:{'batch': 0,
  'train_acc': 0.8124537037037037,
  'train_epoch_loss_avg_over_batch': 0.5333775412510423}
 INFO:root:epoch: 1  lr: 0.0100
-2025-03-12:09:38:55 [INFO    ] [nad.py:89] epoch: 1  lr: 0.0100
+2025-03-13:12:49:42 [INFO    ] [nad.py:89] epoch: 1  lr: 0.0100
 WARNING:root:zero len array in func all_acc(), return None!
-2025-03-12:09:40:46 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
+2025-03-13:12:53:15 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
 WARNING:root:zero len array in func all_acc(), return None!
-2025-03-12:09:40:46 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
+2025-03-13:12:53:15 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
 INFO:root:Epoch1: Loss:32.31422737240791 Training Acc:85.82870370370371(18539/21600)
-2025-03-12:09:40:46 [INFO    ] [nad.py:600] Epoch1: Loss:32.31422737240791 Training Acc:85.82870370370371(18539/21600)
+2025-03-13:12:53:15 [INFO    ] [nad.py:606] Epoch1: Loss:32.31422737240791 Training Acc:85.82870370370371(18539/21600)
 INFO:root:{'batch': 0,
  'bd_test_loss_avg_over_batch': 3.6878053971699307,
  'clean_test_loss_avg_over_batch': 1.250310348741936,
@@ -493,7 +491,7 @@ INFO:root:{'batch': 0,
  'test_ra': 0.6354285714285715,
  'train_acc': 0.858287037037037,
  'train_epoch_loss_avg_over_batch': 0.3801673808518578}
-2025-03-12:09:42:23 [INFO    ] [trainer_cls.py:65] {'batch': 0,
+2025-03-13:12:58:48 [INFO    ] [trainer_cls.py:65] {'batch': 0,
  'bd_test_loss_avg_over_batch': 3.6878053971699307,
  'clean_test_loss_avg_over_batch': 1.250310348741936,
  'epoch': 0,
@@ -503,13 +501,13 @@ INFO:root:{'batch': 0,
  'train_acc': 0.858287037037037,
  'train_epoch_loss_avg_over_batch': 0.3801673808518578}
 INFO:root:epoch: 2  lr: 0.0100
-2025-03-12:09:42:23 [INFO    ] [nad.py:89] epoch: 2  lr: 0.0100
+2025-03-13:12:59:02 [INFO    ] [nad.py:89] epoch: 2  lr: 0.0100
 WARNING:root:zero len array in func all_acc(), return None!
-2025-03-12:09:44:25 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
+2025-03-13:13:02:06 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
 WARNING:root:zero len array in func all_acc(), return None!
-2025-03-12:09:44:25 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
+2025-03-13:13:02:06 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
 INFO:root:Epoch2: Loss:29.04354514181614 Training Acc:87.125(18819/21600)
-2025-03-12:09:44:25 [INFO    ] [nad.py:600] Epoch2: Loss:29.04354514181614 Training Acc:87.125(18819/21600)
+2025-03-13:13:02:06 [INFO    ] [nad.py:606] Epoch2: Loss:29.04354514181614 Training Acc:87.125(18819/21600)
 INFO:root:{'batch': 0,
  'bd_test_loss_avg_over_batch': 4.882937908172607,
  'clean_test_loss_avg_over_batch': 1.3582838015122847,
@@ -519,7 +517,7 @@ INFO:root:{'batch': 0,
  'test_ra': 0.688,
  'train_acc': 0.87125,
  'train_epoch_loss_avg_over_batch': 0.3416887663743075}
-2025-03-12:09:45:47 [INFO    ] [trainer_cls.py:65] {'batch': 0,
+2025-03-13:13:04:06 [INFO    ] [trainer_cls.py:65] {'batch': 0,
  'bd_test_loss_avg_over_batch': 4.882937908172607,
  'clean_test_loss_avg_over_batch': 1.3582838015122847,
  'epoch': 0,
@@ -529,13 +527,13 @@ INFO:root:{'batch': 0,
  'train_acc': 0.87125,
  'train_epoch_loss_avg_over_batch': 0.3416887663743075}
 INFO:root:epoch: 3  lr: 0.0100
-2025-03-12:09:45:48 [INFO    ] [nad.py:89] epoch: 3  lr: 0.0100
+2025-03-13:13:04:07 [INFO    ] [nad.py:89] epoch: 3  lr: 0.0100
 WARNING:root:zero len array in func all_acc(), return None!
-2025-03-12:09:48:33 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
+2025-03-13:13:07:55 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
 WARNING:root:zero len array in func all_acc(), return None!
-2025-03-12:09:48:33 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
+2025-03-13:13:07:55 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
 INFO:root:Epoch3: Loss:27.244581952691078 Training Acc:87.69444444444444(18942/21600)
-2025-03-12:09:48:33 [INFO    ] [nad.py:600] Epoch3: Loss:27.244581952691078 Training Acc:87.69444444444444(18942/21600)
+2025-03-13:13:07:55 [INFO    ] [nad.py:606] Epoch3: Loss:27.244581952691078 Training Acc:87.69444444444444(18942/21600)
 INFO:root:{'batch': 0,
  'bd_test_loss_avg_over_batch': 5.2295306239809305,
  'clean_test_loss_avg_over_batch': 1.5095880465074019,
@@ -545,7 +543,7 @@ INFO:root:{'batch': 0,
  'test_ra': 0.6832857142857143,
  'train_acc': 0.8769444444444444,
  'train_epoch_loss_avg_over_batch': 0.3205244935610715}
-2025-03-12:09:50:19 [INFO    ] [trainer_cls.py:65] {'batch': 0,
+2025-03-13:13:10:17 [INFO    ] [trainer_cls.py:65] {'batch': 0,
  'bd_test_loss_avg_over_batch': 5.2295306239809305,
  'clean_test_loss_avg_over_batch': 1.5095880465074019,
  'epoch': 0,
@@ -555,13 +553,13 @@ INFO:root:{'batch': 0,
  'train_acc': 0.8769444444444444,
  'train_epoch_loss_avg_over_batch': 0.3205244935610715}
 INFO:root:epoch: 4  lr: 0.0100
-2025-03-12:09:50:19 [INFO    ] [nad.py:89] epoch: 4  lr: 0.0100
+2025-03-13:13:10:18 [INFO    ] [nad.py:89] epoch: 4  lr: 0.0100
 WARNING:root:zero len array in func all_acc(), return None!
-2025-03-12:09:52:53 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
+2025-03-13:13:14:43 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
 WARNING:root:zero len array in func all_acc(), return None!
-2025-03-12:09:52:53 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
+2025-03-13:13:14:43 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
 INFO:root:Epoch4: Loss:24.467141941189766 Training Acc:89.12037037037037(19250/21600)
-2025-03-12:09:52:53 [INFO    ] [nad.py:600] Epoch4: Loss:24.467141941189766 Training Acc:89.12037037037037(19250/21600)
+2025-03-13:13:14:43 [INFO    ] [nad.py:606] Epoch4: Loss:24.467141941189766 Training Acc:89.12037037037037(19250/21600)
 INFO:root:{'batch': 0,
  'bd_test_loss_avg_over_batch': 4.785207067217145,
  'clean_test_loss_avg_over_batch': 1.3444333365469268,
@@ -571,7 +569,7 @@ INFO:root:{'batch': 0,
  'test_ra': 0.6655714285714286,
  'train_acc': 0.8912037037037037,
  'train_epoch_loss_avg_over_batch': 0.2878487287198796}
-2025-03-12:09:54:36 [INFO    ] [trainer_cls.py:65] {'batch': 0,
+2025-03-13:13:16:55 [INFO    ] [trainer_cls.py:65] {'batch': 0,
  'bd_test_loss_avg_over_batch': 4.785207067217145,
  'clean_test_loss_avg_over_batch': 1.3444333365469268,
  'epoch': 0,
@@ -581,13 +579,13 @@ INFO:root:{'batch': 0,
  'train_acc': 0.8912037037037037,
  'train_epoch_loss_avg_over_batch': 0.2878487287198796}
 INFO:root:epoch: 5  lr: 0.0100
-2025-03-12:09:54:37 [INFO    ] [nad.py:89] epoch: 5  lr: 0.0100
+2025-03-13:13:16:56 [INFO    ] [nad.py:89] epoch: 5  lr: 0.0100
 WARNING:root:zero len array in func all_acc(), return None!
-2025-03-12:09:56:32 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
+2025-03-13:13:20:39 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
 WARNING:root:zero len array in func all_acc(), return None!
-2025-03-12:09:56:32 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
+2025-03-13:13:20:39 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
 INFO:root:Epoch5: Loss:22.338485792279243 Training Acc:89.99074074074075(19438/21600)
-2025-03-12:09:56:32 [INFO    ] [nad.py:600] Epoch5: Loss:22.338485792279243 Training Acc:89.99074074074075(19438/21600)
+2025-03-13:13:20:39 [INFO    ] [nad.py:606] Epoch5: Loss:22.338485792279243 Training Acc:89.99074074074075(19438/21600)
 INFO:root:{'batch': 0,
  'bd_test_loss_avg_over_batch': 4.639819758278983,
  'clean_test_loss_avg_over_batch': 1.4401553724751328,
@@ -597,7 +595,7 @@ INFO:root:{'batch': 0,
  'test_ra': 0.6492857142857142,
  'train_acc': 0.8999074074074074,
  'train_epoch_loss_avg_over_batch': 0.2628057152032852}
-2025-03-12:09:58:19 [INFO    ] [trainer_cls.py:65] {'batch': 0,
+2025-03-13:13:22:18 [INFO    ] [trainer_cls.py:65] {'batch': 0,
  'bd_test_loss_avg_over_batch': 4.639819758278983,
  'clean_test_loss_avg_over_batch': 1.4401553724751328,
  'epoch': 0,
@@ -607,13 +605,13 @@ INFO:root:{'batch': 0,
  'train_acc': 0.8999074074074074,
  'train_epoch_loss_avg_over_batch': 0.2628057152032852}
 INFO:root:epoch: 6  lr: 0.0100
-2025-03-12:09:58:19 [INFO    ] [nad.py:89] epoch: 6  lr: 0.0100
+2025-03-13:13:22:18 [INFO    ] [nad.py:89] epoch: 6  lr: 0.0100
 WARNING:root:zero len array in func all_acc(), return None!
-2025-03-12:10:00:35 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
+2025-03-13:13:26:50 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
 WARNING:root:zero len array in func all_acc(), return None!
-2025-03-12:10:00:35 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
+2025-03-13:13:26:50 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
 INFO:root:Epoch6: Loss:21.35820345580578 Training Acc:90.21296296296296(19486/21600)
-2025-03-12:10:00:35 [INFO    ] [nad.py:600] Epoch6: Loss:21.35820345580578 Training Acc:90.21296296296296(19486/21600)
+2025-03-13:13:26:50 [INFO    ] [nad.py:606] Epoch6: Loss:21.35820345580578 Training Acc:90.21296296296296(19486/21600)
 INFO:root:{'batch': 0,
  'bd_test_loss_avg_over_batch': 4.772993700844901,
  'clean_test_loss_avg_over_batch': 1.2860995350462017,
@@ -623,7 +621,7 @@ INFO:root:{'batch': 0,
  'test_ra': 0.6948571428571428,
  'train_acc': 0.9021296296296296,
  'train_epoch_loss_avg_over_batch': 0.25127298183300917}
-2025-03-12:10:02:12 [INFO    ] [trainer_cls.py:65] {'batch': 0,
+2025-03-13:13:29:25 [INFO    ] [trainer_cls.py:65] {'batch': 0,
  'bd_test_loss_avg_over_batch': 4.772993700844901,
  'clean_test_loss_avg_over_batch': 1.2860995350462017,
  'epoch': 0,
@@ -633,13 +631,13 @@ INFO:root:{'batch': 0,
  'train_acc': 0.9021296296296296,
  'train_epoch_loss_avg_over_batch': 0.25127298183300917}
 INFO:root:epoch: 7  lr: 0.0100
-2025-03-12:10:02:12 [INFO    ] [nad.py:89] epoch: 7  lr: 0.0100
+2025-03-13:13:29:26 [INFO    ] [nad.py:89] epoch: 7  lr: 0.0100
 WARNING:root:zero len array in func all_acc(), return None!
-2025-03-12:10:04:41 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
+2025-03-13:13:32:27 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
 WARNING:root:zero len array in func all_acc(), return None!
-2025-03-12:10:04:41 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
+2025-03-13:13:32:27 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
 INFO:root:Epoch7: Loss:20.499050199985504 Training Acc:91.00925925925925(19658/21600)
-2025-03-12:10:04:41 [INFO    ] [nad.py:600] Epoch7: Loss:20.499050199985504 Training Acc:91.00925925925925(19658/21600)
+2025-03-13:13:32:27 [INFO    ] [nad.py:606] Epoch7: Loss:20.499050199985504 Training Acc:91.00925925925925(19658/21600)
 INFO:root:{'batch': 0,
  'bd_test_loss_avg_over_batch': 4.872410195214408,
  'clean_test_loss_avg_over_batch': 1.272439631548795,
@@ -649,7 +647,7 @@ INFO:root:{'batch': 0,
  'test_ra': 0.6942857142857143,
  'train_acc': 0.9100925925925926,
  'train_epoch_loss_avg_over_batch': 0.2411652964704177}
-2025-03-12:10:05:59 [INFO    ] [trainer_cls.py:65] {'batch': 0,
+2025-03-13:13:36:10 [INFO    ] [trainer_cls.py:65] {'batch': 0,
  'bd_test_loss_avg_over_batch': 4.872410195214408,
  'clean_test_loss_avg_over_batch': 1.272439631548795,
  'epoch': 0,
@@ -659,13 +657,13 @@ INFO:root:{'batch': 0,
  'train_acc': 0.9100925925925926,
  'train_epoch_loss_avg_over_batch': 0.2411652964704177}
 INFO:root:epoch: 8  lr: 0.0100
-2025-03-12:10:05:59 [INFO    ] [nad.py:89] epoch: 8  lr: 0.0100
+2025-03-13:13:36:11 [INFO    ] [nad.py:89] epoch: 8  lr: 0.0100
 WARNING:root:zero len array in func all_acc(), return None!
-2025-03-12:10:08:13 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
+2025-03-13:13:39:09 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
 WARNING:root:zero len array in func all_acc(), return None!
-2025-03-12:10:08:13 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
+2025-03-13:13:39:09 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
 INFO:root:Epoch8: Loss:20.63798314332962 Training Acc:90.7824074074074(19609/21600)
-2025-03-12:10:08:13 [INFO    ] [nad.py:600] Epoch8: Loss:20.63798314332962 Training Acc:90.7824074074074(19609/21600)
+2025-03-13:13:39:09 [INFO    ] [nad.py:606] Epoch8: Loss:20.63798314332962 Training Acc:90.7824074074074(19609/21600)
 INFO:root:{'batch': 0,
  'bd_test_loss_avg_over_batch': 4.737339564732143,
  'clean_test_loss_avg_over_batch': 1.278940782402501,
@@ -675,7 +673,7 @@ INFO:root:{'batch': 0,
  'test_ra': 0.6831428571428572,
  'train_acc': 0.9078240740740741,
  'train_epoch_loss_avg_over_batch': 0.24279980168623083}
-2025-03-12:10:09:40 [INFO    ] [trainer_cls.py:65] {'batch': 0,
+2025-03-13:13:41:32 [INFO    ] [trainer_cls.py:65] {'batch': 0,
  'bd_test_loss_avg_over_batch': 4.737339564732143,
  'clean_test_loss_avg_over_batch': 1.278940782402501,
  'epoch': 0,
@@ -685,206 +683,398 @@ INFO:root:{'batch': 0,
  'train_acc': 0.9078240740740741,
  'train_epoch_loss_avg_over_batch': 0.24279980168623083}
 INFO:root:epoch: 9  lr: 0.0100
-2025-03-12:10:09:40 [INFO    ] [nad.py:89] epoch: 9  lr: 0.0100
+2025-03-13:13:41:33 [INFO    ] [nad.py:89] epoch: 9  lr: 0.0100
 WARNING:root:zero len array in func all_acc(), return None!
-2025-03-12:10:10:31 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
+2025-03-13:13:46:16 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
 WARNING:root:zero len array in func all_acc(), return None!
-2025-03-12:10:10:31 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
+2025-03-13:13:46:16 [WARNING ] [trainer_cls.py:590] zero len array in func all_acc(), return None!
 INFO:root:Epoch9: Loss:18.678738936781883 Training Acc:91.56944444444444(19779/21600)
-2025-03-12:10:10:31 [INFO    ] [nad.py:600] Epoch9: Loss:18.678738936781883 Training Acc:91.56944444444444(19779/21600)
+2025-03-13:13:46:16 [INFO    ] [nad.py:606] Epoch9: Loss:18.678738936781883 Training Acc:91.56944444444444(19779/21600)
 Activation3_s min: -0.21933899819850922, max: 0.6508954763412476
+Saved normalized attention map: attention_maps/student_sample0_raw.png
 Saved attention map: attention_maps/student_sample0.png
+Saved normalized attention map: attention_maps/student_sample1_raw.png
 Saved attention map: attention_maps/student_sample1.png
+Saved normalized attention map: attention_maps/student_sample2_raw.png
 Saved attention map: attention_maps/student_sample2.png
+Saved normalized attention map: attention_maps/student_sample3_raw.png
 Saved attention map: attention_maps/student_sample3.png
+Saved normalized attention map: attention_maps/student_sample4_raw.png
 Saved attention map: attention_maps/student_sample4.png
+Saved normalized attention map: attention_maps/student_sample5_raw.png
 Saved attention map: attention_maps/student_sample5.png
+Saved normalized attention map: attention_maps/student_sample6_raw.png
 Saved attention map: attention_maps/student_sample6.png
+Saved normalized attention map: attention_maps/student_sample7_raw.png
 Saved attention map: attention_maps/student_sample7.png
+Saved normalized attention map: attention_maps/student_sample8_raw.png
 Saved attention map: attention_maps/student_sample8.png
+Saved normalized attention map: attention_maps/student_sample9_raw.png
 Saved attention map: attention_maps/student_sample9.png
+Saved normalized attention map: attention_maps/student_sample10_raw.png
 Saved attention map: attention_maps/student_sample10.png
+Saved normalized attention map: attention_maps/student_sample11_raw.png
 Saved attention map: attention_maps/student_sample11.png
+Saved normalized attention map: attention_maps/student_sample12_raw.png
 Saved attention map: attention_maps/student_sample12.png
+Saved normalized attention map: attention_maps/student_sample13_raw.png
 Saved attention map: attention_maps/student_sample13.png
+Saved normalized attention map: attention_maps/student_sample14_raw.png
 Saved attention map: attention_maps/student_sample14.png
+Saved normalized attention map: attention_maps/student_sample15_raw.png
 Saved attention map: attention_maps/student_sample15.png
+Saved normalized attention map: attention_maps/student_sample16_raw.png
 Saved attention map: attention_maps/student_sample16.png
+Saved normalized attention map: attention_maps/student_sample17_raw.png
 Saved attention map: attention_maps/student_sample17.png
+Saved normalized attention map: attention_maps/student_sample18_raw.png
 Saved attention map: attention_maps/student_sample18.png
+Saved normalized attention map: attention_maps/student_sample19_raw.png
 Saved attention map: attention_maps/student_sample19.png
+Saved normalized attention map: attention_maps/student_sample20_raw.png
 Saved attention map: attention_maps/student_sample20.png
+Saved normalized attention map: attention_maps/student_sample21_raw.png
 Saved attention map: attention_maps/student_sample21.png
+Saved normalized attention map: attention_maps/student_sample22_raw.png
 Saved attention map: attention_maps/student_sample22.png
+Saved normalized attention map: attention_maps/student_sample23_raw.png
 Saved attention map: attention_maps/student_sample23.png
+Saved normalized attention map: attention_maps/student_sample24_raw.png
 Saved attention map: attention_maps/student_sample24.png
+Saved normalized attention map: attention_maps/student_sample25_raw.png
 Saved attention map: attention_maps/student_sample25.png
+Saved normalized attention map: attention_maps/student_sample26_raw.png
 Saved attention map: attention_maps/student_sample26.png
+Saved normalized attention map: attention_maps/student_sample27_raw.png
 Saved attention map: attention_maps/student_sample27.png
+Saved normalized attention map: attention_maps/student_sample28_raw.png
 Saved attention map: attention_maps/student_sample28.png
+Saved normalized attention map: attention_maps/student_sample29_raw.png
 Saved attention map: attention_maps/student_sample29.png
+Saved normalized attention map: attention_maps/student_sample30_raw.png
 Saved attention map: attention_maps/student_sample30.png
+Saved normalized attention map: attention_maps/student_sample31_raw.png
 Saved attention map: attention_maps/student_sample31.png
+Saved normalized attention map: attention_maps/student_sample32_raw.png
 Saved attention map: attention_maps/student_sample32.png
+Saved normalized attention map: attention_maps/student_sample33_raw.png
 Saved attention map: attention_maps/student_sample33.png
+Saved normalized attention map: attention_maps/student_sample34_raw.png
 Saved attention map: attention_maps/student_sample34.png
+Saved normalized attention map: attention_maps/student_sample35_raw.png
 Saved attention map: attention_maps/student_sample35.png
+Saved normalized attention map: attention_maps/student_sample36_raw.png
 Saved attention map: attention_maps/student_sample36.png
+Saved normalized attention map: attention_maps/student_sample37_raw.png
 Saved attention map: attention_maps/student_sample37.png
+Saved normalized attention map: attention_maps/student_sample38_raw.png
 Saved attention map: attention_maps/student_sample38.png
+Saved normalized attention map: attention_maps/student_sample39_raw.png
 Saved attention map: attention_maps/student_sample39.png
+Saved normalized attention map: attention_maps/student_sample40_raw.png
 Saved attention map: attention_maps/student_sample40.png
+Saved normalized attention map: attention_maps/student_sample41_raw.png
 Saved attention map: attention_maps/student_sample41.png
+Saved normalized attention map: attention_maps/student_sample42_raw.png
 Saved attention map: attention_maps/student_sample42.png
+Saved normalized attention map: attention_maps/student_sample43_raw.png
 Saved attention map: attention_maps/student_sample43.png
+Saved normalized attention map: attention_maps/student_sample44_raw.png
 Saved attention map: attention_maps/student_sample44.png
+Saved normalized attention map: attention_maps/student_sample45_raw.png
 Saved attention map: attention_maps/student_sample45.png
+Saved normalized attention map: attention_maps/student_sample46_raw.png
 Saved attention map: attention_maps/student_sample46.png
+Saved normalized attention map: attention_maps/student_sample47_raw.png
 Saved attention map: attention_maps/student_sample47.png
+Saved normalized attention map: attention_maps/student_sample48_raw.png
 Saved attention map: attention_maps/student_sample48.png
+Saved normalized attention map: attention_maps/student_sample49_raw.png
 Saved attention map: attention_maps/student_sample49.png
+Saved normalized attention map: attention_maps/student_sample50_raw.png
 Saved attention map: attention_maps/student_sample50.png
+Saved normalized attention map: attention_maps/student_sample51_raw.png
 Saved attention map: attention_maps/student_sample51.png
+Saved normalized attention map: attention_maps/student_sample52_raw.png
 Saved attention map: attention_maps/student_sample52.png
+Saved normalized attention map: attention_maps/student_sample53_raw.png
 Saved attention map: attention_maps/student_sample53.png
+Saved normalized attention map: attention_maps/student_sample54_raw.png
 Saved attention map: attention_maps/student_sample54.png
+Saved normalized attention map: attention_maps/student_sample55_raw.png
 Saved attention map: attention_maps/student_sample55.png
+Saved normalized attention map: attention_maps/student_sample56_raw.png
 Saved attention map: attention_maps/student_sample56.png
+Saved normalized attention map: attention_maps/student_sample57_raw.png
 Saved attention map: attention_maps/student_sample57.png
+Saved normalized attention map: attention_maps/student_sample58_raw.png
 Saved attention map: attention_maps/student_sample58.png
+Saved normalized attention map: attention_maps/student_sample59_raw.png
 Saved attention map: attention_maps/student_sample59.png
+Saved normalized attention map: attention_maps/student_sample60_raw.png
 Saved attention map: attention_maps/student_sample60.png
+Saved normalized attention map: attention_maps/student_sample61_raw.png
 Saved attention map: attention_maps/student_sample61.png
+Saved normalized attention map: attention_maps/student_sample62_raw.png
 Saved attention map: attention_maps/student_sample62.png
+Saved normalized attention map: attention_maps/student_sample63_raw.png
 Saved attention map: attention_maps/student_sample63.png
+Saved normalized attention map: attention_maps/student_sample64_raw.png
 Saved attention map: attention_maps/student_sample64.png
+Saved normalized attention map: attention_maps/student_sample65_raw.png
 Saved attention map: attention_maps/student_sample65.png
+Saved normalized attention map: attention_maps/student_sample66_raw.png
 Saved attention map: attention_maps/student_sample66.png
+Saved normalized attention map: attention_maps/student_sample67_raw.png
 Saved attention map: attention_maps/student_sample67.png
+Saved normalized attention map: attention_maps/student_sample68_raw.png
 Saved attention map: attention_maps/student_sample68.png
+Saved normalized attention map: attention_maps/student_sample69_raw.png
 Saved attention map: attention_maps/student_sample69.png
+Saved normalized attention map: attention_maps/student_sample70_raw.png
 Saved attention map: attention_maps/student_sample70.png
+Saved normalized attention map: attention_maps/student_sample71_raw.png
 Saved attention map: attention_maps/student_sample71.png
+Saved normalized attention map: attention_maps/student_sample72_raw.png
 Saved attention map: attention_maps/student_sample72.png
+Saved normalized attention map: attention_maps/student_sample73_raw.png
 Saved attention map: attention_maps/student_sample73.png
+Saved normalized attention map: attention_maps/student_sample74_raw.png
 Saved attention map: attention_maps/student_sample74.png
+Saved normalized attention map: attention_maps/student_sample75_raw.png
 Saved attention map: attention_maps/student_sample75.png
+Saved normalized attention map: attention_maps/student_sample76_raw.png
 Saved attention map: attention_maps/student_sample76.png
+Saved normalized attention map: attention_maps/student_sample77_raw.png
 Saved attention map: attention_maps/student_sample77.png
+Saved normalized attention map: attention_maps/student_sample78_raw.png
 Saved attention map: attention_maps/student_sample78.png
+Saved normalized attention map: attention_maps/student_sample79_raw.png
 Saved attention map: attention_maps/student_sample79.png
+Saved normalized attention map: attention_maps/student_sample80_raw.png
 Saved attention map: attention_maps/student_sample80.png
+Saved normalized attention map: attention_maps/student_sample81_raw.png
 Saved attention map: attention_maps/student_sample81.png
+Saved normalized attention map: attention_maps/student_sample82_raw.png
 Saved attention map: attention_maps/student_sample82.png
+Saved normalized attention map: attention_maps/student_sample83_raw.png
 Saved attention map: attention_maps/student_sample83.png
+Saved normalized attention map: attention_maps/student_sample84_raw.png
 Saved attention map: attention_maps/student_sample84.png
+Saved normalized attention map: attention_maps/student_sample85_raw.png
 Saved attention map: attention_maps/student_sample85.png
+Saved normalized attention map: attention_maps/student_sample86_raw.png
 Saved attention map: attention_maps/student_sample86.png
+Saved normalized attention map: attention_maps/student_sample87_raw.png
 Saved attention map: attention_maps/student_sample87.png
+Saved normalized attention map: attention_maps/student_sample88_raw.png
 Saved attention map: attention_maps/student_sample88.png
+Saved normalized attention map: attention_maps/student_sample89_raw.png
 Saved attention map: attention_maps/student_sample89.png
+Saved normalized attention map: attention_maps/student_sample90_raw.png
 Saved attention map: attention_maps/student_sample90.png
+Saved normalized attention map: attention_maps/student_sample91_raw.png
 Saved attention map: attention_maps/student_sample91.png
+Saved normalized attention map: attention_maps/student_sample92_raw.png
 Saved attention map: attention_maps/student_sample92.png
+Saved normalized attention map: attention_maps/student_sample93_raw.png
 Saved attention map: attention_maps/student_sample93.png
+Saved normalized attention map: attention_maps/student_sample94_raw.png
 Saved attention map: attention_maps/student_sample94.png
+Saved normalized attention map: attention_maps/student_sample95_raw.png
 Saved attention map: attention_maps/student_sample95.png
 Activation3_t min: -0.19438385963439941, max: 0.7013508081436157
+Saved normalized attention map: attention_maps/teacher_sample0_raw.png
 Saved attention map: attention_maps/teacher_sample0.png
+Saved normalized attention map: attention_maps/teacher_sample1_raw.png
 Saved attention map: attention_maps/teacher_sample1.png
+Saved normalized attention map: attention_maps/teacher_sample2_raw.png
 Saved attention map: attention_maps/teacher_sample2.png
+Saved normalized attention map: attention_maps/teacher_sample3_raw.png
 Saved attention map: attention_maps/teacher_sample3.png
+Saved normalized attention map: attention_maps/teacher_sample4_raw.png
 Saved attention map: attention_maps/teacher_sample4.png
+Saved normalized attention map: attention_maps/teacher_sample5_raw.png
 Saved attention map: attention_maps/teacher_sample5.png
+Saved normalized attention map: attention_maps/teacher_sample6_raw.png
 Saved attention map: attention_maps/teacher_sample6.png
+Saved normalized attention map: attention_maps/teacher_sample7_raw.png
 Saved attention map: attention_maps/teacher_sample7.png
+Saved normalized attention map: attention_maps/teacher_sample8_raw.png
 Saved attention map: attention_maps/teacher_sample8.png
+Saved normalized attention map: attention_maps/teacher_sample9_raw.png
 Saved attention map: attention_maps/teacher_sample9.png
+Saved normalized attention map: attention_maps/teacher_sample10_raw.png
 Saved attention map: attention_maps/teacher_sample10.png
+Saved normalized attention map: attention_maps/teacher_sample11_raw.png
 Saved attention map: attention_maps/teacher_sample11.png
+Saved normalized attention map: attention_maps/teacher_sample12_raw.png
 Saved attention map: attention_maps/teacher_sample12.png
+Saved normalized attention map: attention_maps/teacher_sample13_raw.png
 Saved attention map: attention_maps/teacher_sample13.png
+Saved normalized attention map: attention_maps/teacher_sample14_raw.png
 Saved attention map: attention_maps/teacher_sample14.png
+Saved normalized attention map: attention_maps/teacher_sample15_raw.png
 Saved attention map: attention_maps/teacher_sample15.png
+Saved normalized attention map: attention_maps/teacher_sample16_raw.png
 Saved attention map: attention_maps/teacher_sample16.png
+Saved normalized attention map: attention_maps/teacher_sample17_raw.png
 Saved attention map: attention_maps/teacher_sample17.png
+Saved normalized attention map: attention_maps/teacher_sample18_raw.png
 Saved attention map: attention_maps/teacher_sample18.png
+Saved normalized attention map: attention_maps/teacher_sample19_raw.png
 Saved attention map: attention_maps/teacher_sample19.png
+Saved normalized attention map: attention_maps/teacher_sample20_raw.png
 Saved attention map: attention_maps/teacher_sample20.png
+Saved normalized attention map: attention_maps/teacher_sample21_raw.png
 Saved attention map: attention_maps/teacher_sample21.png
+Saved normalized attention map: attention_maps/teacher_sample22_raw.png
 Saved attention map: attention_maps/teacher_sample22.png
+Saved normalized attention map: attention_maps/teacher_sample23_raw.png
 Saved attention map: attention_maps/teacher_sample23.png
+Saved normalized attention map: attention_maps/teacher_sample24_raw.png
 Saved attention map: attention_maps/teacher_sample24.png
+Saved normalized attention map: attention_maps/teacher_sample25_raw.png
 Saved attention map: attention_maps/teacher_sample25.png
+Saved normalized attention map: attention_maps/teacher_sample26_raw.png
 Saved attention map: attention_maps/teacher_sample26.png
+Saved normalized attention map: attention_maps/teacher_sample27_raw.png
 Saved attention map: attention_maps/teacher_sample27.png
+Saved normalized attention map: attention_maps/teacher_sample28_raw.png
 Saved attention map: attention_maps/teacher_sample28.png
+Saved normalized attention map: attention_maps/teacher_sample29_raw.png
 Saved attention map: attention_maps/teacher_sample29.png
+Saved normalized attention map: attention_maps/teacher_sample30_raw.png
 Saved attention map: attention_maps/teacher_sample30.png
+Saved normalized attention map: attention_maps/teacher_sample31_raw.png
 Saved attention map: attention_maps/teacher_sample31.png
+Saved normalized attention map: attention_maps/teacher_sample32_raw.png
 Saved attention map: attention_maps/teacher_sample32.png
+Saved normalized attention map: attention_maps/teacher_sample33_raw.png
 Saved attention map: attention_maps/teacher_sample33.png
+Saved normalized attention map: attention_maps/teacher_sample34_raw.png
 Saved attention map: attention_maps/teacher_sample34.png
+Saved normalized attention map: attention_maps/teacher_sample35_raw.png
 Saved attention map: attention_maps/teacher_sample35.png
+Saved normalized attention map: attention_maps/teacher_sample36_raw.png
 Saved attention map: attention_maps/teacher_sample36.png
+Saved normalized attention map: attention_maps/teacher_sample37_raw.png
 Saved attention map: attention_maps/teacher_sample37.png
+Saved normalized attention map: attention_maps/teacher_sample38_raw.png
 Saved attention map: attention_maps/teacher_sample38.png
+Saved normalized attention map: attention_maps/teacher_sample39_raw.png
 Saved attention map: attention_maps/teacher_sample39.png
+Saved normalized attention map: attention_maps/teacher_sample40_raw.png
 Saved attention map: attention_maps/teacher_sample40.png
+Saved normalized attention map: attention_maps/teacher_sample41_raw.png
 Saved attention map: attention_maps/teacher_sample41.png
+Saved normalized attention map: attention_maps/teacher_sample42_raw.png
 Saved attention map: attention_maps/teacher_sample42.png
+Saved normalized attention map: attention_maps/teacher_sample43_raw.png
 Saved attention map: attention_maps/teacher_sample43.png
+Saved normalized attention map: attention_maps/teacher_sample44_raw.png
 Saved attention map: attention_maps/teacher_sample44.png
+Saved normalized attention map: attention_maps/teacher_sample45_raw.png
 Saved attention map: attention_maps/teacher_sample45.png
+Saved normalized attention map: attention_maps/teacher_sample46_raw.png
 Saved attention map: attention_maps/teacher_sample46.png
+Saved normalized attention map: attention_maps/teacher_sample47_raw.png
 Saved attention map: attention_maps/teacher_sample47.png
+Saved normalized attention map: attention_maps/teacher_sample48_raw.png
 Saved attention map: attention_maps/teacher_sample48.png
+Saved normalized attention map: attention_maps/teacher_sample49_raw.png
 Saved attention map: attention_maps/teacher_sample49.png
+Saved normalized attention map: attention_maps/teacher_sample50_raw.png
 Saved attention map: attention_maps/teacher_sample50.png
+Saved normalized attention map: attention_maps/teacher_sample51_raw.png
 Saved attention map: attention_maps/teacher_sample51.png
+Saved normalized attention map: attention_maps/teacher_sample52_raw.png
 Saved attention map: attention_maps/teacher_sample52.png
+Saved normalized attention map: attention_maps/teacher_sample53_raw.png
 Saved attention map: attention_maps/teacher_sample53.png
+Saved normalized attention map: attention_maps/teacher_sample54_raw.png
 Saved attention map: attention_maps/teacher_sample54.png
+Saved normalized attention map: attention_maps/teacher_sample55_raw.png
 Saved attention map: attention_maps/teacher_sample55.png
+Saved normalized attention map: attention_maps/teacher_sample56_raw.png
 Saved attention map: attention_maps/teacher_sample56.png
+Saved normalized attention map: attention_maps/teacher_sample57_raw.png
 Saved attention map: attention_maps/teacher_sample57.png
+Saved normalized attention map: attention_maps/teacher_sample58_raw.png
 Saved attention map: attention_maps/teacher_sample58.png
+Saved normalized attention map: attention_maps/teacher_sample59_raw.png
 Saved attention map: attention_maps/teacher_sample59.png
+Saved normalized attention map: attention_maps/teacher_sample60_raw.png
 Saved attention map: attention_maps/teacher_sample60.png
+Saved normalized attention map: attention_maps/teacher_sample61_raw.png
 Saved attention map: attention_maps/teacher_sample61.png
+Saved normalized attention map: attention_maps/teacher_sample62_raw.png
 Saved attention map: attention_maps/teacher_sample62.png
+Saved normalized attention map: attention_maps/teacher_sample63_raw.png
 Saved attention map: attention_maps/teacher_sample63.png
+Saved normalized attention map: attention_maps/teacher_sample64_raw.png
 Saved attention map: attention_maps/teacher_sample64.png
+Saved normalized attention map: attention_maps/teacher_sample65_raw.png
 Saved attention map: attention_maps/teacher_sample65.png
+Saved normalized attention map: attention_maps/teacher_sample66_raw.png
 Saved attention map: attention_maps/teacher_sample66.png
+Saved normalized attention map: attention_maps/teacher_sample67_raw.png
 Saved attention map: attention_maps/teacher_sample67.png
+Saved normalized attention map: attention_maps/teacher_sample68_raw.png
 Saved attention map: attention_maps/teacher_sample68.png
+Saved normalized attention map: attention_maps/teacher_sample69_raw.png
 Saved attention map: attention_maps/teacher_sample69.png
+Saved normalized attention map: attention_maps/teacher_sample70_raw.png
 Saved attention map: attention_maps/teacher_sample70.png
+Saved normalized attention map: attention_maps/teacher_sample71_raw.png
 Saved attention map: attention_maps/teacher_sample71.png
+Saved normalized attention map: attention_maps/teacher_sample72_raw.png
 Saved attention map: attention_maps/teacher_sample72.png
+Saved normalized attention map: attention_maps/teacher_sample73_raw.png
 Saved attention map: attention_maps/teacher_sample73.png
+Saved normalized attention map: attention_maps/teacher_sample74_raw.png
 Saved attention map: attention_maps/teacher_sample74.png
+Saved normalized attention map: attention_maps/teacher_sample75_raw.png
 Saved attention map: attention_maps/teacher_sample75.png
+Saved normalized attention map: attention_maps/teacher_sample76_raw.png
 Saved attention map: attention_maps/teacher_sample76.png
+Saved normalized attention map: attention_maps/teacher_sample77_raw.png
 Saved attention map: attention_maps/teacher_sample77.png
+Saved normalized attention map: attention_maps/teacher_sample78_raw.png
 Saved attention map: attention_maps/teacher_sample78.png
+Saved normalized attention map: attention_maps/teacher_sample79_raw.png
 Saved attention map: attention_maps/teacher_sample79.png
+Saved normalized attention map: attention_maps/teacher_sample80_raw.png
 Saved attention map: attention_maps/teacher_sample80.png
+Saved normalized attention map: attention_maps/teacher_sample81_raw.png
 Saved attention map: attention_maps/teacher_sample81.png
+Saved normalized attention map: attention_maps/teacher_sample82_raw.png
 Saved attention map: attention_maps/teacher_sample82.png
+Saved normalized attention map: attention_maps/teacher_sample83_raw.png
 Saved attention map: attention_maps/teacher_sample83.png
+Saved normalized attention map: attention_maps/teacher_sample84_raw.png
 Saved attention map: attention_maps/teacher_sample84.png
+Saved normalized attention map: attention_maps/teacher_sample85_raw.png
 Saved attention map: attention_maps/teacher_sample85.png
+Saved normalized attention map: attention_maps/teacher_sample86_raw.png
 Saved attention map: attention_maps/teacher_sample86.png
+Saved normalized attention map: attention_maps/teacher_sample87_raw.png
 Saved attention map: attention_maps/teacher_sample87.png
+Saved normalized attention map: attention_maps/teacher_sample88_raw.png
 Saved attention map: attention_maps/teacher_sample88.png
+Saved normalized attention map: attention_maps/teacher_sample89_raw.png
 Saved attention map: attention_maps/teacher_sample89.png
+Saved normalized attention map: attention_maps/teacher_sample90_raw.png
 Saved attention map: attention_maps/teacher_sample90.png
+Saved normalized attention map: attention_maps/teacher_sample91_raw.png
 Saved attention map: attention_maps/teacher_sample91.png
+Saved normalized attention map: attention_maps/teacher_sample92_raw.png
 Saved attention map: attention_maps/teacher_sample92.png
+Saved normalized attention map: attention_maps/teacher_sample93_raw.png
 Saved attention map: attention_maps/teacher_sample93.png
+Saved normalized attention map: attention_maps/teacher_sample94_raw.png
 Saved attention map: attention_maps/teacher_sample94.png
+Saved normalized attention map: attention_maps/teacher_sample95_raw.png
 Saved attention map: attention_maps/teacher_sample95.png
 INFO:root:{'batch': 0,
  'bd_test_loss_avg_over_batch': 5.503412502152579,
@@ -895,7 +1085,7 @@ INFO:root:{'batch': 0,
  'test_ra': 0.718,
  'train_acc': 0.9156944444444445,
  'train_epoch_loss_avg_over_batch': 0.21974986984449274}
-2025-03-12:10:10:53 [INFO    ] [trainer_cls.py:65] {'batch': 0,
+2025-03-13:13:48:37 [INFO    ] [trainer_cls.py:65] {'batch': 0,
  'bd_test_loss_avg_over_batch': 5.503412502152579,
  'clean_test_loss_avg_over_batch': 1.3829659042936382,
  'epoch': 0,
@@ -905,4 +1095,4 @@ INFO:root:{'batch': 0,
  'train_acc': 0.9156944444444445,
  'train_epoch_loss_avg_over_batch': 0.21974986984449274}
 INFO:root:saving...
-2025-03-12:10:10:53 [INFO    ] [save_load_attack.py:176] saving...
+2025-03-13:13:48:38 [INFO    ] [save_load_attack.py:176] saving...
