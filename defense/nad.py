@@ -507,11 +507,18 @@ class NADModelTrainer(PureCleanModelTrainer):
                 # output attention maps for the last epoch and last iteration
                 if epoch == 9 and idx == total_iterations - 1:
                     # calculate attention map using the critierionAT and save as image
+                    print(f"Activation shape: {activation3_s.shape}")
                     print(f"Activation3_s min: {activation3_s.min()}, max: {activation3_s.max()}")
                     attention_map_s = criterionAT.attention_map(activation3_s)
+                    print(f"Attention map shape: {attention_map_s.shape}")
+                    print(f"Attention map min: {attention_map_s.min()}, max: {attention_map_s.max()}")
                     self.save_attention_map(attention_map_s, filename="student")
+
+                    print(f"Activation shape: {activation3_t.shape}")
                     print(f"Activation3_t min: {activation3_t.min()}, max: {activation3_t.max()}")
                     attention_map_t = criterionAT.attention_map(activation3_t)
+                    print(f"Attention map shape: {attention_map_t.shape}")
+                    print(f"Attention map min: {attention_map_t.min()}, max: {attention_map_t.max()}")
                     self.save_attention_map(attention_map_t, filename="teacher")
                 
 
