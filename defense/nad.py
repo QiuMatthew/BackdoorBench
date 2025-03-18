@@ -512,14 +512,14 @@ class NADModelTrainer(PureCleanModelTrainer):
                     attention_map_s = criterionAT.attention_map(activation3_s)
                     print(f"Attention map shape: {attention_map_s.shape}")
                     print(f"Attention map min: {attention_map_s.min()}, max: {attention_map_s.max()}")
-                    self.save_attention_map(attention_map_s, filename="student")
+                    # self.save_attention_map(attention_map_s, filename="student")
 
                     print(f"Activation shape: {activation3_t.shape}")
                     print(f"Activation3_t min: {activation3_t.min()}, max: {activation3_t.max()}")
                     attention_map_t = criterionAT.attention_map(activation3_t)
                     print(f"Attention map shape: {attention_map_t.shape}")
                     print(f"Attention map min: {attention_map_t.min()}, max: {attention_map_t.max()}")
-                    self.save_attention_map(attention_map_t, filename="teacher")
+                    # self.save_attention_map(attention_map_t, filename="teacher")
                 
 
             if args.model == 'convnext_tiny':
