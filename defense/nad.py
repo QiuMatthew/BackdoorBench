@@ -111,6 +111,8 @@ class AT(nn.Module):
 		am = torch.sum(am, dim=1, keepdim=True)
 		norm = torch.norm(am, dim=(2,3), keepdim=True)
 		am = torch.div(am, norm+eps)
+		print(f"Attention map shape: {am.shape}")
+		print(f"Attention map min: {am.min()}, max: {am.max()}")
 
 		return am
 
@@ -499,8 +501,10 @@ class NADModelTrainer(PureCleanModelTrainer):
                 activation3_t = modelout(inputs)
                 # activation3_t = features.view(features.size(0), -1)
 
+                print("Calculating Loss")
                 cls_loss = criterionCls(outputs_s, labels)
                 at3_loss = criterionAT(activation3_s, activation3_t.detach()) * args.beta3
+                print(f"cls_loss: {cls_loss}, at3_loss: {at3_loss}")
 
                 at_loss = at3_loss + cls_loss
                 
@@ -509,18 +513,23 @@ class NADModelTrainer(PureCleanModelTrainer):
                     # calculate attention map using the critierionAT and save as image
                     print(f"Activation shape: {activation3_s.shape}")
                     print(f"Activation3_s min: {activation3_s.min()}, max: {activation3_s.max()}")
+                    print(f"Activation3_s: {activation3_s}")
                     attention_map_s = criterionAT.attention_map(activation3_s)
                     print(f"Attention map shape: {attention_map_s.shape}")
                     print(f"Attention map min: {attention_map_s.min()}, max: {attention_map_s.max()}")
+                    print(f"Attention map: {attention_map_s}")
                     # self.save_attention_map(attention_map_s, filename="student")
 
                     print(f"Activation shape: {activation3_t.shape}")
                     print(f"Activation3_t min: {activation3_t.min()}, max: {activation3_t.max()}")
+                    print(f"Activation3_t: {activation3_t}")
                     attention_map_t = criterionAT.attention_map(activation3_t)
                     print(f"Attention map shape: {attention_map_t.shape}")
                     print(f"Attention map min: {attention_map_t.min()}, max: {attention_map_t.max()}")
+                    print(f"Attention map: {attention_map_t}")
                     # self.save_attention_map(attention_map_t, filename="teacher")
                 
+                    print(f"features_out shape: {features_out}")
 
             if args.model == 'convnext_tiny':
                 outputs_s = snet(inputs)
